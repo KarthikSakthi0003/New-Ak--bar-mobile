@@ -7,7 +7,7 @@
   }
   ul {
     @include mixins.responsive(xs) {
-      padding-left: 0rem;
+      padding-left: 1rem;
     }
   }
 }
@@ -25,7 +25,12 @@
 
 .anime {
   @include mixins.responsive(xs) {
-    padding: 1rem 5rem;
+    padding: 1rem 4rem;
+    display: flex;
+    justify-content: center;
+  }
+  @include mixins.responsive(sm) {
+    padding: 1rem 4rem;
     display: flex;
     justify-content: center;
   }
@@ -35,8 +40,8 @@
   @include mixins.responsive(xs) {
     background-color: #1968b2;
     color: #fff;
-    width: 24rem;
-    height: 12rem;
+    width: 18rem;
+    height: 11rem;
     margin: 0.5em;
   }
   .card-text-maincard1 {
@@ -48,7 +53,7 @@
     margin-top: -2rem;
     margin-left: 40px;
     height: 37px;
-    width: 22rem;
+    width: 16rem;
     background: #d32f2f;
     border-radius: 0 0 4px 4px;
     position: relative;
@@ -86,4 +91,36 @@
 .toggler-bar {
   background-color: #fff;
   flex-direction: row-reverse;
+}
+
+.responsive-bottom {
+  @include mixins.responsive(xs) {
+    padding: 1rem 2rem;
+    margin-top: 10px;
+  }
+}
+.r-b-para {
+  @include mixins.responsive(xs) {
+    margin-top: -1rem;
+    font-size: x-large;
+    font-weight: 600;
+  }
+}
+/* .r-b-para-2 {
+  @include mixins.responsive(xs) {
+    margin-left: 6px;
+    padding: 1rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+ */
+
+.accordion {
+  @include mixins.responsive(xs) {
+    padding: 1rem 1rem;
+    background-color: #f5f8fb;
+    border-radius: 37px;
+  }
 }

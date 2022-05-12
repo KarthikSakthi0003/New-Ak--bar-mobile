@@ -11560,7 +11560,7 @@ a {
 }
 @media only screen and (max-width: 576px) {
   .xs-contai ul {
-    padding-left: 0rem;
+    padding-left: 1rem;
   }
 }
 
@@ -11572,7 +11572,14 @@ a {
 
 @media only screen and (max-width: 576px) {
   .anime {
-    padding: 1rem 5rem;
+    padding: 1rem 4rem;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .anime {
+    padding: 1rem 4rem;
     display: flex;
     justify-content: center;
   }
@@ -11582,8 +11589,8 @@ a {
   .maincard1 {
     background-color: #1968b2;
     color: #fff;
-    width: 24rem;
-    height: 12rem;
+    width: 18rem;
+    height: 11rem;
     margin: 0.5em;
   }
 }
@@ -11596,7 +11603,7 @@ a {
     margin-top: -2rem;
     margin-left: 40px;
     height: 37px;
-    width: 22rem;
+    width: 16rem;
     background: #d32f2f;
     border-radius: 0 0 4px 4px;
     position: relative;
@@ -11635,6 +11642,39 @@ a {
 .toggler-bar {
   background-color: #fff;
   flex-direction: row-reverse;
+}
+
+@media only screen and (max-width: 576px) {
+  .responsive-bottom {
+    padding: 1rem 2rem;
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .r-b-para {
+    margin-top: -1rem;
+    font-size: x-large;
+    font-weight: 600;
+  }
+}
+
+/* .r-b-para-2 {
+  @include mixins.responsive(xs) {
+    margin-left: 6px;
+    padding: 1rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+ */
+@media only screen and (max-width: 576px) {
+  .accordion {
+    padding: 1rem 1rem;
+    background-color: #f5f8fb;
+    border-radius: 37px;
+  }
 }
 
 /* // X-Small devices (portrait phones, less than 576px)
@@ -11709,21 +11749,44 @@ a {
   margin-bottom: 4px;
 }
 @media only screen and (max-width: 576px) {
+  .secondary-navtab .secondary-nav-tabs {
+    padding: 1rem 2rem;
+  }
+}
+@media only screen and (max-width: 576px) {
   .secondary-navtab {
-    padding: 1rem 3rem;
+    padding: 1rem 2rem;
     text-align: center;
     background-color: white;
     color: #1f4687;
     text-decoration: none;
     list-style: none;
     border-radius: 0px 1px 3px 5px;
-    height: 72px;
-    width: 29px;
-    margin-right: -36px;
+    height: 74px;
+    width: 90px;
+    margin-right: -8px;
     border: 1px solid rgba(255, 255, 255, 0.28);
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3);
     margin-bottom: 0px;
-    margin-left: 28px;
+    margin-left: 6px;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .secondary-navtab {
+    padding: 1rem 2rem;
+    text-align: center;
+    background-color: white;
+    color: #1f4687;
+    text-decoration: none;
+    list-style: none;
+    border-radius: 0px 1px 3px 5px;
+    height: 74px;
+    width: 90px;
+    margin-right: -8px;
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3);
+    margin-bottom: 0px;
+    margin-left: 5px;
   }
 }
 .secondary-navtab-anchor {
