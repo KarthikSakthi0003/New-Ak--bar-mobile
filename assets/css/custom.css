@@ -11563,6 +11563,21 @@ a {
     padding-left: 1rem;
   }
 }
+@media only screen and (min-width: 768px) {
+  .xs-contai ul {
+    padding-left: 6rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .xs-contai ul {
+    padding-left: 6rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .xs-contai ul {
+    padding-left: 6rem;
+  }
+}
 
 @media only screen and (max-width: 576px) {
   .card1 {
@@ -11572,14 +11587,7 @@ a {
 
 @media only screen and (max-width: 576px) {
   .anime {
-    padding: 1rem 4rem;
-    display: flex;
-    justify-content: center;
-  }
-}
-@media only screen and (min-width: 576px) {
-  .anime {
-    padding: 1rem 4rem;
+    padding: 1rem 2rem;
     display: flex;
     justify-content: center;
   }
@@ -11676,6 +11684,18 @@ a {
     border-radius: 37px;
   }
 }
+@media only screen and (min-width: 992px) {
+  .accordion {
+    padding: 1rem 1rem;
+    background-color: #f5f8fb;
+    border-radius: 37px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .accordion {
+    display: none;
+  }
+}
 
 /* // X-Small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap
@@ -11732,7 +11752,7 @@ a {
 }
  */
 .secondary-navtab {
-  padding: 0rem 3rem;
+  padding: 1rem 2rem;
   display: inline-flex;
   justify-content: center;
   text-align: center;
@@ -11742,7 +11762,7 @@ a {
   list-style: none;
   border-radius: 9px;
   height: 60px;
-  width: 74px;
+  width: 110px;
   margin-right: 13px;
   border: 1px solid rgba(255, 255, 255, 0.28);
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.3);
@@ -11763,7 +11783,7 @@ a {
     list-style: none;
     border-radius: 0px 1px 3px 5px;
     height: 74px;
-    width: 90px;
+    width: 38px;
     margin-right: -8px;
     border: 1px solid rgba(255, 255, 255, 0.28);
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3);
@@ -11781,7 +11801,7 @@ a {
     list-style: none;
     border-radius: 0px 1px 3px 5px;
     height: 74px;
-    width: 90px;
+    width: 84px;
     margin-right: -8px;
     border: 1px solid rgba(255, 255, 255, 0.28);
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3);

@@ -9,6 +9,15 @@
     @include mixins.responsive(xs) {
       padding-left: 1rem;
     }
+    @include mixins.responsive(md) {
+      padding-left: 6rem;
+    }
+    @include mixins.responsive(lg) {
+      padding-left: 6rem;
+    }
+    @include mixins.responsive(x-lg) {
+      padding-left: 6rem;
+    }
   }
 }
 
@@ -25,12 +34,7 @@
 
 .anime {
   @include mixins.responsive(xs) {
-    padding: 1rem 4rem;
-    display: flex;
-    justify-content: center;
-  }
-  @include mixins.responsive(sm) {
-    padding: 1rem 4rem;
+    padding: 1rem 2rem;
     display: flex;
     justify-content: center;
   }
@@ -122,5 +126,14 @@
     padding: 1rem 1rem;
     background-color: #f5f8fb;
     border-radius: 37px;
+  }
+  @include mixins.responsive(lg) {
+    padding: 1rem 1rem;
+    background-color: #f5f8fb;
+    border-radius: 37px;
+  }
+
+  @include mixins.responsive(md) {
+    display: none;
   }
 }
