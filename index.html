@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Hotels Booking Online - Book Budget, Luxury, Cheap Domestic &
+      International Hotels - Akbar Travels
+    </title>
+    <link
+      rel="shortcut icon"
+      href="https://www.akbartravels.com/in/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <!--bootsrap-icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <!-- fontAwsome -->
+    <script
+      src="https://kit.fontawesome.com/9540c9a694.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--Bootsrap stylesheet-->
+    <link rel="stylesheet" href="./assets/css/custom.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div>
+        <a href="/"
+          ><img
+            src="./assets/img/home-logo.png"
+            alt="akbar-logo"
+            loading="lazy"
+        /></a>
+
+
+        
+      </div>
+
+      <!-- toggler -->
+      <div>
+        <div> <a class="btn"data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"> <span class="toggler-bar"> <i class="fa fa-bars" aria-hidden="true"></i> </span>
+        </a></div>
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Log-in</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+      Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+    </div>
+    <div class="dropdown mt-3">
+      <button class="btn btn-ak-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+        Dropdown button
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+        <!-- toggler -->
+        <ul class="header--menus gap-1">
+          <li>
+            <a href="#" class="btn btn-ak-primary btn-sm" role="button">
+              AKBAR BIZZ
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="btn btn-ak-primary btn-sm" role="button"
+              >IRCTC AGENT</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="btn btn-ak-primary btn-sm dropdown-toggle"
+              data-bs-toggle="dropdown"
+              id="dropdownINR"
+              aria-haspopup="true"
+              aria-expanded="false"
+              role="button"
+              >₹ INR</a
+            >
+            <ul class="dropdown-menu" aria-labelledby="dropdownINR">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              href="#"
+              class="btn btn-ak-primary btn-sm dropdown-toggle"
+              data-bs-toggle="dropdown"
+              id="dropdownCountry"
+              aria-haspopup="true"
+              aria-expanded="false"
+              role="button"
+              >INDIA</a
+            >
+
+            <ul class="dropdown-menu" aria-labelledby="dropdownCountry">
+              <li><a href="#" class="dropdown-item">India</a></li>
+              <li><a href="#" class="dropdown-item">Russia</a></li>
+              <li><a href="#" class="dropdown-item">Ukraine</a></li>
+              <li><a href="#" class="dropdown-item">Canada</a></li>
+              <li><a href="#" class="dropdown-item">India</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              href="#"
+              class="btn btn-login-primary btn-sm downarrow"
+              data-toggle="dropdown"
+              id="Login_RegisterButton"
+              data-bs-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              role="button"
+            >
+              <span><i class="bi bi-person-fill"></i></span>Login/Register
+              <span class="downarrow-icon"
+                ><i class="bi bi-caret-down-fill"></i></span
+            ></a>
+
+            <ul class="dropdown-menu" aria-labelledby="Login_RegisterButton">
+              <li>
+                <a href="#" class="dropdown-item">
+                  <span><i class="bi bi-key-fill margin-left"></i></span>
+                  Login</a
+                >
+              </li>
+
+              <li>
+                <a href="#" class="dropdown-item">
+                  <span><i class="bi bi-emoji-smile-fill"></i></span>
+                  Register</a
+                >
+              </li>
+              <li>
+                <a href="#" class="dropdown-item">
+                  <span><i class="bi bi-clipboard-check-fill"></i></span>
+                  Mybooking</a
+                >
+              </li>
+              <li>
+                <a href="#" class="dropdown-item">
+                  <span><i class="bi bi-cash-coin"></i></span> Makepayment</a
+                >
+              </li>
+              <li>
+                <a href="#" class="dropdown-item">
+                  <span><i class="bi bi-pencil-fill"></i></span> blog</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <!-- ========== Start Secondary navigation ========== -->
+      <section >
+        <div style="">
+        <div class="container xs-contai ">
+          <ul class="justify-content-center">
+            <li class="secondary-navtab">
+              <a
+                class="secondary-navtab-anchor"
+                href="#flights"
+                role="tab"
+                aria-controls="flights"
+                aria-selected="false"
+                ><span
+                  ><i class="fas fa-plane" style="font-weight: 600"></i
+                ></span>
+                Flights</a
+              >
+            </li>
+            <li class="secondary-navtab">
+              <a
+                class="secondary-navtab-anchor"
+                data-toggle="tab"
+                href="#Hotel"
+                role="tab"
+                aria-controls="hotel"
+                aria-selected="false"
+                ><span
+                  ><i class="fa fa-building-o" style="font-weight: 600"></i
+                ></span>
+                Hotel</a
+              >
+            </li>
+            <li class="secondary-navtab">
+              <a
+                class="secondary-navtab-anchor"
+                data-toggle="tab"
+                href="#visa"
+                role="tab"
+                aria-controls="flights"
+                aria-selected="false"
+                ><span
+                  ><i
+                    class="fa fa-cc-visa"
+                    aria-hidden="true"
+                    style="font-weight: 600"
+                  ></i
+                ></span>
+                Visa</a
+              >
+            </li>
+
+            <li class="secondary-navtab">
+              <a
+                class="secondary-navtab-anchor"
+                data-toggle="tab"
+                href="#holiday"
+                role="tab"
+                aria-controls="holiday"
+                aria-selected="false"
+                ><span
+                  ><i class="fa fa-suitcase" style="font-weight: 600"></i
+                ></span>
+                Holiday</a
+              >
+            </li>
+            <li class="secondary-navtab">
+              <a
+                class="secondary-navtab-anchor"
+                data-toggle="tab"
+                href="#flights"
+                role="tab"
+                aria-controls="flights"
+                aria-selected="false"
+                ><span><i class="fa fa-bus" style="font-weight: 600"></i></span>
+                Bus</a
+              >
+            </li>
+            <li class="secondary-navtab">
+              <a
+                class="secondary-navtab-anchor"
+                data-toggle="tab"
+                href="#flights"
+                role="tab"
+                aria-controls="flights"
+                aria-selected="false"
+                ><span
+                  ><i class="fa fa-ship" style="font-weight: 600"></i
+                ></span>
+                Cruise</a
+              >
+            </li>
+            <li class="secondary-navtab">
+              <a
+                class="secondary-navtab-anchor"
+                id="flights-tab"
+                data-toggle="tab"
+                href="#flights"
+                role="tab"
+                aria-controls="flights"
+                aria-selected="false"
+                ><span
+                  ><i class="fa fa-moon-o" style="font-weight: 600"></i
+                ></span>
+                Umrah</a
+              >
+            </li>
+            <li class="secondary-navtab">
+              <a
+                class="secondary-navtab-anchor"
+                id="flights-tab"
+                data-toggle="tab"
+                href="#flights"
+                role="tab"
+                aria-controls="flights"
+                aria-selected="false"
+                ><span
+                  ><i class="fa fa-ellipsis-h" style="font-weight: 600"></i
+                ></span>
+                More</a
+              >
+            </li>
+          </ul>
+        </div>
+<div >
+        <div class="container-radio " >
+          <div class="card card1">
+            <div
+              class="d-flex justify-content-start radio-color-secondary align-top"
+            >
+              <div class="form-check form-check-inline radio">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="inlineRadioOptions"
+                  id="inlineRadio1"
+                  value="option1"
+                />
+                <label class="form-check-label" for="inlineRadio1"
+                  >One Way</label
+                >
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="inlineRadioOptions"
+                  id="inlineRadio2"
+                  value="option2"
+                />
+                <label class="form-check-label" for="inlineRadio2"
+                  >Round Trip</label
+                >
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="inlineRadioOptions"
+                  id="inlineRadio3"
+                  value="option3"
+                />
+                <label class="form-check-label" for="inlineRadio3"
+                  >MultiCity</label
+                >
+              </div>
+              <div class="radio">
+                <h3>Book Flight Tickets</h3>
+              </div>
+              
+            </div>
+          </div>
+        
+
+        <!-- card -->
+        <div class="row align-items-center card1">
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <h6 class="card-title">From</h6>
+                <h3 class="card-text">Bangalore</h3>
+                <p >[BLR] Bengaluru</p>
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <h6 class="card-title">To</h6>
+                <h3 class="card-text">Chennai</h3>
+                <p class="fs-6 fw-lighter">[MAA] Chennai</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card ">
+              <div class="card-body">
+                <h6 class="card-title">Depart</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <h6 class="card-title">Return</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <h6 class="card-title">Traveller & class</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <button class="btn btn-danger  button-flight" type="button">
+              Search Flights
+            </button>
+          </div>
+        </div>
+        <div class="row row-col d-flex flex-row align-item-center justify-content-between">
+          <div class="col align-item-center">
+            <div class="d-flex flex-row align-item-center">
+              <p class="card1"> <span><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></span> Fares from Kolkata</p>
+            
+            
+            <div class="tripcheckbox col card1" style="margin: 10px;">
+               <label class="checkbox-custom checkbox-custom-sm">
+                  <input type="checkbox" name="tripTypeM" value="M"><i></i>
+                  <span>Direct Flights</span>
+               </label>
+               <label class="checkbox-custom checkbox-custom-sm">
+                  <input type="checkbox" id="nonStopF" name="nonStopF" value="1"><i></i>
+                  <span>Defence Fare</span>
+               </label>
+            </div>
+            <div>
+              <h5 class="color-animation anime"><span><i class="fa fa-exclamation-triangle" aria-hidden="true"></i></span> Covid-19 Updates</h5>
+            </div>
+            </div>
+          </div>
+
+        </div>
+        </div>
+        </div>
+      </section>
+
+      <!-- ========== End Secondary navigation ========== -->
+
+      <!-- ========== Start body ========== -->
+      <section>
+ 
+<div class="container-body pt-5">
+
+  <div class="container-body-img card1">
+    <div>
+      <img src="./assets/img/Home Banner.JPEG " class="rounded mx-auto d-block img-fluid " style="width:100%;" alt="Home Banner">
+    </div> 
+  </div>
+<!-- Exclusiv tab , responsive start-->
+  <div class="Exclusivedeals-nav  card2 gap-1 ">
+      <h2 class="text1">Exclusive <strong class="fw-bolder">Deals</strong></h2>
+            
+<div class="hotdealdrop"><div class="dropdown-sm ">
+  <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+    Hot deals
+  </a>
+
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <li><a class="dropdown-item" href="">Hotdeal</a></li>
+    <li><a class="dropdown-item" href="">Flight</a></li>
+    <li><a class="dropdown-item" href="">Hotel</a></li>   
+    <li><a class="dropdown-item" href="">Cruise</a></li>
+    <li><a class="dropdown-item" href="">Holiday</a></li>
+
+  </ul>
+</div>
+
+</div>
+
+
+<!-- responive end -->
+    <ul class="Exclusivedeals-nav-menus card1  gap-4">
+  <li >
+    <a id="Hotdeal" class="Exclusivedeals-nav-menus-item" aria-current="Hotdeal" href="#"> <b> Hotdeal</b></a>
+  </li>
+  <li >
+    <a id="Flight" class="Exclusivedeals-nav-menus-item" aria-current="Flight" href="#"> <b> Flight </b></a>
+  </li>
+  <li class="nav-item">
+    <a id="Hotel" class="Exclusivedeals-nav-menus-item" aria-current="Hotel" href="#"><b> Hotel </b></a>
+  </li>
+  <li class="">
+    <a id="Holidays" class="Exclusivedeals-nav-menus-item" aria-current="Holidays" href="#"><b> Holidays</b></a>
+  </li>
+  <li >
+    <a id="Cruise" class="Exclusivedeals-nav-menus-item" aria-current="Cruise" href="#"><strong> Cruise</strong></a>
+  </li>
+
+  <li class="Exclusivedeals-nav-menus-link">
+    <a style="color:  #d32f2f !important;" aria-current="Cruise" href="#">View all deals</a>
+  </li>
+
+</ul>
+</div>
+
+
+<!-- responsive card -->
+<div class="hotdealdrop">
+<!-- vvvvv -->
+<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="cards-wrapper">
+
+<div class="maincard">
+  <div class="card maincard1">
+  <div class="card-body">
+    <h5 class="card-title">Zero Convenience Fee</h5>
+    <p class="card-text-maincard1">Every Wednesday, save Big with ZERO Convenience Fee on flight bookings</p>
+  </div>
+</div>
+<div >
+  <div class=" maincard2 ">
+    <span class="maincard2-color"><i class="fa fa-plane" aria-hidden="true"></i></span>
+
+  </div>
+</div>
+</div>
+
+      </div>
+      <!--  -->
+      
+    </div>
+    <div class="carousel-item">
+      <div class="cards-wrapper">
+
+<div class="maincard">
+  <div class="card maincard1">
+  <div class="card-body">
+    <h5 class="card-title">Become a Travel Expert</h5>
+    <p class="card-text-maincard1">Every Wednesday, save Big with ZERO Convenience Fee on flight bookings</p>
+  </div>
+</div>
+<div >
+  <div class=" maincard2 ">
+    <span class="maincard2-color"><i class="fa fa-plane" aria-hidden="true"></i></span>
+
+  </div>
+</div>
+</div>
+
+      </div>
+      <!--  -->   
+     </div>
+    <div class="carousel-item">
+      <div class="cards-wrapper">
+
+<div class="maincard">
+  <div class="card maincard1">
+  <div class="card-body">
+    <h5 class="card-title">Save Flat Rs.450 on Flights</h5>
+    <p class="card-text-maincard1">Every Wednesday, save Big with ZERO Convenience Fee on flight bookings</p>
+  </div>
+</div>
+<div >
+  <div class=" maincard2 ">
+    <span class="maincard2-color"><i class="fa fa-plane" aria-hidden="true"></i></span>
+
+  </div>
+</div>
+</div>
+
+      </div>
+      <!--  -->    
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+
+ <!-- image carosel  -->
+<!--carousel-->
+<div class="card1">
+<div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="cards-wrapper">
+        <div class="container ">
+  <div class="card" >
+  <div class="row">
+    <div class="col-2">
+      <img src="./assets/img/say-yes.JPEG" class="img-fluid rounded-start" alt="say-yes">
+    </div>
+    <div class="col-2">
+      <div class="card-body">
+        <div class="bge">
+          <span class="badge bg-secondary  align-items-end flex-column ">Flight</span>
+        </div>
+        <h6 class="card-title">Say YES to International Travel</h6>
+        <p class="card-text fs-6">Enjoy up to Rs. 5000* off on International Flights</p>
+        <p class="card-text"><a  style="color:  #d32f2f !important;text-decoration: none;" href="#"><strong> Know More</strong></a> </p>
+      </div>
+    </div>
+    <div class="col-2">
+      <img src="./assets/img/slide_43.JPEG" class="img-fluid rounded-start" alt="slide_43">
+    </div>
+    <div class="col-2">
+      <div class="card-body">
+        <div class="bge">
+          <span class="badge bg-secondary  align-items-end flex-column ">Flight</span>
+        </div>
+        <h6 class="card-title">Say YES to International Travel</h6>
+        <p class="card-text fs-6">Enjoy up to Rs. 5000* off on International Flights</p>
+        <p class="card-text"><a  style="color:  #d32f2f !important;text-decoration: none;" href="#"><strong> Know More</strong></a> </p>
+      </div>
+    </div>
+
+    <div class="col-2">
+      <img src="./assets/img/slide_19.JPEG" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-2">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><a  style="color:  #d32f2f !important;text-decoration: none;" href="#"><strong> Know More</strong></a> </p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="cards-wrapper">
+        <div class="container ">
+  <div class="card " >
+  <div class="row">
+    <div class="col-2">
+      <img src="./assets/img/say-yes.JPEG" class="img-fluid rounded-start" alt="say-yes">
+    </div>
+    <div class="col-2">
+      <div class="card-body">
+        <div class="bge">
+          <span class="badge bg-secondary  align-items-end flex-column ">Flight</span>
+        </div>
+        <h6 class="card-title">Say YES to International Travel</h6>
+        <p class="card-text fs-6">Enjoy up to Rs. 5000* off on International Flights</p>
+        <p class="card-text"><a  style="color:  #d32f2f !important;text-decoration: none;" href="#"><strong> Know More</strong></a> </p>
+      </div>
+    </div>
+    <div class="col-2">
+      <img src="./assets/img/slide_43.JPEG" class="img-fluid rounded-start" alt="slide_43">
+    </div>
+    <div class="col-2">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+       <p class="card-text"><a  style="color:  #d32f2f !important;text-decoration: none;" href="#"><strong> Know More</strong></a> </p>
+
+      </div>
+    </div>
+    <div class="col-2">
+      <img src="./assets/img/slide_19.JPEG" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-2">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><a  style="color:  #d32f2f !important;text-decoration: none;" href="#"><strong> Know More</strong></a> </p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+        
+      </div>
+    </div>
+    <div class="carousel-item">
+<div class="cards-wrapper">
+  <div class="container ">
+  <div class="card" >
+  <div class="row">
+    <div class="col-2">
+      <img src="./assets/img/say-yes.JPEG" class="img-fluid rounded-start" alt="say-yes">
+    </div>
+    <div class="col-2">
+      <div class="card-body">
+        <div class="bge">
+          <span class="badge bg-secondary  align-items-end flex-column ">Flight</span>
+        </div>
+        <h6 class="card-title">Say YES to International Travel</h6>
+        <p class="card-text fs-6">Enjoy up to Rs. 5000* off on International Flights</p>
+        <p class="card-text"><a  style="color:  #d32f2f !important;text-decoration: none;" href="#"><strong> Know More</strong></a> </p>
+      </div>
+    </div>
+    <div class="col-2">
+      <img src="./assets/img/slide_19.JPEG" class="img-fluid rounded-start" alt="slide_43">
+    </div>
+    <div class="col-2">
+      <div class="card-body">
+        <div class="bge">
+          <span class="badge bg-secondary  align-items-end flex-column ">Flight</span>
+        </div>
+        <h6 class="card-title">Say YES to International Travel</h6>
+        <p class="card-text fs-6">Enjoy up to Rs. 5000* off on International Flights</p>
+        <p class="card-text"><a  style="color:  #d32f2f !important;text-decoration: none;" href="#"><strong> Know More</strong></a> </p>
+      </div>
+    </div>
+
+    <div class="col-2">
+      <img src="./assets/img/slide_43.JPEG class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-2">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><a  style="color:  #d32f2f !important;text-decoration: none;" href="#"><strong> Know More</strong></a> </p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+        
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+
+
+
+      </section>
+      
+      <!-- ========== End body ========== -->
+
+
+      <!-- ========== Start popular destination ========== -->
+<section>
+
+<div class="container">
+<div class="card">
+<div class="card-headerer">
+<div class="Destination">
+   <h2> <span class="Destination-heading">Popular</span> <strong class="fw-bolder heading2 ">Destination</strong></h2>
+    
+    <ul class="Destination-menus gap-3">
+  <li>
+    <a class="Destination-menus-item"aria-current="Hotdeal" href=""> ALL <span class="card1"> DESTINATIONS</span></a>
+  </li>
+  <li>
+    <a class="Destination-menus-item" aria-current="Flight" href="">INTERNATIONAL</a>
+  </li>
+  <li>
+    <a class="Destination-menus-item"  aria-current="Hotel" href="">DOMESTIC</a>
+  </li>
+  
+
+  <li class="card1">
+    <a  class="ml-4" style="color:#d32f2f !important; padding: 1rem 5rem;" aria-current="Cruise" href="#">View all Destinations</a>
+  </li>
+</ul>
+</div>
+</div>
+
+<!-- responsive slider 2 -->
+<div class="hotdealdrop">
+  
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="d-inline-flex justify-content-center">
+<div class="image-wraper-2">
+<div class="card cardwrapp">
+            <img src="./assets/img/europeOverlay.JPEG" class="card-img-top rounded" alt="..." />
+            <div class="card-img-overlay">
+              <h5 class="card-title">Card title</h5>
+              
+            </div>
+          </div>
+          </div>
+          <!--  -->
+<!--           <div class="image-wraper-2">
+<div class="card cardwrapp">
+            <img src="./assets/img/europeOverlay.JPEG" class="card-img-top rounded" alt="..." />
+            <div class="card-img-overlay">
+              <h5 class="card-title">Card title</h5>
+              
+            </div>
+          </div>
+          </div> -->
+          <!--  -->
+
+          <!--  -->
+          </div>
+    </div>
+    <div class="carousel-item">
+<div class="image-wraper-2">
+<div class="card cardwrapp">
+            <img src="./assets/img/europeOverlay.JPEG" class="card-img-top rounded" alt="..." />
+            <div class="card-img-overlay">
+              <h5 class="card-title">Card title</h5>
+              
+            </div>
+          </div>
+          </div>
+          <!--  -->    </div>
+    <div class="carousel-item">
+<div class="image-wraper-2">
+<div class="card cardwrapp">
+            <img src="./assets/img/europeOverlay.JPEG" class="card-img-top rounded" alt="..." />
+            <div class="card-img-overlay">
+              <h5 class="card-title">Card title</h5>
+              
+            </div>
+          </div>
+          </div>
+          <!--  -->    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+</div>
+
+<!-- responsive slider 2 -->
+<div class="card-body card1">
+<div class="row ">
+      <div
+        class="col-6 overflow-y scroll"
+        data-bs-spy="scroll"
+        data-bs-target="#myList"
+        data-bs-offset="0"
+        tabindex="0"
+      >
+        <!-- list group-->
+        <ul class="list-group" id="myList">
+          <a
+            href=" #1"
+            class="list-group-item list-group-item-action d-flex align-items-center gap-2"
+          >
+            <img src="./assets/img/maldives1222.JPEG" class="rounded-3" alt="" />
+            <span><h5>Maldives</h5></span>
+          </a>
+          <a
+            href=" #1"
+            class="list-group-item list-group-item-action d-flex align-items-center gap-2"
+          >
+            <img src="./assets/img/turkey1222.jpeg" class="rounded-3" alt="" />
+            <span><h5>Turkey</h5></span>
+          </a>
+          <a
+            href=" #1"
+            class="list-group-item list-group-item-action d-flex align-items-center gap-2"
+          >
+            <img src="./assets/img/maldives1222.JPEG" class="rounded-3" alt="" />
+            <span><h5>Japan</h5></span>
+          </a>
+          <a
+            href=" #1"
+            class="list-group-item list-group-item-action d-flex align-items-center gap-2"
+          >
+            <img src="./assets/img/turkey1222.jpeg" class="rounded-3" alt="" />
+            <span><h5>Russia</h5></span>
+          </a>
+          <a
+            href=" #1"
+            class="list-group-item list-group-item-action d-flex align-items-center gap-2"
+          >
+            <img src="./assets/img/maldives1222.JPEG" class="rounded-3" alt="" />
+            <span><h5>Ukrain</h5></span>
+          </a>
+          <a
+            href=" #1"
+            class="list-group-item list-group-item-action d-flex align-items-center gap-2"
+          >
+            <img src="./assets/img/turkey1222.jpeg" class="rounded-3" alt="" />
+            <span><h5>Turkey</h5></span>
+          </a>
+        <a
+            href=" #1"
+            class="list-group-item list-group-item-action d-flex align-items-center gap-2"
+          >
+            <img src="./assets/img/maldives1222.JPEG" class="rounded-3" alt="" />
+            <span><h5>Japan</h5></span>
+          </a>
+ 
+        </ul>
+      </div>
+      <!--       <div class="col-2">
+        <div>
+          <h4 id="1"></h4>
+          <p>turkey</p>
+        </div>
+      </div> -->
+
+      <!--grid-->
+<!--       <div class="row-cols-1 row-cols-md-2 g-4">
+ -->        <div class="col-3">
+          <div class="card border">
+            <img src="./assets/img/thailandOverlay.JPEG" class="card-img-top rounded" alt="..." />
+            <div class="card-img-overlay">
+              <h5 class="card-title"> Thailand</h5>
+              
+            </div>
+          </div>
+          <div class="col-12">
+          <div class="card">
+            <img src="./assets/img/europeOverlay.JPEG" class="card-img-top rounded" alt="..." />
+            <div class="card-img-overlay">
+              <h5 class="card-title">Card title</h5>
+              
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="col-3">
+          <div class="card">
+            <img src="./assets/img/europeOverlay.JPEG" class="card-img-top rounded" alt="..." />
+            <div class="card-img-overlay">
+              <h5 class="footer">Card </h5>
+                        </div>
+          </div>
+          <div class="col-12">
+          <div class="card">
+            <img src="./assets/img/thailandOverlay.JPEG" class="card-img-top rounded" alt="..." />
+            <div class="card-img-overlay">
+              <h5 class="card-title">Card title3</h5>
+              
+            </div>
+          </div>
+        </div>
+        </div>
+        <div>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  
+    <!---->
+  </div>
+
+
+
+</section>
+      
+      <!-- ========== End Section ========== -->
+    </main>
+
+    <!-- Bootstrap Js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+  </body>
+</html>

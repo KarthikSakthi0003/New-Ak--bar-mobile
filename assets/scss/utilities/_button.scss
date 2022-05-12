@@ -1,0 +1,79 @@
+@use "../abstract/mixins" as mixins;
+
+//button-primary
+
+.secondary-navtab {
+  padding: 0rem 3rem;
+  display: inline-flex;
+  justify-content: center;
+  text-align: center;
+  background-color: #ffff;
+  color: #000;
+  text-decoration: none;
+  list-style: none;
+  border-radius: 9px;
+  height: 60px;
+  width: 74px;
+  margin-right: 13px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.3);
+  margin-bottom: 4px;
+
+  @include mixins.responsive(xs) {
+    padding: 1rem 3rem;
+
+    text-align: center;
+    background-color: white;
+    color: #1f4687;
+    text-decoration: none;
+    list-style: none;
+    border-radius: 0px 1px 3px 5px;
+    height: 72px;
+    width: 29px;
+    margin-right: -36px;
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 30%);
+    margin-bottom: 0px;
+    margin-left: 28px;
+  }
+
+  &-anchor {
+    text-align: center;
+    color: #000;
+    @include mixins.responsive(xs) {
+      color: #1f4687;
+    }
+  }
+  &:hover {
+    background-color: #c52727;
+    color: #fff;
+
+    @include mixins.responsive(xs) {
+      &:hover {
+        background-color: white;
+        color: white;
+      }
+    }
+  }
+}
+.radio {
+  @include mixins.responsive(xs) {
+    display: none;
+  }
+  h3 {
+    margin-left: 36rem;
+    display: flex;
+    justify-content: end;
+    text-align: center;
+    align-items: center;
+    @include mixins.responsive(xs) {
+      display: none;
+    }
+  }
+}
+
+.button-flight {
+  padding: 1.5rem 1rem;
+  font-size: 1.25rem;
+  border-radius: 0.3rem;
+}

@@ -1,0 +1,154 @@
+@use "../abstract/mixins" as mixins;
+
+.header {
+  padding: 1rem 5rem;
+  display: flex;
+  background-color: #07162d;
+  justify-content: space-between;
+  align-items: center;
+
+  @include mixins.responsive(xs) {
+    align-items: center;
+  }
+
+  &--menus {
+    display: flex;
+    list-style: none;
+    margin-right: 25px;
+    @include mixins.responsive(xs) {
+      display: none;
+    }
+
+    &--item {
+      margin-right: 5rem !important;
+    }
+  }
+
+  @include mixins.responsive(xs) {
+    //css code
+    padding: 1rem 2rem;
+    background-color: #14589c;
+  }
+}
+
+//login down arrow
+.downarrow {
+  &-icon {
+    margin-left: 25px;
+    color: white;
+  }
+}
+
+//container-radio
+.container-radio {
+  padding: 1rem 5rem;
+  @include mixins.responsive(xs) {
+    padding: 1rem 2rem;
+    margin-top: -2rem;
+  }
+}
+
+//container-body
+.container-body {
+  padding: 1rem 0rem;
+
+  &-img {
+    padding: 1rem 10rem;
+  }
+}
+//Exclusive deals
+.Exclusivedeals-nav {
+  padding: 2rem 4rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  @include mixins.responsive(xs) {
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -6rem;
+  }
+  .text1 {
+    @include mixins.responsive(xs) {
+      font-size: large;
+    }
+  }
+
+  &-menus {
+    display: flex;
+    list-style: none;
+    margin-right: 25px;
+    color: #000;
+    &-item {
+      color: #000;
+      &:hover {
+        padding: 10px 10px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: #000;
+        border-bottom: 2px solid #c52727;
+      }
+    }
+
+    &-link {
+      padding: 0.5rem 14rem;
+    }
+  }
+}
+
+.card-headerer {
+  background-color: #fff;
+}
+
+.Destination {
+  padding: 1rem 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  @include mixins.responsive(xs) {
+    flex-direction: column;
+  }
+
+  &-menus {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-right: 0px;
+    color: #000;
+    @include mixins.responsive(xs) {
+      margin-top: 19px;
+      flex-direction: row;
+      margin-right: 140px;
+      margin-left: -38px;
+    }
+
+    &-item {
+      color: #000;
+      font-weight: 700;
+      &:hover {
+        padding: 10px 10px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: #000;
+        border-bottom: 2px solid #c52727;
+      }
+    }
+  }
+  &-heading {
+    @include mixins.responsive(xs) {
+      font-size: medium;
+    }
+  }
+
+  .heading2 {
+    @include mixins.responsive(xs) {
+      font-weight: 300;
+      flex-direction: row;
+    }
+  }
+  .footer {
+    display: flex;
+    align-items: baseline;
+  }
+}

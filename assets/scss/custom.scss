@@ -1,0 +1,32 @@
+@import "../bootsrapVendor/scss/functions";
+
+@import "../bootsrapVendor/scss/variables";
+
+@import "../bootsrapVendor/scss/mixins";
+
+//Akbar primary colors
+$custom-colors: (
+  "ak-primary": #22364c,
+  "login-primary": #c52727,
+);
+
+//merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+@import "../bootsrapVendor/scss/bootstrap.scss";
+
+//base
+@import "./base/global";
+
+//animation
+@import "./components/animation"; //layout
+@import "./components/header";
+
+// responsive
+@import "./pages/responsive";
+
+//abstract
+@import "./abstract/mixins";
+
+//utilities
+@import "./utilities/button";

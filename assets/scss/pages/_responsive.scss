@@ -1,0 +1,89 @@
+@use "../abstract/mixins" as mixins;
+
+//responsive xs
+.xs-contai {
+  @include mixins.responsive(xs) {
+    padding: 1rem 0rem;
+  }
+  ul {
+    @include mixins.responsive(xs) {
+      padding-left: 0rem;
+    }
+  }
+}
+
+.secondary-navtab {
+  @include mixins.responsive(xs) {
+  }
+}
+
+.card1 {
+  @include mixins.responsive(xs) {
+    display: none;
+  }
+}
+
+.anime {
+  @include mixins.responsive(xs) {
+    padding: 1rem 5rem;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.maincard1 {
+  @include mixins.responsive(xs) {
+    background-color: #1968b2;
+    color: #fff;
+    width: 24rem;
+    height: 12rem;
+    margin: 0.5em;
+  }
+  .card-text-maincard1 {
+    font-size: small;
+  }
+}
+.maincard2 {
+  @include mixins.responsive(xs) {
+    margin-top: -2rem;
+    margin-left: 40px;
+    height: 37px;
+    width: 22rem;
+    background: #d32f2f;
+    border-radius: 0 0 4px 4px;
+    position: relative;
+    z-index: 9;
+  }
+}
+.maincard2-color {
+  color: #fff;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.cards-wrapper {
+  display: flex;
+}
+
+.hotdealdrop {
+  @include mixins.responsive(md) {
+    display: none;
+  }
+}
+
+.image-wraper-2 {
+  @include mixins.responsive(xs) {
+    display: flex;
+  }
+  .cardwrapp {
+    @include mixins.responsive(xs) {
+      margin: 0 0.5em;
+      width: calc(100% / 3);
+    }
+  }
+}
+
+.toggler-bar {
+  background-color: #fff;
+  flex-direction: row-reverse;
+}
