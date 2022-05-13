@@ -12051,7 +12051,7 @@ a {
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3);
     margin-top: 2px;
     margin-bottom: 0px;
-    margin-left: 1px;
+    margin-left: 0px;
   }
 }
 @media only screen and (min-width: 576px) {
