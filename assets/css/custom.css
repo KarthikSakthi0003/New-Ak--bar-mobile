@@ -11614,6 +11614,7 @@ a {
     flex-direction: row;
     margin-right: 140px;
     margin-left: -38px;
+    transition: 500ms;
   }
 }
 @media only screen and (min-width: 768px) {

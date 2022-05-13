@@ -216,6 +216,7 @@
       flex-direction: row;
       margin-right: 140px;
       margin-left: -38px;
+      transition: 500ms;
     }
     @include mixins.responsive(md) {
       margin-top: 19px;
