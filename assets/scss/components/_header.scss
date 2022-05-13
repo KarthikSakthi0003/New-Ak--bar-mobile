@@ -69,6 +69,23 @@
   @include mixins.responsive(xs) {
     padding: 1rem 2rem;
     margin-top: -2rem;
+    /* &.show1 {
+      @include mixins.responsive(xs) {
+        display: none;
+        position: fixed;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #fff;
+        z-index: 3;
+        transition: 500ms;
+
+        &-show2 {
+          display: block;
+          top: 68px;
+        }
+      }
+    } */
   }
   @include mixins.responsive(md) {
     padding: 1rem 17rem;
@@ -130,7 +147,7 @@
     margin-top: -6rem;
   }
   @include mixins.responsive(lg) {
-    padding: 6rem 1rem;
+    padding: 6rem 5rem;
     display: flex;
     justify-content: flex-start;
     align-items: baseline;

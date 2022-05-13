@@ -15,7 +15,7 @@
       padding-left: 0rem;
     }
     @include mixins.responsive(lg) {
-      padding-left: 4rem;
+      padding-left: 12rem;
     }
     @include mixins.responsive(x-lg) {
     }
@@ -30,6 +30,28 @@
 .card1 {
   @include mixins.responsive(xs) {
     display: none;
+
+    /* &.show1 {
+      @include mixins.responsive(xs) {
+        display: none;
+        position: fixed;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #fff;
+        z-index: 3;
+        transition: 500ms;
+
+        &.show1-show2 {
+          display: block;
+          top: 68px;
+        }
+
+        &.a1 {
+          padding: 2rem;
+        }
+      }
+    } */
   }
   @include mixins.responsive(md) {
     display: none;
@@ -54,7 +76,7 @@
 
 .anime {
   @include mixins.responsive(xs) {
-    padding: 1rem 5rem;
+    padding: 1rem 4rem;
     display: flex;
     justify-content: center;
   }
@@ -112,7 +134,7 @@
 }
 
 .hotdealdrop {
-  @include mixins.responsive(lg) {
+  @include mixins.responsive(x-lg) {
     display: none;
   }
 }
@@ -215,5 +237,17 @@
   }
   @include mixins.responsive(md) {
     display: none;
+  }
+}
+
+.hotel-card {
+  padding: 1rem 3rem;
+  display: flex;
+  justify-content: center;
+
+  @include mixins.responsive(lg) {
+    padding: 1rem 3rem;
+    display: flex;
+    justify-content: center;
   }
 }

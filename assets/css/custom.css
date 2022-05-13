@@ -11451,6 +11451,23 @@ a {
   .container-radio {
     padding: 1rem 2rem;
     margin-top: -2rem;
+    /* &.show1 {
+      @include mixins.responsive(xs) {
+        display: none;
+        position: fixed;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #fff;
+        z-index: 3;
+        transition: 500ms;
+
+        &-show2 {
+          display: block;
+          top: 68px;
+        }
+      }
+    } */
   }
 }
 @media only screen and (min-width: 768px) {
@@ -11523,7 +11540,7 @@ a {
 }
 @media only screen and (min-width: 992px) {
   .Exclusivedeals-nav {
-    padding: 6rem 1rem;
+    padding: 6rem 5rem;
     display: flex;
     justify-content: flex-start;
     align-items: baseline;
@@ -11690,12 +11707,33 @@ a {
 }
 @media only screen and (min-width: 992px) {
   .xs-contai ul {
-    padding-left: 4rem;
+    padding-left: 12rem;
   }
 }
 @media only screen and (max-width: 576px) {
   .card1 {
     display: none;
+    /* &.show1 {
+      @include mixins.responsive(xs) {
+        display: none;
+        position: fixed;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #fff;
+        z-index: 3;
+        transition: 500ms;
+
+        &.show1-show2 {
+          display: block;
+          top: 68px;
+        }
+
+        &.a1 {
+          padding: 2rem;
+        }
+      }
+    } */
   }
 }
 @media only screen and (min-width: 768px) {
@@ -11724,7 +11762,7 @@ a {
 
 @media only screen and (max-width: 576px) {
   .anime {
-    padding: 1rem 5rem;
+    padding: 1rem 4rem;
     display: flex;
     justify-content: center;
   }
@@ -11787,7 +11825,7 @@ a {
   display: flex;
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1200px) {
   .hotdealdrop {
     display: none;
   }
@@ -11912,6 +11950,19 @@ a {
   }
 }
 
+.hotel-card {
+  padding: 1rem 3rem;
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (min-width: 992px) {
+  .hotel-card {
+    padding: 1rem 3rem;
+    display: flex;
+    justify-content: center;
+  }
+}
+
 /* // X-Small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap
 
@@ -11985,20 +12036,21 @@ a {
 }
 @media only screen and (max-width: 576px) {
   .secondary-navtab {
-    padding: 1rem 3rem;
+    padding: 1rem 2rem;
     text-align: center;
     background-color: #fff;
     color: #1f4687;
     text-decoration: none;
     list-style: none;
-    border-radius: 0px 1px 3px 5px;
-    height: 74px;
-    width: 38px;
-    margin-right: -8px;
+    border-radius: 0px 1px 6px 2px;
+    height: 70px;
+    width: 79px;
+    margin-right: -1px;
     border: 1px solid rgba(255, 255, 255, 0.28);
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3);
+    margin-top: 2px;
     margin-bottom: 0px;
-    margin-left: 6px;
+    margin-left: 3px;
   }
 }
 @media only screen and (min-width: 576px) {
@@ -12044,11 +12096,11 @@ a {
     justify-content: center;
     text-align: center;
     background-color: white;
-    color: #000;
+    color: #5f5f5f;
     text-decoration: none;
     list-style: none;
     border-radius: 9px;
-    height: 60px;
+    height: 71px;
     width: 110px;
     margin-right: 13px;
     border: 1px solid rgba(255, 255, 255, 0.28);
@@ -12126,6 +12178,23 @@ a {
   padding: 1.5rem 1rem;
   font-size: 1.25rem;
   border-radius: 0.3rem;
+}
+
+@media only screen and (max-width: 576px) {
+  .show1 {
+    display: none;
+    position: fixed;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 3;
+    transition: 500ms;
+  }
+  .show1-show2 {
+    display: block;
+    top: 68px;
+  }
 }
 
 /*# sourceMappingURL=custom.css.map */

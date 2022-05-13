@@ -30,6 +30,7 @@
   </head>
 
   <body>
+    <!-- ========== Start Hotel Page ========== -->
     <header class="header">
       <div>
         <a href="/"
@@ -180,7 +181,7 @@
         <div class="containerer1 xs-contai ">
           <ul class=" secondary-nav-tabs">
             <li class="secondary-navtab">
-              <a id="clicker"
+              <a
                 class="secondary-navtab-anchor"
                 href="index.html"
                 role="tab"
@@ -194,10 +195,9 @@
             </li>
             <li class="secondary-navtab">
               <a
-              id="show"
-                class="secondary-navtab-anchor show"
+                class="secondary-navtab-anchor"
                 data-toggle="tab"
-                href="Flights.html"
+                href="#Hotel"
                 role="tab"
                 aria-controls="hotel"
                 aria-selected="false"
@@ -255,7 +255,7 @@
               >
             </li>
             <li class="secondary-navtab">
-              <a 
+              <a
                 class="secondary-navtab-anchor"
                 data-toggle="tab"
                 href="#flights"
@@ -289,7 +289,7 @@
                 class="secondary-navtab-anchor"
                 id="flights-tab"
                 data-toggle="tab"
-                
+                href="#flights"
                 role="tab"
                 aria-controls="flights"
                 aria-selected="false"
@@ -303,67 +303,28 @@
         </div>
 <div >
         <div class="container-radio " >
-          <div class="card card1 show1 show1-show2 ">
+          <div class="card card1">
             <div
-              class="d-flex justify-content-start radio-color-secondary align-top "
-            >
-              <div class="form-check form-check-inline radio ">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="inlineRadioOptions"
-                  id="inlineRadio1"
-                  value="option1"
-                />
-                <label class="form-check-label" for="inlineRadio1"
-                  >One Way</label
-                >
-              </div>
-              <div class="form-check form-check-inline">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="inlineRadioOptions"
-                  id="inlineRadio2"
-                  value="option2"
-                />
-                <label class="form-check-label" for="inlineRadio2"
-                  >Round Trip</label
-                >
-              </div>
-              <div class="form-check form-check-inline">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="inlineRadioOptions"
-                  id="inlineRadio3"
-                  value="option3"
-                />
-                <label class="form-check-label" for="inlineRadio3"
-                  >MultiCity</label
-                >
-              </div>
-              <div class="radio">
-                <h3>Book Flight Tickets</h3>
-              </div>
+              class="hotel-card">
+                <h3>Book Domestic and International Hotel</h3>
               
             </div>
           </div>
         
 
         <!-- card -->
-        <div class="row align-items-center card1 a1">
+        <div class="row align-items-center card1">
           <div class="col">
             <div class="card">
               <div class="card-body">
-                <h6 class="card-title">From</h6>
+                <h6 class="card-title">Enter Your Destination or property</h6>
                 <h3 class="card-text">Bangalore</h3>
-                <p >[BLR] Bengaluru</p>
+                <p >Bengaluru</p>
                 <p></p>
               </div>
             </div>
           </div>
-          <div class="col">
+          <!-- <div class="col">
             <div class="card">
               <div class="card-body">
                 <h6 class="card-title">To</h6>
@@ -371,7 +332,7 @@
                 <p class="fs-6 fw-lighter">[MAA] Chennai</p>
               </div>
             </div>
-          </div>
+          </div> -->
           <div class="col">
             <div class="card ">
               <div class="card-body">
@@ -493,7 +454,7 @@ Thursday</p>
       <h2 class="text1">Exclusive <strong class="fw-bolder">Deals</strong></h2>
             
 <div class="hotdealdrop"><div class="dropdown-sm ">
-  <a class="btn dropdown-toggle" href="" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+  <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
     Hot deals
   </a>
 
@@ -796,7 +757,7 @@ Thursday</p>
     
     <ul class="Destination-menus gap-3 gap-md-5">
   <li>
-    <a class="Destination-menus-item"aria-current="Hotdeal" href=""> ALL</a>
+    <a class="Destination-menus-item"aria-current="Hotdeal" href=""> ALL <span class="card1"> DESTINATIONS</span></a>
   </li>
   <li>
     <a class="Destination-menus-item" aria-current="Flight" href="">INTERNATIONAL</a>
@@ -814,7 +775,7 @@ Thursday</p>
 </div>
 
 <!-- responsive slider 2 -->
-<div class="">
+<div class="hotdealdrop">
   
           <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
@@ -1080,7 +1041,8 @@ Access flight tickets, vouchers & all travel Information at your fingertips
 Easy to use
 Be the first one to learn about upcoming travel deals and offers
 Keep in touch with us anytime, anywhere
-Download the AkbarTravels App & wherever you’re going, take us with you.      </div>
+Download the AkbarTravels App & wherever you’re going, take us with you.
+      </div>
     </div>
   </div>
 </div>
@@ -1101,7 +1063,7 @@ Download the AkbarTravels App & wherever you’re going, take us with you.      
     <!-- Bootstrap Js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     
-    <!-- js -->
-    <script src="./assets/js/main.js"></script>
+  
+    <!-- ========== End Hotel Page ========== -->
   </body>
 </html>
