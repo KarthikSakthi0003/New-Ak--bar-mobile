@@ -15,9 +15,10 @@
       padding-left: 0rem;
     }
     @include mixins.responsive(lg) {
-      padding-left: 12rem;
+      padding: 1rem 0rem;
     }
     @include mixins.responsive(x-lg) {
+      padding-left: 12rem;
     }
   }
 }
@@ -57,6 +58,9 @@
     display: none;
   }
   @include mixins.responsive(lg) {
+    display: none;
+  }
+  @include mixins.responsive(x-lg) {
     display: flex;
     list-style: none;
     margin-right: 25px;
@@ -80,6 +84,10 @@
     display: flex;
     justify-content: center;
   }
+
+  @include mixins.responsive(lg) {
+    font-size: larger;
+  }
 }
 
 .maincard1 {
@@ -97,8 +105,21 @@
     height: 13rem;
     margin: 0.5em;
   }
+  @include mixins.responsive(lg) {
+    background-color: #1968b2;
+    color: #fff;
+    width: 53rem;
+    height: 17rem;
+
+    margin: 0.5em;
+  }
   .card-text-maincard1 {
     font-size: small;
+  }
+}
+#myCarousel {
+  @include mixins.responsive(lg) {
+    margin-top: -4rem;
   }
 }
 .maincard2 {
@@ -117,6 +138,16 @@
     margin-left: 40px;
     height: 52px;
     width: 41rem;
+    background: #d32f2f;
+    border-radius: 0 0 4px 4px;
+    position: relative;
+    z-index: 9;
+  }
+  @include mixins.responsive(lg) {
+    margin-top: -3rem;
+    margin-left: 40px;
+    height: 52px;
+    width: 51rem;
     background: #d32f2f;
     border-radius: 0 0 4px 4px;
     position: relative;
@@ -194,6 +225,14 @@
     justify-content: space-between;
     align-items: center;
   }
+  @include mixins.responsive(lg) {
+    margin-right: 64px;
+    margin-left: 419px;
+    padding: 1rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 .r-b-para-3 {
   @include mixins.responsive(md) {
@@ -238,6 +277,14 @@
   @include mixins.responsive(md) {
     display: none;
   }
+  @include mixins.responsive(x-lg) {
+    padding: 1rem 5rem;
+    display: flex;
+    list-style: none;
+    margin-right: 25px;
+    color: #000;
+    flex-direction: column;
+  }
 }
 
 .hotel-card {
@@ -249,5 +296,29 @@
     padding: 1rem 3rem;
     display: flex;
     justify-content: center;
+  }
+}
+
+.container-body-img {
+  @include mixins.responsive(x-lg) {
+    padding: 2rem 14rem;
+  }
+}
+.secondary-navtab {
+  @include mixins.responsive(x-lg) {
+    a:hover {
+      background-color: #c52727;
+      color: #fff;
+    }
+  }
+}
+.header {
+  @include mixins.responsive(x-lg) {
+    background-color: #07162d;
+  }
+}
+.hiddenlg {
+  @include mixins.responsive(lg) {
+    display: none;
   }
 }

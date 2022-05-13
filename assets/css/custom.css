@@ -11401,6 +11401,15 @@ a {
     align-items: center;
   }
 }
+@media only screen and (min-width: 1200px) {
+  .header {
+    padding: 1rem 0rem;
+    display: flex;
+    background-color: #07162d;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 .header--menus {
   display: flex;
   list-style: none;
@@ -11477,6 +11486,11 @@ a {
 }
 @media only screen and (min-width: 992px) {
   .container-radio {
+    padding: 1rem 26rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .container-radio {
     padding: 1rem 5rem;
   }
 }
@@ -11494,7 +11508,7 @@ a {
 }
 @media only screen and (min-width: 992px) {
   .container-body {
-    padding: 1rem 10rem;
+    padding: 1rem 17rem;
   }
 }
 
@@ -11540,9 +11554,18 @@ a {
 }
 @media only screen and (min-width: 992px) {
   .Exclusivedeals-nav {
-    padding: 6rem 5rem;
+    padding: 6rem 0rem;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .Exclusivedeals-nav {
+    padding: 6rem 5rem;
+    font-size: x-large;
+    display: flex;
+    justify-content: space-between;
     align-items: baseline;
   }
 }
@@ -11627,6 +11650,19 @@ a {
 }
 @media only screen and (min-width: 992px) {
   .Destination-menus {
+    padding: 1rem 5rem;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-right: 91px;
+    margin-left: 41px;
+    align-items: center;
+    justify-content: space-between;
+    color: #000;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .Destination-menus {
     display: flex;
     justify-content: space-between;
     list-style: none;
@@ -11708,9 +11744,15 @@ a {
 }
 @media only screen and (min-width: 992px) {
   .xs-contai ul {
+    padding: 1rem 0rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .xs-contai ul {
     padding-left: 12rem;
   }
 }
+
 @media only screen and (max-width: 576px) {
   .card1 {
     display: none;
@@ -11744,6 +11786,11 @@ a {
 }
 @media only screen and (min-width: 992px) {
   .card1 {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .card1 {
     display: flex;
     list-style: none;
     margin-right: 25px;
@@ -11768,6 +11815,11 @@ a {
     justify-content: center;
   }
 }
+@media only screen and (min-width: 992px) {
+  .anime {
+    font-size: larger;
+  }
+}
 
 @media only screen and (max-width: 576px) {
   .maincard1 {
@@ -11787,8 +11839,23 @@ a {
     margin: 0.5em;
   }
 }
+@media only screen and (min-width: 992px) {
+  .maincard1 {
+    background-color: #1968b2;
+    color: #fff;
+    width: 53rem;
+    height: 17rem;
+    margin: 0.5em;
+  }
+}
 .maincard1 .card-text-maincard1 {
   font-size: small;
+}
+
+@media only screen and (min-width: 992px) {
+  #myCarousel {
+    margin-top: -4rem;
+  }
 }
 
 @media only screen and (max-width: 576px) {
@@ -11809,6 +11876,18 @@ a {
     margin-left: 40px;
     height: 52px;
     width: 41rem;
+    background: #d32f2f;
+    border-radius: 0 0 4px 4px;
+    position: relative;
+    z-index: 9;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .maincard2 {
+    margin-top: -3rem;
+    margin-left: 40px;
+    height: 52px;
+    width: 51rem;
     background: #d32f2f;
     border-radius: 0 0 4px 4px;
     position: relative;
@@ -11898,6 +11977,16 @@ a {
     align-items: center;
   }
 }
+@media only screen and (min-width: 992px) {
+  .r-b-para-2 {
+    margin-right: 64px;
+    margin-left: 419px;
+    padding: 1rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 
 @media only screen and (min-width: 768px) {
   .r-b-para-3 {
@@ -11950,6 +12039,16 @@ a {
     display: none;
   }
 }
+@media only screen and (min-width: 1200px) {
+  .card-bodyr {
+    padding: 1rem 5rem;
+    display: flex;
+    list-style: none;
+    margin-right: 25px;
+    color: #000;
+    flex-direction: column;
+  }
+}
 
 .hotel-card {
   padding: 1rem 3rem;
@@ -11961,6 +12060,31 @@ a {
     padding: 1rem 3rem;
     display: flex;
     justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container-body-img {
+    padding: 2rem 14rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .secondary-navtab a:hover {
+    background-color: #c52727;
+    color: #fff;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .header {
+    background-color: #07162d;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .hiddenlg {
+    display: none;
   }
 }
 
@@ -12092,6 +12216,26 @@ a {
 }
 @media only screen and (min-width: 992px) {
   .secondary-navtab {
+    padding: 1rem 7.8rem;
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    color: #5f5f5f;
+    text-decoration: none;
+    list-style: none;
+    border-radius: 9px;
+    height: 93px;
+    width: 102px;
+    margin-left: 6px;
+    margin-right: -8px;
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.3);
+    margin-bottom: 3px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .secondary-navtab {
     padding: 1rem 2rem;
     display: inline-flex;
     justify-content: center;
@@ -12131,6 +12275,12 @@ a {
 @media only screen and (min-width: 992px) {
   .secondary-navtab-anchor {
     text-align: center;
+    color: #1f4687;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .secondary-navtab-anchor {
+    text-align: center;
     color: #000;
   }
 }
@@ -12151,6 +12301,12 @@ a {
   }
 }
 @media only screen and (min-width: 992px) {
+  .secondary-navtab:hover {
+    background-color: white;
+    color: #1f4687;
+  }
+}
+@media only screen and (min-width: 1200px) {
   .secondary-navtab:hover {
     background-color: #c52727;
     color: #fff;
