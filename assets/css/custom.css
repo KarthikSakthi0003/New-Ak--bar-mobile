@@ -12180,8 +12180,8 @@ a {
   border-radius: 0.3rem;
 }
 
-@media only screen and (max-width: 576px) {
-  .show1 {
+/* .show1 {
+  @include mixins.responsive(xs) {
     display: none;
     position: fixed;
     left: 0;
@@ -12190,11 +12190,12 @@ a {
     background-color: #fff;
     z-index: 3;
     transition: 500ms;
+
+    &-show2 {
+      display: block;
+      top: 68px;
+    }
   }
-  .show1-show2 {
-    display: block;
-    top: 68px;
-  }
-}
+} */
 
 /*# sourceMappingURL=custom.css.map */
