@@ -11387,6 +11387,20 @@ a {
     align-items: center;
   }
 }
+@media only screen and (min-width: 768px) {
+  .header {
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .header {
+    padding: 1rem 5rem;
+    display: flex;
+    background-color: #07162d;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 .header--menus {
   display: flex;
   list-style: none;
@@ -11397,10 +11411,28 @@ a {
     display: none;
   }
 }
+@media only screen and (min-width: 768px) {
+  .header--menus {
+    display: none;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .header--menus {
+    display: flex;
+    list-style: none;
+    margin-right: 25px;
+  }
+}
 .header--menus--item {
   margin-right: 5rem !important;
 }
 @media only screen and (max-width: 576px) {
+  .header {
+    padding: 1rem 2rem;
+    background-color: #14589c;
+  }
+}
+@media only screen and (min-width: 768px) {
   .header {
     padding: 1rem 2rem;
     background-color: #14589c;
@@ -11421,12 +11453,48 @@ a {
     margin-top: -2rem;
   }
 }
+@media only screen and (min-width: 768px) {
+  .container-radio {
+    padding: 1rem 17rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .container-radio {
+    padding: 1rem 5rem;
+  }
+}
 
 .container-body {
   padding: 1rem 0rem;
 }
+@media only screen and (min-width: 992px) {
+  .container-body {
+    padding: 1rem 5rem;
+  }
+}
 .container-body-img {
   padding: 1rem 10rem;
+}
+@media only screen and (min-width: 992px) {
+  .container-body {
+    padding: 1rem 10rem;
+  }
+}
+
+.exclusive-container {
+  padding: 1rem 5rem;
+}
+@media only screen and (max-width: 576px) {
+  .exclusive-container {
+    padding: 4rem 0rem;
+    align-content: center;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .exclusive-container {
+    padding: 4rem 1rem;
+    align-content: center;
+  }
 }
 
 .Exclusivedeals-nav {
@@ -11442,6 +11510,23 @@ a {
     justify-content: space-between;
     align-items: center;
     margin-top: -6rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .Exclusivedeals-nav {
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -6rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .Exclusivedeals-nav {
+    padding: 6rem 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -11466,7 +11551,7 @@ a {
   border-bottom: 2px solid #c52727;
 }
 .Exclusivedeals-nav-menus-link {
-  padding: 0.5rem 14rem;
+  padding: 0.5rem 10rem;
 }
 
 .card-headerer {
@@ -11474,14 +11559,29 @@ a {
 }
 
 .Destination {
-  padding: 1rem 1rem;
+  padding: 1rem 5rem;
   display: flex;
   justify-content: flex-start;
   align-items: baseline;
 }
 @media only screen and (max-width: 576px) {
   .Destination {
+    padding: 1rem 1rem;
     flex-direction: column;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .Destination {
+    padding: 1rem 1rem;
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .Destination {
+    padding: 1rem 5rem;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
   }
 }
 .Destination-menus {
@@ -11497,6 +11597,26 @@ a {
     flex-direction: row;
     margin-right: 140px;
     margin-left: -38px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .Destination-menus {
+    margin-top: 19px;
+    flex-direction: row;
+    margin-right: 140px;
+    margin-left: -26px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .Destination-menus {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-right: 91px;
+    margin-left: 41px;
+    align-items: center;
+    justify-content: space-between;
+    color: #000;
   }
 }
 .Destination-menus-item {
@@ -11565,29 +11685,46 @@ a {
 }
 @media only screen and (min-width: 768px) {
   .xs-contai ul {
-    padding-left: 6rem;
+    padding-left: 0rem;
   }
 }
 @media only screen and (min-width: 992px) {
   .xs-contai ul {
-    padding-left: 6rem;
+    padding-left: 4rem;
   }
 }
-@media only screen and (min-width: 1200px) {
-  .xs-contai ul {
-    padding-left: 6rem;
-  }
-}
-
 @media only screen and (max-width: 576px) {
   .card1 {
     display: none;
   }
 }
+@media only screen and (min-width: 768px) {
+  .card1 {
+    display: none;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .card1 {
+    display: flex;
+    list-style: none;
+    margin-right: 25px;
+    color: #000;
+  }
+  .card1-item {
+    color: #000;
+  }
+  .card1-item:hover {
+    padding: 10px 10px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #000;
+    border-bottom: 2px solid #c52727;
+  }
+}
 
 @media only screen and (max-width: 576px) {
   .anime {
-    padding: 1rem 2rem;
+    padding: 1rem 5rem;
     display: flex;
     justify-content: center;
   }
@@ -11599,6 +11736,15 @@ a {
     color: #fff;
     width: 18rem;
     height: 11rem;
+    margin: 0.5em;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .maincard1 {
+    background-color: #1968b2;
+    color: #fff;
+    width: 43rem;
+    height: 13rem;
     margin: 0.5em;
   }
 }
@@ -11618,6 +11764,18 @@ a {
     z-index: 9;
   }
 }
+@media only screen and (min-width: 768px) {
+  .maincard2 {
+    margin-top: -3rem;
+    margin-left: 40px;
+    height: 52px;
+    width: 41rem;
+    background: #d32f2f;
+    border-radius: 0 0 4px 4px;
+    position: relative;
+    z-index: 9;
+  }
+}
 
 .maincard2-color {
   color: #fff;
@@ -11629,7 +11787,7 @@ a {
   display: flex;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
   .hotdealdrop {
     display: none;
   }
@@ -11638,6 +11796,17 @@ a {
 @media only screen and (max-width: 576px) {
   .image-wraper-2 {
     display: flex;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .image-wraper-2 {
+    display: flex;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .image-wraper-2 .cardwrapp {
+    margin: 0 0.5em;
+    width: 33.3333333333%;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -11658,6 +11827,12 @@ a {
     margin-top: 10px;
   }
 }
+@media only screen and (min-width: 768px) {
+  .responsive-bottom {
+    padding: 0rem 2rem;
+    margin-top: 10px;
+  }
+}
 
 @media only screen and (max-width: 576px) {
   .r-b-para {
@@ -11666,18 +11841,44 @@ a {
     font-weight: 600;
   }
 }
+@media only screen and (min-width: 768px) {
+  .r-b-para {
+    margin-top: -1rem;
+    font-size: x-large;
+    font-weight: 600;
+  }
+}
 
-/* .r-b-para-2 {
-  @include mixins.responsive(xs) {
-    margin-left: 6px;
+@media only screen and (min-width: 768px) {
+  .r-b-para-2 {
+    margin-right: 75px;
+    margin-left: 247px;
     padding: 1rem 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 }
- */
+
+@media only screen and (min-width: 768px) {
+  .r-b-para-3 {
+    margin-right: opx;
+    margin-left: 6px;
+    padding: 1rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
 @media only screen and (max-width: 576px) {
+  .accordion {
+    padding: 1rem 1rem;
+    background-color: #f5f8fb;
+    border-radius: 37px;
+  }
+}
+@media only screen and (min-width: 768px) {
   .accordion {
     padding: 1rem 1rem;
     background-color: #f5f8fb;
@@ -11691,8 +11892,22 @@ a {
     border-radius: 37px;
   }
 }
+
+.card-bodyr {
+  padding: 1rem 5rem;
+  display: flex;
+  list-style: none;
+  margin-right: 25px;
+  color: #000;
+  flex-direction: column;
+}
+@media only screen and (max-width: 576px) {
+  .card-bodyr {
+    display: none;
+  }
+}
 @media only screen and (min-width: 768px) {
-  .accordion {
+  .card-bodyr {
     display: none;
   }
 }
@@ -11769,15 +11984,10 @@ a {
   margin-bottom: 4px;
 }
 @media only screen and (max-width: 576px) {
-  .secondary-navtab .secondary-nav-tabs {
-    padding: 1rem 2rem;
-  }
-}
-@media only screen and (max-width: 576px) {
   .secondary-navtab {
-    padding: 1rem 2rem;
+    padding: 1rem 3rem;
     text-align: center;
-    background-color: white;
+    background-color: #fff;
     color: #1f4687;
     text-decoration: none;
     list-style: none;
@@ -11809,6 +12019,43 @@ a {
     margin-left: 5px;
   }
 }
+@media only screen and (min-width: 768px) {
+  .secondary-navtab {
+    padding: 1rem 6rem;
+    text-align: center;
+    background-color: white;
+    color: #1f4687;
+    text-decoration: none;
+    list-style: none;
+    border-radius: 0px 1px 3px 5px;
+    height: 84px;
+    width: 40px;
+    margin-right: -17px;
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3);
+    margin-bottom: 0px;
+    margin-left: 6px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .secondary-navtab {
+    padding: 1rem 2rem;
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    color: #000;
+    text-decoration: none;
+    list-style: none;
+    border-radius: 9px;
+    height: 60px;
+    width: 110px;
+    margin-right: 13px;
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.3);
+    margin-bottom: 4px;
+  }
+}
 .secondary-navtab-anchor {
   text-align: center;
   color: #000;
@@ -11818,14 +12065,42 @@ a {
     color: #1f4687;
   }
 }
+@media only screen and (min-width: 576px) {
+  .secondary-navtab-anchor {
+    color: #1f4687;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .secondary-navtab-anchor {
+    color: #1f4687;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .secondary-navtab-anchor {
+    text-align: center;
+    color: #000;
+  }
+}
 .secondary-navtab:hover {
   background-color: #c52727;
   color: #fff;
 }
 @media only screen and (max-width: 576px) {
-  .secondary-navtab:hover:hover {
+  .secondary-navtab:hover {
     background-color: white;
-    color: white;
+    color: #1f4687;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .secondary-navtab:hover {
+    background-color: white;
+    color: #1f4687;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .secondary-navtab:hover {
+    background-color: #c52727;
+    color: #fff;
   }
 }
 

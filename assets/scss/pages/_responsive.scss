@@ -5,18 +5,19 @@
   @include mixins.responsive(xs) {
     padding: 1rem 0rem;
   }
+  @include mixins.responsive(lg) {
+  }
   ul {
     @include mixins.responsive(xs) {
       padding-left: 1rem;
     }
     @include mixins.responsive(md) {
-      padding-left: 6rem;
+      padding-left: 0rem;
     }
     @include mixins.responsive(lg) {
-      padding-left: 6rem;
+      padding-left: 4rem;
     }
     @include mixins.responsive(x-lg) {
-      padding-left: 6rem;
     }
   }
 }
@@ -30,11 +31,30 @@
   @include mixins.responsive(xs) {
     display: none;
   }
+  @include mixins.responsive(md) {
+    display: none;
+  }
+  @include mixins.responsive(lg) {
+    display: flex;
+    list-style: none;
+    margin-right: 25px;
+    color: #000;
+    &-item {
+      color: #000;
+      &:hover {
+        padding: 10px 10px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: #000;
+        border-bottom: 2px solid #c52727;
+      }
+    }
+  }
 }
 
 .anime {
   @include mixins.responsive(xs) {
-    padding: 1rem 2rem;
+    padding: 1rem 5rem;
     display: flex;
     justify-content: center;
   }
@@ -46,6 +66,13 @@
     color: #fff;
     width: 18rem;
     height: 11rem;
+    margin: 0.5em;
+  }
+  @include mixins.responsive(md) {
+    background-color: #1968b2;
+    color: #fff;
+    width: 43rem;
+    height: 13rem;
     margin: 0.5em;
   }
   .card-text-maincard1 {
@@ -63,6 +90,16 @@
     position: relative;
     z-index: 9;
   }
+  @include mixins.responsive(md) {
+    margin-top: -3rem;
+    margin-left: 40px;
+    height: 52px;
+    width: 41rem;
+    background: #d32f2f;
+    border-radius: 0 0 4px 4px;
+    position: relative;
+    z-index: 9;
+  }
 }
 .maincard2-color {
   color: #fff;
@@ -75,7 +112,7 @@
 }
 
 .hotdealdrop {
-  @include mixins.responsive(md) {
+  @include mixins.responsive(lg) {
     display: none;
   }
 }
@@ -84,7 +121,14 @@
   @include mixins.responsive(xs) {
     display: flex;
   }
+  @include mixins.responsive(md) {
+    display: flex;
+  }
   .cardwrapp {
+    @include mixins.responsive(xs) {
+      margin: 0 0.5em;
+      width: calc(100% / 3);
+    }
     @include mixins.responsive(xs) {
       margin: 0 0.5em;
       width: calc(100% / 3);
@@ -102,6 +146,10 @@
     padding: 1rem 2rem;
     margin-top: 10px;
   }
+  @include mixins.responsive(md) {
+    padding: 0rem 2rem;
+    margin-top: 10px;
+  }
 }
 .r-b-para {
   @include mixins.responsive(xs) {
@@ -109,20 +157,40 @@
     font-size: x-large;
     font-weight: 600;
   }
+  @include mixins.responsive(md) {
+    margin-top: -1rem;
+    font-size: x-large;
+    font-weight: 600;
+  }
 }
-/* .r-b-para-2 {
-  @include mixins.responsive(xs) {
-    margin-left: 6px;
+.r-b-para-2 {
+  @include mixins.responsive(md) {
+    margin-right: 75px;
+    margin-left: 247px;
     padding: 1rem 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 }
- */
+.r-b-para-3 {
+  @include mixins.responsive(md) {
+    margin-right: opx;
+    margin-left: 6px;
+    padding: 1rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 
 .accordion {
   @include mixins.responsive(xs) {
+    padding: 1rem 1rem;
+    background-color: #f5f8fb;
+    border-radius: 37px;
+  }
+  @include mixins.responsive(md) {
     padding: 1rem 1rem;
     background-color: #f5f8fb;
     border-radius: 37px;
@@ -132,7 +200,19 @@
     background-color: #f5f8fb;
     border-radius: 37px;
   }
+}
 
+.card-bodyr {
+  padding: 1rem 5rem;
+  display: flex;
+  list-style: none;
+  margin-right: 25px;
+  color: #000;
+  flex-direction: column;
+
+  @include mixins.responsive(xs) {
+    display: none;
+  }
   @include mixins.responsive(md) {
     display: none;
   }
