@@ -35,7 +35,7 @@
     box-shadow: 0 2px 2px 0 rgb(0 0 0 / 30%);
     margin-top: 2px;
     margin-bottom: 0px;
-    margin-left: 1px;
+    margin-left: 0px;
   }
   @include mixins.responsive(sm) {
     padding: 1rem 2rem;
