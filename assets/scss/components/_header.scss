@@ -73,7 +73,7 @@
 .container-radio {
   padding: 1rem 5rem;
   @include mixins.responsive(xs) {
-    padding: 4rem 1rem;
+    padding: 4.2rem 0.3rem;
     margin-top: -2rem;
     /* &.show1 {
       @include mixins.responsive(xs) {
