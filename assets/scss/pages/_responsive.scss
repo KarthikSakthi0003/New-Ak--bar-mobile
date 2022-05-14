@@ -80,7 +80,7 @@
 
 .anime {
   @include mixins.responsive(xs) {
-    padding: 1rem 1rem;
+    padding: 1rem 0rem;
     display: flex;
     justify-content: center;
   }
