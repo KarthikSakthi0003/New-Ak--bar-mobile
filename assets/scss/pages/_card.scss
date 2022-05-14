@@ -1,0 +1,86 @@
+@use "../abstract/mixins" as mixins;
+
+.nav_tab_c1 {
+  padding: 1rem 2rem;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardtab-content {
+  padding: 1rem 2rem;
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+
+  @include mixins.responsive(xs) {
+    padding: 2rem 3rem;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+  }
+}
+
+.input_type1 {
+  @include mixins.responsive(xs) {
+    width: 100%;
+    /*     border-radius: 10px;
+ */
+    outline: none;
+    /* padding-top: 0rem;
+    padding-bottom: 0rem;
+    padding-right: 7rem;
+    padding-left: 1rem;
+     */
+    box-sizing: border-box;
+  }
+
+  @include mixins.responsive(md) {
+    width: 100%;
+    outline: none;
+
+    /*   border-radius: 10px;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    padding-right: 7rem;
+    padding-left: 1rem; */
+    box-sizing: border-box;
+  }
+}
+.input_type2 {
+  box-sizing: border-box;
+  @include mixins.responsive(lg) {
+    outline: none;
+    margin-left: 18px;
+    box-sizing: border-box;
+  }
+}
+
+.card-body1 {
+  @include mixins.responsive(md) {
+    padding: 1rem 4rem;
+  }
+}
+.card-bodyw2 {
+  @include mixins.responsive(md) {
+    padding: 1rem 4rem;
+  }
+}
+.pl-lg1 {
+  @include mixins.responsive(lg) {
+    padding-left: 1rem;
+  }
+}
+.holiday-card {
+  @include mixins.responsive(sm) {
+  }
+  @include mixins.responsive(sm) {
+  }
+  @include mixins.responsive(md) {
+  }
+  @include mixins.responsive(lg) {
+    padding: 1rem 1rem;
+  }
+}

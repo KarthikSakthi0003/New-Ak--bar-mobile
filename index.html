@@ -116,11 +116,16 @@
             >
 
             <ul class="dropdown-menu" aria-labelledby="dropdownCountry">
-              <li><a href="#" class="dropdown-item">India</a></li>
-              <li><a href="#" class="dropdown-item">Russia</a></li>
-              <li><a href="#" class="dropdown-item">Ukraine</a></li>
-              <li><a href="#" class="dropdown-item">Canada</a></li>
-              <li><a href="#" class="dropdown-item">India</a></li>
+              <li><a class="active" href="" title="AED">AED - UAE Dirham</a></li>
+                                    <li ><a class="dropdown-item" href="" title="USD">USD - US Dollar</a></li>
+                                    <li><a class="dropdown-item"href="" title="SAR">SAR - Saudi Riyal</a></li>
+                                    <li ><a class="dropdown-item"href="" title="GBP">GBP - British Pound</a></li>
+                                    <li><a class="dropdown-item"href="" title="EUR">EUR - Euro</a></li>
+                                    <li><a class="dropdown-item"href="" title="QAR">QAR - Qatari Rial</a></li>
+                                    <li><a class="dropdown-item"href="" title="BHD">BHD - Bahraini Dinar</a></li>
+                                    <li><a class="dropdown-item"href="" title="OMR">OMR - Omani Riyal</a></li>
+                                    <li><a class="dropdown-item"href="" title="KWD">KWD - Kuwaiti Dinar</a></li>
+                                    <li><a class="dropdown-item"href="" title="INR">INR - Indian Rupee</a></li>
             </ul>
           </li>
 
@@ -207,10 +212,10 @@
                   </li>
           </ul>
  -->
+<div class="secondary-navigation">
+           <ul class="secondary-nav-tabs  nav" id="myTab" role="tablist">
 
-           <ul class="secondary-nav-tabs nav  " id="myTab" role="tablist">
-
-            <li class="secondary-navtab nav-item nav_hover" role="presentation">
+            <li class="secondary-navtab nav-item nav_hover visible1 btn-visible" role="presentation">
               <a 
                 class="secondary-navtab-anchor   active link_padding"
                 id="home-tab"
@@ -222,8 +227,8 @@
                 Flights</a
               >
             </li>
-           <li class="secondary-navtab nav-item" role="presentation">
-            <a class="secondary-navtab-anchor "
+           <li class="secondary-navtab nav-item btn-visible" role="presentation">
+            <a class="secondary-navtab-anchor visible2"
             
                 href="Flights.html"
             
@@ -232,8 +237,8 @@
                 ></span>
                 Hotel</a> 
                   </li>
-
-            <li class="secondary-navtab nav-item" role="presentation">
+<!--  
+            <li class="secondary-navtab d-none nav-item visible3" role="presentation">
               <a
                 class="secondary-navtab-anchor"
                 data-toggle="tab"
@@ -251,15 +256,19 @@
                 ></span>
                 Visa</a
               >
-            </li>
+            </li> -->
 
-            <li class="secondary-navtab">
+            <li class="secondary-navtab visible4 btn-visible">
               <a
                 class="secondary-navtab-anchor"
+                id="pills-contact-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-contact"
+                type="button"
                 data-toggle="tab"
                 href="#holiday"
                 role="tab"
-                aria-controls="holiday"
+                aria-controls="pills-contact"
                 aria-selected="false"
                 ><span
                   ><i class="fa fa-suitcase" style="font-weight: 600"></i
@@ -267,7 +276,7 @@
                 Holiday</a
               >
             </li>
-            <li class="secondary-navtab">
+            <li class="secondary-navtab visible5 btn-visible">
               <a
                 class="secondary-navtab-anchor"
                 data-toggle="tab"
@@ -280,7 +289,8 @@
                 Bus</a
               >
             </li>
-            <li class="secondary-navtab">
+            <!-- 
+            <li class="secondary-navtab d-none visible6">
               <a 
                 class="secondary-navtab-anchor"
                 data-toggle="tab"
@@ -294,7 +304,7 @@
                 Cruise</a
               >
             </li>
-            <li class="secondary-navtab">
+            <li class="secondary-navtab d-none visible7">
               <a
                 class="secondary-navtab-anchor"
                 id="flights-tab"
@@ -310,7 +320,7 @@
                 Umrah</a
               >
             </li>
-            <li class="secondary-navtab">
+            <li class="secondary-navtab d-none visible8">
               <a
                 class="secondary-navtab-anchor"
                 id="flights-tab"
@@ -324,64 +334,48 @@
                 ></span>
                 More</a
               >
-            </li>
+            </li> -->
           </ul>
+          </div>
           <div class="tab-content" id="myTabContent">
   <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"> 
     <div class="container-radio " >
           <div class="card">
-            <div
-              class="radio_content"
-            >
-              <div class="form-check form-check-inline  ">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="inlineRadioOptions"
-                  id="inlineRadio1"
-                  value="option1"
-                />
-                <label class="form-check-label" for="inlineRadio1"
-                  >One Way</label
-                >
-              </div>
-              <div class="form-check form-check-inline">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="inlineRadioOptions"
-                  id="inlineRadio2"
-                  value="option2"
-                />
-                <label class="form-check-label" for="inlineRadio2"
-                  >Round Trip</label
-                >
-              </div>
-              <div class="form-check form-check-inline">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="inlineRadioOptions"
-                  id="inlineRadio3"
-                  value="option3"
-                />
-                <label class="form-check-label" for="inlineRadio3"
-                  >MultiCity</label
-                >
-              </div>
-              <!-- <div class="radio">
-                <h3>Book Flight Tickets</h3>
-              </div> -->
-              
-            </div>
-          </div></div>
-         <div class="row align-items-center nav_tab_input">
-          <div class="col">
+            <div class="radio_content">
+              <!-- navigation start -->
+    <div class="radiobutton">          
+<div class="form-check">
+<ul class="nav" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <input class="form-check-input  active" id="oneway" checked="checked" data-bs-toggle="tab" data-bs-target="#wayone"  role="tab" aria-controls="wayone" aria-selected="true" type="radio" value="option1" id="flexRadioDefault1" name="trip"><label class="form-check-label" for="flexRadioDefault1">
+    Oneway
+  </label>
+  </li>
+  <li class="nav-item" role="presentation">
+    <input class="form-check-input" id="twoway" data-bs-toggle="tab" data-bs-target="#waytwo"  role="tab" aria-controls="waytwo" aria-selected="false" type="radio"value="option1" id="flexRadioDefault1" name="trip"><label class="form-check-label" for="flexRadioDefault1">
+    Round trip
+  </label>
+  </li>
+  <li class="nav-item" role="presentation">
+    <input class="form-check-input " id="threeway" data-bs-toggle="tab" data-bs-target="#waythree"  role="tab" aria-controls="waythree" aria-selected="false" type="radio" value="option1" id="flexRadioDefault1" name="trip"><label class="form-check-label" for="flexRadioDefault1">
+    MultiCity
+  </label>
+  </li>
+</ul>
+</div>
+
+</div>
+<div class="radionavigation">
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="wayone" role="tabpanel" aria-labelledby="oneway"> 
+   <div class="oneway-card">
+    <div class="row nav_tab_input-1">
+          <div class="col column1">
             <div class="card">
               <div class="card-body nav_tab_card">
                 <h6 class="card-title">From</h6>
-                <h3 class="card-text"><input class="input_type" type="text" name="" id="" placeholder="Bangalore"> </h3> 
-                <p  class="location"><span><i class="bi bi-geo-alt"></i></span></p>
+                <h3 class="card-text"><input class="input_type1" type="text" name="" id="" placeholder="Bangalore"> </h3> 
+                  <span class="icon-inside-o1"><i class="bi bi-geo-alt"></i></span>
                 <p></p>
               </div>
             </div>
@@ -389,9 +383,271 @@
           <div class="col">
             <div class="card">
               <div class="card-body nav_tab_card2">
+                <h6 class="card-title pl-lg1" >To</h6>
+                <h3 class="card-text"><input class="input_type2" type="text" name="" id="" placeholder="Chennai"> </h3> 
+                  <span class="icon-inside-o2"><i class="bi bi-geo-alt"></i></span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card ">
+              <div class="card-body card-body1">
+                <div class="Flight--dropdown"><div class="dropdown">
+  <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+    <span><i class="bi bi-calendar-day"></i></span>Depart
+  </a>
+
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+   <p>12 May’22
+Thursday</p>
+    <li><a class="dropdown-item" href="#"></a></li>
+    <li><a class="dropdown-item" href="#"></a></li>
+    <li><a class="dropdown-item" href="#"></a></li>
+  </ul>
+</div> </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+<div class="Flight--dropdown"><div class="dropdown">
+  <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+    <span><i class="bi bi-calendar-day"></i></span>Return
+  </a>
+
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+   <p>12 May’22
+Thursday</p>
+    <li><a class="dropdown-item" href="#"></a></li>
+    <li><a class="dropdown-item" href="#"></a></li>
+    <li><a class="dropdown-item" href="#"></a></li>
+  </ul>
+</div> </div>              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body nav_tab_card3">
+                <div class="list--tooltip">
+<a class="btn " data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+    Travellers &class
+  </a>                
+<div class="collapse" id="collapseExample">
+  <div class="card card-body">
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+  <label class="form-check-label" for="flexRadioDefault1">
+    Economy
+  </label>  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+  <label class="form-check-label" for="flexRadioDefault1">
+    Premium 
+  </label>
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+  <label class="form-check-label" for="flexRadioDefault1">
+    Bussiness
+  </label>
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+  <label class="form-check-label" for="flexRadioDefault1">
+    First-class
+  </label>
+</div>
+  </div>
+</div>
+</div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <button class="btn btn-danger  button-flight-2" type="button">
+              Search Flights
+            </button>
+          </div>
+        </div>
+        </div>
+        <div class="row row-col">
+          <div class="col align-item-center">
+            <div class="d-none flex-row align-item-center">
+              <p class="card1"> <span><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></span> Fares from Kolkata</p>
+            
+            
+            <div class="tripcheckbox col card" style="margin: 10px;">
+               <label class="checkbox-custom checkbox-custom-sm">
+                  <input type="checkbox" name="tripTypeM" value="M"><i></i>
+                  <span>Direct Flights</span>
+               </label>
+               <label class="checkbox-custom checkbox-custom-sm">
+                  <input type="checkbox" id="nonStopF" name="nonStopF" value="1"><i></i>
+                  <span>Defence Fare</span>
+               </label>
+            </div>
+            <!-- <div>
+              <h6 class="color-animation anime "><span><i class="fa fa-exclamation-triangle" aria-hidden="true"></i></span> Covid-19 Updates</h6>
+            </div> -->
+            </div>
+          </div>
+
+        </div>
+      
+      </div>
+  <div class="tab-pane fade" id="waytwo" role="tabpanel" aria-labelledby="twoway">
+  <div class="twoway-card">
+    <div class="row  nav_tab_input-2">
+          <div class="col">
+            <div class="card">
+              <div class="card-body nav_tab_card-w2">
+                <h6 class="card-title">From</h6>
+                <h3 class="card-text"><input class="input_type3" type="text" name="" id="" placeholder="Mangalore"> </h3> 
+                  <span class="icon-inside-t1"><i class="bi bi-geo-alt"></i></span>
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body nav_tab_card-w2-2">
+                <h6 class="card-title pl-lg1">To</h6>
+                <h3 class="card-text"><input class="input_type4" type="text" name="" id="" placeholder="Hyderbad"> </h3> 
+                  <span class="icon-inside-t2"><i class="bi bi-geo-alt"></i></span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card ">
+              <div class="card-body card-bodyw2">
+                <div class="Flight--dropdown"><div class="dropdown">
+  <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+    <span><i class="bi bi-calendar-day"></i></span>Depart
+  </a>
+
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+   <p>12 May’22
+Thursday</p>
+    <li><a class="dropdown-item" href="#"></a></li>
+    <li><a class="dropdown-item" href="#"></a></li>
+    <li><a class="dropdown-item" href="#"></a></li>
+  </ul>
+</div> </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+<div class="Flight--dropdown"><div class="dropdown">
+  <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+    <span><i class="bi bi-calendar-day"></i></span>Return
+  </a>
+
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+   <p>12 May’22
+Thursday</p>
+    <li><a class="dropdown-item" href="#"></a></li>
+    <li><a class="dropdown-item" href="#"></a></li>
+    <li><a class="dropdown-item" href="#"></a></li>
+  </ul>
+</div> </div>              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body nav_tab_card3">
+                <div class="list--tooltip">
+<a class="btn " data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+    Travellers &class
+  </a>                
+<div class="collapse" id="collapseExample">
+  <div class="card card-body">
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+  <label class="form-check-label" for="flexRadioDefault1">
+    Economy
+  </label>  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+  <label class="form-check-label" for="flexRadioDefault1">
+    Premium 
+  </label>
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+  <label class="form-check-label" for="flexRadioDefault1">
+    Bussiness
+  </label>
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+  <label class="form-check-label" for="flexRadioDefault1">
+    First-class
+  </label>
+</div>
+  </div>
+</div>
+</div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <button class="btn btn-danger  button-flight-2" type="button">
+              Search Flights
+            </button>
+          </div>
+        </div></div>
+        <div class="row row-col">
+          <div class="col align-item-center">
+            <div class="d-none flex-row align-item-center">
+              <p class="card1"> <span><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></span> Fares from Kolkata</p>
+            
+            
+            <div class="tripcheckbox col card" style="margin: 10px;">
+               <label class="checkbox-custom checkbox-custom-sm">
+                  <input type="checkbox" name="tripTypeM" value="M"><i></i>
+                  <span>Direct Flights</span>
+               </label>
+               <label class="checkbox-custom checkbox-custom-sm">
+                  <input type="checkbox" id="nonStopF" name="nonStopF" value="1"><i></i>
+                  <span>Defence Fare</span>
+               </label>
+            </div>
+            <!-- <div>
+              <h6 class="color-animation anime "><span><i class="fa fa-exclamation-triangle" aria-hidden="true"></i></span> Covid-19 Updates</h6>
+            </div> -->
+            </div>
+          </div>
+
+        </div></div>
+  <div class="tab-pane fade" id="waythree" role="tabpanel" aria-labelledby="threeway"> 
+    <div class="multiway-card">
+    <div class="row nav_tab_input-3">
+          <div class="col">
+            <div class="card">
+              <div class="card-body nav_tab_cardw3">
+                <h6 class="card-title">From</h6>
+                <h3 class="card-text"><input class="input_type5" type="text" name="" id="" placeholder="Bangalore"> </h3> 
+                <span class="icon-inside-m1"><i class="bi bi-geo-alt"></i></span>
+          
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body nav_tab_card2">
+                <h6 class="card-title pl-lg1">To</h6>
+                <h3 class="card-text"><input class="input_type6" type="text" name="" id="" placeholder="Chennai"> </h3> 
+                <span class="icon-inside-m2"><i class="bi bi-geo-alt"></i></span>
+
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body nav_tab_card2">
+                <h6 class="card-title pl-lg1">From</h6>
+                <h3 class="card-text"><input class="input_type7" type="text" name="" id="" placeholder="Coimbatore"> </h3> 
+                <span class="icon-inside-m3"><i class="bi bi-geo-alt"></i></span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body nav_tab_cardw3-mumbai">
                 <h6 class="card-title">To</h6>
-                <h3 class="card-text"><input class="input_type" type="text" name="" id="" placeholder="Chennai"> </h3> 
-                <p  class="location"><span><i class="bi bi-geo-alt"></i></span></p>
+                <h3 class="card-text"> <input class="input_type8" type="text" name="" id="" placeholder="Mumbai">
+                  <span class="icon-inside-m4"><i class="bi bi-geo-alt"></i></span> </h3> 
               </div>
             </div>
           </div>
@@ -465,11 +721,11 @@ Thursday</p>
             </div>
           </div>
           <div class="col">
-            <button class="btn btn-danger  "button-flight-2 type="button">
+            <button class="btn btn-danger button-flight-2" type="button">
               Search Flights
             </button>
           </div>
-        </div>
+        </div> </div>
         <div class="row row-col">
           <div class="col align-item-center">
             <div class="d-none flex-row align-item-center">
@@ -494,22 +750,26 @@ Thursday</p>
 
         </div>
 
+  </div>
+</div>
 
+</div>
 
-        </div>
+              
+             
+             
+          </div></div>
+            </div>
+          </div>
+
   <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-
-
-
-<div class="card">
+<div class="card mt-4">
             <div
               class="hotel-card">
                 <h3>Book Domestic & International Hotel</h3>
               
             </div>
           </div>
-        
-
         <!-- card -->
         <div class="row align-items-center">
           <div class="col">
@@ -517,7 +777,7 @@ Thursday</p>
               <div class="card-body">
                 <h6 class="card-title">Enter Your Destination or property</h6>
                 <h3 class="card-text input_type"><input type="text" placeholder="Bengaluru"> </h3>
-                <p  class="location"><span><i class="bi bi-geo-alt"></i></span></p>
+                <p  class="icon-inside-m5"><span><i class="bi bi-geo-alt"></i></span></p>
                 
               </div>
             </div>
@@ -601,7 +861,7 @@ Thursday</p>
             </div>
           </div>
           <div class="col">
-            <button class="btn btn-danger button-flight-2 " type="button">
+            <button class="btn btn-danger button-flight-2-hotel " type="button">
               Search Flights
             </button>
           </div>
@@ -629,19 +889,94 @@ Thursday</p>
           </div>
 
         </div>
-
-
-
-
-
-
-
     </div>
-  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+
+<!-- holidaycard -->
+<div class="holiday-card">
+<div class="card mt-4">
+            <div
+              class="hotel-card">
+                <h3>Book Domestic and International Holiday Packages
+</h3>
+              
+            </div>
+          </div>
+        <!-- card -->
+<div class="row align-items-center">
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <h6 class="card-title">Enter Your Destination </h6>
+                <h3 class="card-text input_type"><input type="text" placeholder="Dubai"> </h3>
+                <p  class="icon-inside-m6"><span><i class="bi bi-geo-alt"></i></span></p>
+                
+              </div>
+            </div>
+          </div>
+        
+                    <div class="col">
+            <div class="card">
+              <div class="card-body">
+<div class="Flight--dropdown"><div class="dropdown">
+  <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+    <span><i class="bi bi-calendar-day"></i></span>Start On
+  </a>
+
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+   <p>12 May’22
+Thursday</p>
+    <li><a class="dropdown-item" href="#"></a></li>
+    <li><a class="dropdown-item" href="#"></a></li>
+    <li><a class="dropdown-item" href="#"></a></li>
+  </ul>
+  <h1>Any Time</h1>
+</div> </div>              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <div class="list--tooltip">
+<a class="btn " data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+    Travellers &class
+  </a>                
+<div class="collapse" id="collapseExample">
+  <div class="card card-body">
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+  <label class="form-check-label" for="flexRadioDefault1">
+    Economy
+  </label>  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+  <label class="form-check-label" for="flexRadioDefault1">
+    Premium 
+  </label>
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+  <label class="form-check-label" for="flexRadioDefault1">
+    Bussiness
+  </label>
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+  <label class="form-check-label" for="flexRadioDefault1">
+    First-class
+  </label>
+</div>
+  </div>
+</div>
+</div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <button class="btn btn-danger button-flight-2-hotel " type="button">
+              Search Flights
+            </button>
+          </div>
+        </div>
 </div>
 
-
-
+<!-- holiday card end -->
+  </div>
+</div>
         </div>
  
  
@@ -1156,7 +1491,7 @@ Thursday</p>
   </li>
   
 
-  <li class="card1">
+  <li class="card1 destination_display">
     <a  class="ml-4" style="color:#d32f2f !important; padding: 1rem 5rem;" aria-current="Cruise" href="#">View all Destinations</a>
   </li>
 </ul>
@@ -1230,7 +1565,7 @@ Thursday</p>
 </div>
 
 <!-- responsive slider 2 -->
-<div class="card-bodyr card1">
+<div class="card-bodyr card1 destination_display">
 <div class="row ">
       <div
         class="col-6 overflow-y scroll"
@@ -1446,6 +1781,8 @@ Download the AkbarTravels App & wherever you’re going, take us with you.      
 
 
       <!-- ========== End Section ========== -->
+<!-- ckeking  -->
+
 
 
 <!-- checkend -->

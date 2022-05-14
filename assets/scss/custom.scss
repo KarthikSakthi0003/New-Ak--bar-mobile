@@ -26,6 +26,8 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 // responsive
 @import "./pages/responsive";
+@import "./pages/hiddenresponsive";
+@import "./pages/card";
 
 //abstract
 @import "./abstract/mixins";

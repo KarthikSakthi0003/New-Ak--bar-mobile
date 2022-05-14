@@ -1,0 +1,472 @@
+@use "../abstract/mixins" as mixins;
+
+.none {
+  .visible1 {
+    @include mixins.responsive(xs) {
+      //padding: 1rem 2rem;
+    }
+    @include mixins.responsive(md) {
+      // padding: 1rem 5rem;
+    }
+    @include mixins.responsive(lg) {
+      //padding: 1rem 5rem;
+    }
+    @include mixins.responsive(x-lg) {
+      //padding: 1rem 5rem;
+    }
+  }
+  .visible2 {
+    /* @include mixins.responsive(xs) {
+    padding: 1rem 2rem;
+  }
+  @include mixins.responsive(md) {
+    padding: 1rem 5rem;
+  }
+  @include mixins.responsive(lg) {
+    padding: 1rem 5rem;
+  }
+  @include mixins.responsive(x-lg) {
+    padding: 1rem 5rem;
+  } */
+  }
+  .visible3 {
+    @include mixins.responsive(xs) {
+      display: none;
+    }
+    @include mixins.responsive(md) {
+      display: none;
+    }
+    @include mixins.responsive(lg) {
+      // padding: 1rem 5rem;
+    }
+    @include mixins.responsive(x-lg) {
+      //padding: 1rem 5rem;
+    }
+  }
+  .visible4 {
+    /* @include mixins.responsive(xs) {
+    padding: 1rem 2rem;
+  }
+  @include mixins.responsive(md) {
+    padding: 1rem 5rem;
+  }
+  @include mixins.responsive(lg) {
+    padding: 1rem 5rem;
+  }
+  @include mixins.responsive(x-lg) {
+    padding: 1rem 5rem;
+  }*/
+  }
+  .visible5 {
+    /* @include mixins.responsive(xs) {
+    
+  }
+  @include mixins.responsive(md) {
+    padding: 1rem 5rem;
+  }
+  @include mixins.responsive(lg) {
+    padding: 1rem 5rem;
+  }
+  @include mixins.responsive(x-lg) {
+    padding: 1rem 5rem;
+  } */
+  }
+  .visible6 {
+    @include mixins.responsive(xs) {
+      display: none;
+    }
+    @include mixins.responsive(md) {
+      display: none;
+    }
+    @include mixins.responsive(lg) {
+      padding: 1rem 5rem;
+    }
+    @include mixins.responsive(x-lg) {
+      padding: 1rem 5rem;
+    }
+  }
+  .visible7 {
+    @include mixins.responsive(xs) {
+      display: none;
+    }
+    @include mixins.responsive(md) {
+      display: none;
+    }
+    @include mixins.responsive(lg) {
+      padding: 1rem 5rem;
+    }
+    @include mixins.responsive(x-lg) {
+      padding: 1rem 5rem;
+    }
+  }
+  .visible8 {
+    @include mixins.responsive(xs) {
+      display: none;
+    }
+    @include mixins.responsive(md) {
+      display: none;
+    }
+    @include mixins.responsive(lg) {
+      padding: 1rem 5rem;
+    }
+    @include mixins.responsive(x-lg) {
+      padding: 1rem 5rem;
+    }
+  }
+}
+
+.icon-inside-o1 {
+  position: absolute;
+  right: 27px;
+  margin-top: -3px;
+  top: calc(50% - 11px);
+  pointer-events: none;
+  font-size: 18px;
+  font-size: 1.5rem;
+  color: #c4c3c3;
+  z-index: 3;
+  @include mixins.responsive(md) {
+    position: absolute;
+    right: 263px;
+    margin-top: -3px;
+    top: calc(50% - 11px);
+    pointer-events: none;
+    font-size: 18px;
+    font-size: 1.5rem;
+    color: #c4c3c3;
+    z-index: 3;
+  }
+  @include mixins.responsive(lg) {
+    position: absolute;
+    right: 140px;
+    margin-top: 0px;
+    top: calc(50% - 11px);
+    pointer-events: none;
+    font-size: 18px;
+    font-size: 1.5rem;
+    color: #c4c3c3;
+    z-index: 3;
+  }
+}
+.icon-inside-o2 {
+  position: absolute;
+  right: 27px;
+  margin-top: 3px;
+  top: calc(50% - 11px);
+  pointer-events: none;
+  font-size: 18px;
+  font-size: 1.5rem;
+  color: #c4c3c3;
+  z-index: 3;
+  @include mixins.responsive(md) {
+    position: absolute;
+    right: 265px;
+    margin-top: -3px;
+    top: calc(50% - 11px);
+    pointer-events: none;
+    font-size: 18px;
+    font-size: 1.5rem;
+    color: #c4c3c3;
+    z-index: 3;
+  }
+  @include mixins.responsive(lg) {
+    position: absolute;
+    right: 150px;
+    margin-top: 5px;
+    top: calc(50% - 11px);
+    pointer-events: none;
+    font-size: 18px;
+    font-size: 1.5rem;
+    color: #c4c3c3;
+    z-index: 3;
+  }
+}
+
+.icon-inside-t1 {
+  position: absolute;
+  right: 27px;
+  margin-top: -3px;
+  top: calc(50% - 11px);
+  pointer-events: none;
+  font-size: 18px;
+  font-size: 1.5rem;
+  color: #c4c3c3;
+  z-index: 3;
+
+  @include mixins.responsive(md) {
+    position: absolute;
+    right: 265px;
+    margin-top: -3px;
+    top: calc(50% - 11px);
+    pointer-events: none;
+    font-size: 18px;
+    font-size: 1.5rem;
+    color: #c4c3c3;
+    z-index: 3;
+  }
+  @include mixins.responsive(lg) {
+    position: absolute;
+    right: 140px;
+    margin-top: 0px;
+    top: calc(50% - 11px);
+    pointer-events: none;
+    font-size: 18px;
+    font-size: 1.5rem;
+    color: #c4c3c3;
+    z-index: 3;
+  }
+}
+.icon-inside-t2 {
+  position: absolute;
+  right: 27px;
+  margin-top: 3px;
+  top: calc(50% - 11px);
+  pointer-events: none;
+  font-size: 18px;
+  font-size: 1.5rem;
+  color: #c4c3c3;
+  z-index: 3;
+  @include mixins.responsive(md) {
+    position: absolute;
+    right: 265px;
+    margin-top: 3px;
+    top: calc(50% - 11px);
+    pointer-events: none;
+    font-size: 18px;
+    font-size: 1.5rem;
+    color: #c4c3c3;
+    z-index: 3;
+  }
+  @include mixins.responsive(lg) {
+    position: absolute;
+    right: 150px;
+    margin-top: 3px;
+    top: calc(50% - 11px);
+    pointer-events: none;
+    font-size: 18px;
+    font-size: 1.5rem;
+    color: #c4c3c3;
+    z-index: 3;
+  }
+}
+.icon-inside-m1 {
+  position: absolute;
+  right: 27px;
+  margin-top: 2px;
+  top: calc(50% - 11px);
+  pointer-events: none;
+  font-size: 18px;
+  font-size: 1.5rem;
+  color: #c4c3c3;
+  z-index: 3;
+  @include mixins.responsive(md) {
+    position: absolute;
+    right: 265px;
+    margin-top: 1px;
+    top: calc(50% - 11px);
+    pointer-events: none;
+    font-size: 18px;
+    font-size: 1.5rem;
+    color: #c4c3c3;
+    z-index: 3;
+  }
+  @include mixins.responsive(lg) {
+    position: absolute;
+    right: 136px;
+    margin-top: 5px;
+    top: calc(50% - 11px);
+    pointer-events: none;
+    font-size: 18px;
+    font-size: 1.5rem;
+    color: #c4c3c3;
+    z-index: 3;
+  }
+}
+.icon-inside-m2 {
+  position: absolute;
+  right: 27px;
+  margin-top: 2px;
+  top: calc(50% - 11px);
+  pointer-events: none;
+  font-size: 18px;
+  font-size: 1.5rem;
+  color: #c4c3c3;
+  z-index: 3;
+  @include mixins.responsive(md) {
+    position: absolute;
+    right: 265px;
+    margin-top: 2px;
+    top: calc(50% - 11px);
+    pointer-events: none;
+    font-size: 18px;
+    font-size: 1.5rem;
+    color: #c4c3c3;
+    z-index: 3;
+  }
+  @include mixins.responsive(lg) {
+    position: absolute;
+    right: 140px;
+    margin-top: 5px;
+    top: calc(50% - 11px);
+    pointer-events: none;
+    font-size: 18px;
+    font-size: 1.5rem;
+    color: #c4c3c3;
+    z-index: 3;
+  }
+}
+.icon-inside-m3 {
+  position: absolute;
+  right: 27px;
+  margin-top: 2px;
+  top: calc(50% - 11px);
+  pointer-events: none;
+  font-size: 18px;
+  font-size: 1.5rem;
+  color: #c4c3c3;
+  z-index: 3;
+  @include mixins.responsive(md) {
+    position: absolute;
+    right: 265px;
+    margin-top: 2px;
+    top: calc(50% - 11px);
+    pointer-events: none;
+    font-size: 18px;
+    font-size: 1.5rem;
+    color: #c4c3c3;
+    z-index: 3;
+  }
+  @include mixins.responsive(lg) {
+    position: absolute;
+    right: 136px;
+    margin-top: 3px;
+    top: calc(50% - 11px);
+    pointer-events: none;
+    font-size: 18px;
+    font-size: 1.5rem;
+    color: #c4c3c3;
+    z-index: 3;
+  }
+}
+.icon-inside-m4 {
+  position: absolute;
+  right: 27px;
+  margin-top: 10px;
+  top: calc(50% - 11px);
+  pointer-events: none;
+  font-size: 18px;
+  font-size: 1.5rem;
+  color: #c4c3c3;
+  z-index: 3;
+  @include mixins.responsive(md) {
+    position: absolute;
+    right: 265px;
+    margin-top: 10px;
+    top: calc(50% - 11px);
+    pointer-events: none;
+    font-size: 18px;
+    font-size: 1.5rem;
+    color: #c4c3c3;
+    z-index: 3;
+  }
+  @include mixins.responsive(lg) {
+    position: absolute;
+    right: 140px;
+    margin-top: 8px;
+    top: calc(50% - 11px);
+    pointer-events: none;
+    font-size: 18px;
+    font-size: 1.5rem;
+    color: #c4c3c3;
+    z-index: 3;
+  }
+}
+.icon-inside-m5 {
+  position: absolute;
+  right: -13px;
+  left: 263px;
+  margin-top: 2px;
+  padding-right: 13rem;
+  top: calc(50% - 11px);
+  pointer-events: none;
+  font-size: 18px;
+  font-size: 1.5rem;
+  color: #c4c3c3;
+  z-index: 3;
+  @include mixins.responsive(md) {
+    position: absolute;
+    right: 265px;
+    margin-top: 2px;
+    top: calc(50% - 11px);
+    pointer-events: none;
+    font-size: 18px;
+    font-size: 1.5rem;
+    color: #c4c3c3;
+    z-index: 3;
+  }
+}
+.icon-inside-m6 {
+  position: absolute;
+  right: -13px;
+  left: 263px;
+  margin-top: 2px;
+  padding-right: 13rem;
+  top: calc(50% - 11px);
+  pointer-events: none;
+  font-size: 18px;
+  font-size: 1.5rem;
+  color: #c4c3c3;
+  z-index: 3;
+  @include mixins.responsive(md) {
+    position: absolute;
+    right: 265px;
+    margin-top: 2px;
+    top: calc(50% - 11px);
+    pointer-events: none;
+    font-size: 18px;
+    font-size: 1.5rem;
+    color: #c4c3c3;
+    z-index: 3;
+  }
+  @include mixins.responsive(lg) {
+    position: absolute;
+    right: 265px;
+    margin-top: 0px;
+    top: calc(50% - 11px);
+    pointer-events: none;
+    font-size: 18px;
+    font-size: 1.5rem;
+    color: #c4c3c3;
+    z-index: 3;
+  }
+}
+/* .btn-visible {
+  @include mixins.responsive(xs) {
+    padding: 1rem 2rem !important;
+    padding-left: 11px !important;
+    padding-right: 9px !important;
+    display: block !important;
+    justify-content: space-evenly !important;
+    text-align: center !important;
+    background-color: #fff !important;
+    color: #1f4687 !important;
+    text-decoration: none !important;
+    list-style: none !important;
+    border-radius: 2px 1px 12px 12px !important;
+    height: 73px !important;
+    width: 97px !important;
+    margin-right: 2px !important;
+    border: 1px solid rgba(255, 255, 255, 0.28) !important;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 30%) !important;
+    margin-top: 2px !important;
+    margin-bottom: 0px !important;
+    margin-left: 5px !important;
+    align-items: center;
+  }
+}
+ */
+.destination_display {
+  @include mixins.responsive(lg) {
+    display: contents;
+  }
+}

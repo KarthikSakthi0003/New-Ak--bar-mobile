@@ -18,13 +18,14 @@
       padding: 1rem 0rem;
     }
     @include mixins.responsive(x-lg) {
-      padding-left: 12rem;
+      padding: 1rem 1rem;
     }
   }
 }
 
-.secondary-navtab {
-  @include mixins.responsive(xs) {
+.secondary-navigation {
+  @include mixins.responsive(x-lg) {
+    padding: 1rem 24rem;
   }
 }
 
@@ -80,17 +81,17 @@
 
 .anime {
   @include mixins.responsive(xs) {
-    padding: 1rem 0rem;
+    padding: 0rem 0rem;
     display: flex;
     justify-content: center;
   }
   @include mixins.responsive(md) {
-    padding: 1rem 17rem;
+    padding: 1rem 8rem;
     font-size: larger;
   }
 
   @include mixins.responsive(lg) {
-    padding: 1rem 24rem;
+    padding: 1rem 12rem;
     font-size: larger;
   }
   @include mixins.responsive(x-lg) {
@@ -329,10 +330,5 @@
 .hiddenlg {
   @include mixins.responsive(lg) {
     display: none;
-  }
-}
-.button-flight-2 {
-  @include mixins.responsive(x-lg) {
-    padding: 0.8rem 5rem;
   }
 }
