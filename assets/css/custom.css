@@ -11436,6 +11436,13 @@ a {
     margin-right: 25px;
   }
 }
+@media only screen and (min-width: 992px) {
+  .header--menus {
+    display: flex;
+    list-style: none;
+    margin-right: 25px;
+  }
+}
 .header--menus--item {
   margin-right: 5rem !important;
 }

@@ -43,6 +43,11 @@
       list-style: none;
       margin-right: 25px;
     }
+    @include mixins.responsive(lg) {
+      display: flex;
+      list-style: none;
+      margin-right: 25px;
+    }
 
     &--item {
       margin-right: 5rem !important;
