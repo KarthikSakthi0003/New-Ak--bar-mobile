@@ -12774,10 +12774,152 @@ a {
 .input_type2 {
   box-sizing: border-box;
 }
+@media only screen and (min-width: 768px) {
+  .input_type2 {
+    outline: none;
+    width: 94%;
+    box-sizing: border-box;
+  }
+}
 @media only screen and (min-width: 992px) {
   .input_type2 {
     outline: none;
     margin-left: 18px;
+    box-sizing: border-box;
+  }
+}
+
+.input_type3 {
+  box-sizing: border-box;
+}
+@media only screen and (min-width: 768px) {
+  .input_type3 {
+    outline: none;
+    width: 94%;
+    box-sizing: border-box;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .input_type3 {
+    outline: none;
+    margin-left: 7px;
+    width: 97%;
+    box-sizing: border-box;
+  }
+}
+
+.input_type4 {
+  box-sizing: border-box;
+}
+@media only screen and (min-width: 768px) {
+  .input_type4 {
+    outline: none;
+    width: 94%;
+    box-sizing: border-box;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .input_type4 {
+    outline: none;
+    margin-left: 18px;
+    box-sizing: border-box;
+  }
+}
+
+.input_type5 {
+  box-sizing: border-box;
+}
+@media only screen and (min-width: 768px) {
+  .input_type5 {
+    outline: none;
+    width: 94%;
+    box-sizing: border-box;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .input_type5 {
+    outline: none;
+    margin-left: -3px;
+    width: 96%;
+    box-sizing: border-box;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .input_type5 {
+    outline: none;
+    margin-left: -3px;
+    width: 95%;
+    box-sizing: border-box;
+  }
+}
+
+.input_type6 {
+  box-sizing: border-box;
+}
+@media only screen and (min-width: 768px) {
+  .input_type6 {
+    outline: none;
+    width: 89%;
+    box-sizing: border-box;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .input_type6 {
+    outline: none;
+    margin-left: 18px;
+    box-sizing: border-box;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .input_type6 {
+    outline: none;
+    margin-top: 1px;
+    margin-left: 18px;
+    box-sizing: border-box;
+  }
+}
+
+.input_type7 {
+  box-sizing: border-box;
+}
+@media only screen and (min-width: 768px) {
+  .input_type7 {
+    outline: none;
+    width: 89%;
+    box-sizing: border-box;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .input_type7 {
+    outline: none;
+    margin-left: 18px;
+    box-sizing: border-box;
+  }
+}
+
+.input_type8 {
+  box-sizing: border-box;
+}
+@media only screen and (min-width: 768px) {
+  .input_type8 {
+    outline: none;
+    width: 117%;
+    box-sizing: border-box;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .input_type8 {
+    outline: none;
+    margin-left: 0px;
+    width: 108%;
+    box-sizing: border-box;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .input_type8 {
+    outline: none;
+    margin-left: 0px;
+    width: 103%;
     box-sizing: border-box;
   }
 }
@@ -12803,6 +12945,89 @@ a {
 @media only screen and (min-width: 992px) {
   .holiday-card {
     padding: 1rem 1rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .owc2 {
+    padding: 1rem 0rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .owc1 {
+    padding: 1rem 0rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .owc4 {
+    padding: 1rem 1rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .owc4--lg--card {
+    padding: 1rem 4rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .owc6 {
+    padding: 1rem 6rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .twc1 {
+    padding: 1rem 0rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .twc2 {
+    padding: 1rem 0rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .twc4--lg--card {
+    padding: 1rem 4rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .twc6 {
+    padding: 1rem 6rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .mwc1 {
+    padding: 1rem 0rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .mwc2 {
+    padding: 1rem 0rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .mwc3 {
+    padding: 1rem 0rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .mwc4 {
+    padding: 1rem 0rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .mwc8 {
+    padding: 1rem 6rem;
   }
 }
 
