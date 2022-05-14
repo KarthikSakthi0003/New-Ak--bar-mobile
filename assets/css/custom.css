@@ -12209,7 +12209,9 @@ a {
 }
 @media only screen and (max-width: 576px) {
   .secondary-navtab {
-    padding: 1rem 1.3rem;
+    padding: 1rem 0rem;
+    padding-left: 17px;
+    padding-right: 9px;
     display: block;
     justify-content: space-evenly;
     text-align: center;
@@ -12219,8 +12221,8 @@ a {
     list-style: none;
     border-radius: 0px 10px 10px 3px;
     height: 68px;
-    width: 83px;
-    margin-right: 2px;
+    width: 72px;
+    margin-right: 1px;
     border: 1px solid rgba(255, 255, 255, 0.28);
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3);
     margin-top: 2px;
