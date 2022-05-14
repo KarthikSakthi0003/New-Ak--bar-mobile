@@ -11839,7 +11839,7 @@ a {
 
 @media only screen and (max-width: 576px) {
   .anime {
-    padding: 1rem 1rem;
+    padding: 1rem 0rem;
     display: flex;
     justify-content: center;
   }
