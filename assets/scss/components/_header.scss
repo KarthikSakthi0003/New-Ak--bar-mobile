@@ -73,7 +73,7 @@
 .container-radio {
   padding: 1rem 5rem;
   @include mixins.responsive(xs) {
-    padding: 1rem 2rem;
+    padding: 4rem 1rem;
     margin-top: -2rem;
     /* &.show1 {
       @include mixins.responsive(xs) {
@@ -94,17 +94,22 @@
     } */
   }
   @include mixins.responsive(md) {
-    padding: 1rem 17rem;
+    padding: 3rem 1rem;
     //margin-top: -2rem;
   }
   @include mixins.responsive(lg) {
-    padding: 1rem 26rem;
+    padding: 1rem 1rem;
   }
   @include mixins.responsive(x-lg) {
-    padding: 1rem 5rem;
+    padding: 0rem 6rem;
   }
 }
 
+.radio_content {
+  @include mixins.responsive(x-lg) {
+    padding: 2rem 2rem;
+  }
+}
 //container-body
 .container-body {
   padding: 1rem 0rem;
@@ -131,6 +136,11 @@
   }
   @include mixins.responsive(md) {
     padding: 4rem 1rem;
+
+    align-content: center;
+  }
+  @include mixins.responsive(x-lg) {
+    padding: 4rem 3rem;
 
     align-content: center;
   }
@@ -179,6 +189,8 @@
     list-style: none;
     margin-right: 25px;
     color: #000;
+    align-items: center;
+    transition: 500ms;
     &-item {
       color: #000;
       &:hover {
@@ -191,7 +203,7 @@
     }
 
     &-link {
-      padding: 0.5rem 10rem;
+      padding: 1rem 6rem;
     }
   }
 }
@@ -219,6 +231,15 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: baseline;
+  }
+  @include mixins.responsive(x-lg) {
+    padding: 0rem 5rem;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+    font-weight: 800;
+    font-size: larger;
+    margin-right: 62px;
   }
 
   &-menus {

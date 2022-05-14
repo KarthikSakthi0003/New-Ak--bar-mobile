@@ -1,0 +1,97 @@
+@use "../abstract/mixins" as mixins;
+
+/* .button-flight-2 {
+  padding: 1.5rem 1rem;
+  font-size: 1.25rem;
+  border-radius: 0.3rem;
+}
+ */
+
+.display-none {
+  display: none;
+  @include mixins.responsive(x-lg) {
+    display: none;
+  }
+}
+.nav_hover {
+  a: {
+    background-color: #fff;
+    color: #1f4687;
+  }
+  @include mixins.responsive(xs) {
+    background-color: #fff;
+    color: #1f4687;
+  }
+}
+.link_padding {
+  display: block;
+  padding: -0.5rem 1rem;
+  @include mixins.responsive(xs) {
+    display: block;
+    padding: -0.5rem 1rem;
+  }
+}
+
+.input_type {
+  width: 100%;
+  border-radius: 10px;
+  outline: none;
+  padding: 1rem;
+  box-sizing: border-box;
+  :focus {
+    border-color: dodgerblue;
+    box-shadow: 0 0 8px 0 dodgerblue;
+  }
+}
+
+.location {
+  margin-top: 0px;
+  margin-bottom: -2rem;
+  padding: 1rem 7rem;
+  text-align: center;
+}
+.tripcheckbox {
+  flex-direction: row-reverse;
+  align-content: center;
+  justify-content: space-around;
+}
+
+.hotel-card {
+  @include mixins.responsive(xs) {
+    padding: 2rem 1rem;
+  }
+}
+
+.nav_tab_input {
+  @include mixins.responsive(x-lg) {
+    padding: 0rem 6rem;
+  }
+}
+
+.nav_tab_card {
+  @include mixins.responsive(md) {
+    padding: 1rem 2rem;
+  }
+  @include mixins.responsive(md) {
+    padding: 1rem 5rem;
+  }
+}
+.nav_tab_card2 {
+  @include mixins.responsive(md) {
+    padding: 1.5rem 2rem;
+  }
+  @include mixins.responsive(lg) {
+    padding: 1.5rem 6rem;
+  }
+}
+.nav_tab_card3 {
+  @include mixins.responsive(x-lg) {
+    padding: 1rem -2rem;
+  }
+}
+
+.responsive_slider {
+  @include mixins.responsive(lg) {
+    display: none;
+  }
+}

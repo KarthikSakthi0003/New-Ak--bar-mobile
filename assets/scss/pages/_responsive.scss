@@ -9,7 +9,7 @@
   }
   ul {
     @include mixins.responsive(xs) {
-      padding-left: 1rem;
+      padding: 0rem 0rem;
     }
     @include mixins.responsive(md) {
       padding-left: 0rem;
@@ -80,12 +80,21 @@
 
 .anime {
   @include mixins.responsive(xs) {
-    padding: 1rem 4rem;
+    padding: 1rem 1rem;
     display: flex;
     justify-content: center;
   }
+  @include mixins.responsive(md) {
+    padding: 1rem 17rem;
+    font-size: larger;
+  }
 
   @include mixins.responsive(lg) {
+    padding: 1rem 24rem;
+    font-size: larger;
+  }
+  @include mixins.responsive(x-lg) {
+    padding: 1rem 17rem;
     font-size: larger;
   }
 }
@@ -301,7 +310,7 @@
 
 .container-body-img {
   @include mixins.responsive(x-lg) {
-    padding: 2rem 14rem;
+    padding: 4rem 19rem;
   }
 }
 .secondary-navtab {
@@ -320,5 +329,10 @@
 .hiddenlg {
   @include mixins.responsive(lg) {
     display: none;
+  }
+}
+.button-flight-2 {
+  @include mixins.responsive(x-lg) {
+    padding: 0.8rem 5rem;
   }
 }

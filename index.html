@@ -178,38 +178,62 @@
     <main>
       <!-- ========== Start Secondary navigation ========== -->
       <section >
-        <div style="">
+        <div >
         <div class="containerer1 xs-contai ">
-          <ul class=" secondary-nav-tabs">
-            <li class="secondary-navtab">
-              <a id="clicker"
-                class="secondary-navtab-anchor"
+          <div class="navtabs_top">
+
+<!-- <ul class="secondary-nav-tabs nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="secondary-navtab nav-item" role="presentation">
+              <a 
+                class="secondary-navtab-anchor nav-link active"
+                id="pills-home-tab"
                 href="index.html"
-                role="tab"
-                aria-controls="flights"
-                aria-selected="false"
+                data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"
                 ><span
                   ><i class="fas fa-plane" style="font-weight: 600"></i
                 ></span>
                 Flights</a
               >
             </li>
-            <li class="secondary-navtab">
-              <a
-              id="show"
-                class="secondary-navtab-anchor show"
-                data-toggle="tab"
+            <li class="secondary-navtab nav-item" role="presentation">
+            <a class="secondary-navtab-anchor nav-link"
+            
                 href="Flights.html"
-                role="tab"
-                aria-controls="hotel"
-                aria-selected="false"
-                ><span
+            
+               id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><span
                   ><i class="fa fa-building-o" style="font-weight: 600"></i
                 ></span>
-                Hotel</a
+                Hotel</a> 
+                  </li>
+          </ul>
+ -->
+
+           <ul class="secondary-nav-tabs nav  " id="myTab" role="tablist">
+
+            <li class="secondary-navtab nav-item nav_hover" role="presentation">
+              <a 
+                class="secondary-navtab-anchor   active link_padding"
+                id="home-tab"
+                href="index.html"
+                data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true"
+                ><span
+                  ><i class="fas fa-plane" style="font-weight: 600"></i
+                ></span>
+                Flights</a
               >
             </li>
-            <li class="secondary-navtab">
+           <li class="secondary-navtab nav-item" role="presentation">
+            <a class="secondary-navtab-anchor "
+            
+                href="Flights.html"
+            
+               id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><span
+                  ><i class="fa fa-building-o" style="font-weight: 600"></i
+                ></span>
+                Hotel</a> 
+                  </li>
+
+            <li class="secondary-navtab nav-item" role="presentation">
               <a
                 class="secondary-navtab-anchor"
                 data-toggle="tab"
@@ -302,14 +326,338 @@
               >
             </li>
           </ul>
+          <div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"> 
+    <div class="container-radio " >
+          <div class="card">
+            <div
+              class="radio_content"
+            >
+              <div class="form-check form-check-inline  ">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="inlineRadioOptions"
+                  id="inlineRadio1"
+                  value="option1"
+                />
+                <label class="form-check-label" for="inlineRadio1"
+                  >One Way</label
+                >
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="inlineRadioOptions"
+                  id="inlineRadio2"
+                  value="option2"
+                />
+                <label class="form-check-label" for="inlineRadio2"
+                  >Round Trip</label
+                >
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="inlineRadioOptions"
+                  id="inlineRadio3"
+                  value="option3"
+                />
+                <label class="form-check-label" for="inlineRadio3"
+                  >MultiCity</label
+                >
+              </div>
+              <!-- <div class="radio">
+                <h3>Book Flight Tickets</h3>
+              </div> -->
+              
+            </div>
+          </div></div>
+         <div class="row align-items-center nav_tab_input">
+          <div class="col">
+            <div class="card">
+              <div class="card-body nav_tab_card">
+                <h6 class="card-title">From</h6>
+                <h3 class="card-text"><input class="input_type" type="text" name="" id="" placeholder="Bangalore"> </h3> 
+                <p  class="location"><span><i class="bi bi-geo-alt"></i></span></p>
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body nav_tab_card2">
+                <h6 class="card-title">To</h6>
+                <h3 class="card-text"><input class="input_type" type="text" name="" id="" placeholder="Chennai"> </h3> 
+                <p  class="location"><span><i class="bi bi-geo-alt"></i></span></p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card ">
+              <div class="card-body">
+                <div class="Flight--dropdown"><div class="dropdown">
+  <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+    <span><i class="bi bi-calendar-day"></i></span>Depart
+  </a>
+
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+   <p>12 May’22
+Thursday</p>
+    <li><a class="dropdown-item" href="#"></a></li>
+    <li><a class="dropdown-item" href="#"></a></li>
+    <li><a class="dropdown-item" href="#"></a></li>
+  </ul>
+</div> </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+<div class="Flight--dropdown"><div class="dropdown">
+  <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+    <span><i class="bi bi-calendar-day"></i></span>Return
+  </a>
+
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+   <p>12 May’22
+Thursday</p>
+    <li><a class="dropdown-item" href="#"></a></li>
+    <li><a class="dropdown-item" href="#"></a></li>
+    <li><a class="dropdown-item" href="#"></a></li>
+  </ul>
+</div> </div>              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body nav_tab_card3">
+                <div class="list--tooltip">
+<a class="btn " data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+    Travellers &class
+  </a>                
+<div class="collapse" id="collapseExample">
+  <div class="card card-body">
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+  <label class="form-check-label" for="flexRadioDefault1">
+    Economy
+  </label>  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+  <label class="form-check-label" for="flexRadioDefault1">
+    Premium 
+  </label>
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+  <label class="form-check-label" for="flexRadioDefault1">
+    Bussiness
+  </label>
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+  <label class="form-check-label" for="flexRadioDefault1">
+    First-class
+  </label>
+</div>
+  </div>
+</div>
+</div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <button class="btn btn-danger  "button-flight-2 type="button">
+              Search Flights
+            </button>
+          </div>
         </div>
+        <div class="row row-col">
+          <div class="col align-item-center">
+            <div class="d-none flex-row align-item-center">
+              <p class="card1"> <span><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></span> Fares from Kolkata</p>
+            
+            
+            <div class="tripcheckbox col card" style="margin: 10px;">
+               <label class="checkbox-custom checkbox-custom-sm">
+                  <input type="checkbox" name="tripTypeM" value="M"><i></i>
+                  <span>Direct Flights</span>
+               </label>
+               <label class="checkbox-custom checkbox-custom-sm">
+                  <input type="checkbox" id="nonStopF" name="nonStopF" value="1"><i></i>
+                  <span>Defence Fare</span>
+               </label>
+            </div>
+            <!-- <div>
+              <h6 class="color-animation anime "><span><i class="fa fa-exclamation-triangle" aria-hidden="true"></i></span> Covid-19 Updates</h6>
+            </div> -->
+            </div>
+          </div>
+
+        </div>
+
+
+
+        </div>
+  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+
+
+
+<div class="card">
+            <div
+              class="hotel-card">
+                <h3>Book Domestic & International Hotel</h3>
+              
+            </div>
+          </div>
+        
+
+        <!-- card -->
+        <div class="row align-items-center">
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <h6 class="card-title">Enter Your Destination or property</h6>
+                <h3 class="card-text input_type"><input type="text" placeholder="Bengaluru"> </h3>
+                <p  class="location"><span><i class="bi bi-geo-alt"></i></span></p>
+                
+              </div>
+            </div>
+          </div>
+          <!-- <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <h6 class="card-title">To</h6>
+                <h3 class="card-text">Chennai</h3>
+                <p class="fs-6 fw-lighter">[MAA] Chennai</p>
+              </div>
+            </div>
+          </div> -->
+          <div class="col">
+            <div class="card ">
+              <div class="card-body">
+                <div class="Flight--dropdown"><div class="dropdown">
+  <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+    <span><i class="bi bi-calendar-day"></i></span>Depart
+  </a>
+
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+   <p>12 May’22
+Thursday</p>
+    <li><a class="dropdown-item" href="#"></a></li>
+    <li><a class="dropdown-item" href="#"></a></li>
+    <li><a class="dropdown-item" href="#"></a></li>
+  </ul>
+</div> </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+<div class="Flight--dropdown"><div class="dropdown">
+  <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+    <span><i class="bi bi-calendar-day"></i></span>Return
+  </a>
+
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+   <p>12 May’22
+Thursday</p>
+    <li><a class="dropdown-item" href="#"></a></li>
+    <li><a class="dropdown-item" href="#"></a></li>
+    <li><a class="dropdown-item" href="#"></a></li>
+  </ul>
+</div> </div>              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <div class="list--tooltip">
+<a class="btn " data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+    Travellers &class
+  </a>                
+<div class="collapse" id="collapseExample">
+  <div class="card card-body">
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+  <label class="form-check-label" for="flexRadioDefault1">
+    Economy
+  </label>  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+  <label class="form-check-label" for="flexRadioDefault1">
+    Premium 
+  </label>
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+  <label class="form-check-label" for="flexRadioDefault1">
+    Bussiness
+  </label>
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+  <label class="form-check-label" for="flexRadioDefault1">
+    First-class
+  </label>
+</div>
+  </div>
+</div>
+</div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <button class="btn btn-danger button-flight-2 " type="button">
+              Search Flights
+            </button>
+          </div>
+        </div>
+        <div class="row row-col d-flex flex-row align-item-center justify-content-between">
+          <div class="col align-item-center">
+            <div class="d-none flex-row align-item-center">
+              <p class="card1"> <span><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></span> Fares from Kolkata</p>
+            
+            
+            <div class="tripcheckbox col card1" style="margin: 10px;">
+               <label class="checkbox-custom checkbox-custom-sm">
+                  <input type="checkbox" name="tripTypeM" value="M"><i></i>
+                  <span>Direct Flights</span>
+               </label>
+               <label class="checkbox-custom checkbox-custom-sm">
+                  <input type="checkbox" id="nonStopF" name="nonStopF" value="1"><i></i>
+                  <span>Defence Fare</span>
+               </label>
+            </div>
+            <!-- <div>
+              <h6 class="color-animation anime"><span><i class="fa fa-exclamation-triangle" aria-hidden="true"></i></span> Covid-19 Updates</h6>
+            </div> -->
+            </div>
+          </div>
+
+        </div>
+
+
+
+
+
+
+
+    </div>
+  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+</div>
+
+
+
+        </div>
+ 
+ 
+      </div>
 <div >
-        <div class="container-radio " >
+  <!-- Animation--> 
+<div class="anime">
+<h6 class="color-animation anime"><span><i class="fa fa-exclamation-triangle" aria-hidden="true"></i></span> Covid-19 Updates</h6>
+            </div>
+
+        <!-- <div class="container-radio " >
           <div class="card card1 show1 show1-show2 ">
             <div
               class="d-flex justify-content-start radio-color-secondary align-top "
             >
-              <div class="form-check form-check-inline radio ">
+              <div class="form-check form-check-inline radio-btn radio-btn-show ">
                 <input
                   class="form-check-input"
                   type="radio"
@@ -353,7 +701,7 @@
           </div>
         
 
-        <!-- card -->
+        <!-- card 
         <div class="row align-items-center card1 a1">
           <div class="col">
             <div class="card">
@@ -475,7 +823,7 @@ Thursday</p>
         </div>
         </div>
       </section>
-
+ -->
       <!-- ========== End Secondary navigation ========== -->
 
       <!-- ========== Start body ========== -->
@@ -816,7 +1164,7 @@ Thursday</p>
 </div>
 
 <!-- responsive slider 2 -->
-<div class="">
+<div class=" responsive_slider">
   
           <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
@@ -1098,6 +1446,9 @@ Download the AkbarTravels App & wherever you’re going, take us with you.      
 
 
       <!-- ========== End Section ========== -->
+
+
+<!-- checkend -->
     </main>
 
     <!-- Bootstrap Js -->

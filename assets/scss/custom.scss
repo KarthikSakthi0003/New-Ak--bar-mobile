@@ -9,7 +9,9 @@ $custom-colors: (
   "ak-primary": #22364c,
   "login-primary": #c52727,
 );
-
+.nav-link {
+  padding: -0.5rem 1rem !important;
+}
 //merge the maps
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
@@ -30,3 +32,4 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 //utilities
 @import "./utilities/button";
+@import "./utilities/navtabs";

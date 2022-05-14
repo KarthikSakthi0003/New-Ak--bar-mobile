@@ -162,7 +162,1192 @@
 
 
 
+<!-- mobile -->
+<div class="container">
+      <!-- Secondary Navigation
+         ============================================= -->
+      <ul class="nav nav-tabs border-bottom style-3 justify-content-center" id="myTab" role="tablist">
+         <!--  <li class="nav-item" style="background-color: #ffff;    border-radius: 9px;height:50px;width: 64px;margin-right: 13px;border: 1px solid rgba(255,255,255,.28);
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,.3);margin-bottom: 4px;" > 
+    <a class="nav-link active" id="flights-tab" data-toggle="tab" href="#flights" role="tab" aria-controls="flights" aria-selected="true" ><span><i class="fas fa-plane" style="font-weight: 600;"></i></span> Flights</a> </li> -->
+         <li class="nav-item " style="background-color: #ffff;    border-radius: 9px;height:50px;width: 64px;margin-right: 13px;border: 1px solid rgba(255,255,255,.28);
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,.3);margin-bottom: 4px;">
+            <a class="nav-link" id="flights-tab" data-toggle="tab" href="#flights" role="tab" aria-controls="flights" aria-selected="false"><span><i class="fas fa-plane" style="font-weight: 600;"></i></span> Flights</a>&gt;
+         </li>
+         <li class="nav-item " style="background-color: #ffff;    border-radius: 9px;height:50px;width: 64px;margin-right: 13px;border: 1px solid rgba(255,255,255,.28);
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,.3);margin-bottom: 4px;"> <a class="nav-link" id="hotels-tab" data-toggle="tab" href="#hotels" role="tab" aria-controls="hotels" aria-selected="false" style="margin-left: 0px;    font-size: 12px;"><span><i class="fas fa-bed" style="font-weight: 600;"></i></span> Hotels</a> </li>
+         <li class="nav-item" style="background-color: #ffff;    border-radius: 9px;height:50px; width: 64px;margin-right: 13px;border: 1px solid rgba(255,255,255,.28);
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,.3);margin-bottom: 4px;"> <a class="nav-link active" id="bus-tab" data-toggle="tab" href="#bus" role="tab" aria-controls="bus" aria-selected="true" style="margin-left: 6px;    font-size: 12px;"><span><i class="fas fa-bus" style="font-weight: 600;margin-right: -5px;"></i></span> Bus</a> </li>
+         <!--<li class="nav-item" style="background-color: #ffff;    border-radius: 9px;height:50px; width: 64px;margin-right: 13px;border: 1px solid rgba(255,255,255,.28);-->
+         <!--box-shadow: 0 3px 5px 0 rgba(0,0,0,.3);margin-bottom: 4px;" > <a  id="insurance-tab" data-toggle="tab" href="#insurance" role="tab" aria-controls="insurance" aria-selected="false" style="margin-left: 6px; font-size: 12px;"><span><i class="fas fa-medkit" style="font-weight: 600;margin-right: 30px;margin-left:18px;margin-top: 10px;"> </i></span><span>Insurance</span></a></li>-->
+         <!--   <li class="nav-item" style="background-color: #ffff;    border-radius: 9px;height:50px;width: 64px;margin-right: 13px;" > <a class="nav-link" id="trains-tab" style="margin-left: -6px;    font-size: 12px;" data-toggle="tab" href="#trains" role="tab" aria-controls="trains" aria-selected="false"><span><i class="fas fa-train" style="font-weight: 600;margin-right: -13px;"></i></span> Holiday</a> </li>
+         <li class="nav-item" style="background-color: #ffff;    border-radius: 9px;height:50px;width: 64px;margin-right: 13px;" > <a class="nav-link" id="Activities-tab" style="margin-left: -11px;    font-size: 12px;" data-toggle="tab" href="#Activities" role="tab" aria-controls="car" aria-selected="false"><span><i class="fas fa-car" style="font-weight: 600; margin-right: -17px;"></i></span> Activities</a> </li> -->
+      </ul>
+      <div class="tab-content pt-4 pb-2" id="myTabContent" style="background-color: #ffff;border-radius: 9px;height: auto;margin-top: -20px;">
+         <!-- Search Flight -->
+         <div class="tab-pane fade" id="flights" role="tabpanel" aria-labelledby="flights-tab">
+            <form id="O-R-Trip" autocomplete="off" class="" action="https://etripoo.com/flights/results" method="post">
+               <input type="hidden" name="tripType" value="S" id="tripTypeVal">
+                              <div class="container">
+               <div class="row">
+                  <div class="col-12">
+                     <div class="row no-gutters search-input-2">
+                        <div class="col-lg-2 bor">
+                           <!-- <input type="text" class="form-control" id="flightFrom" required placeholder="From"> -->
+                           <input type="text" value="" name="fromCity" id="fromCity" class="form-control text-truncate matchfrom ui-autocomplete-input" placeholder="Origin" autocomplete="off" onclick="this.select();" required="" style="height: 85px;border:1px solid;">
+                           <span class="icon-inside"><i class="fas fa-map-marker-alt"></i></span>
+                        </div>
+                        <!--   <div style="position: relative;">
+                           <div class="swap-img">
+                              <i class="mdi mdi-swap-horizontal"></i>
+                           </div>
+                        </div> -->
+                        <div class="col-lg-2 bor">
+                           <!-- <input type="text" class="form-control" id="flightTo" required placeholder="To"> -->
+                           <input type="text" value="" name="toCity" id="toCity" class="form-control pl-4 text-truncate matchto ui-autocomplete-input" placeholder="Destination" autocomplete="off" onclick="this.select();" required="" style="height: 85px;border:1px solid;border-left:0px solid">
+                           <span class="icon-inside"><i class="fas fa-map-marker-alt"></i></span>
+                        </div>
+                        <input hidden="" id="field12">
+                        <div class="col-lg-2 bor">
+                           <!-- <input id="flightDepart" type="text" class="form-control" required placeholder="Depart Date"> -->
+                           <input type="text" name="departDate" class="form-control hasDatepicker" id="dpcalf" placeholder="Departure Date" style="height: 85px;border:1px solid;border-left:0px solid">
+                           <!-- <input name="departDate" type="text" value="" class="form-control calendar readonly" placeholder="Departure Date" id="dpf1" autocomplete="off" onclick="this.select();" style="height: 85px;"> -->
+                           <span class="icon-inside"><i class="far fa-calendar-alt"></i></span>
+                        </div>
+                        <div class="col-lg-2 bor">
+                           <!-- <input id="flightReturn" type="text" class="form-control" required placeholder="Return Date"> -->
+                           <input type="text" name="returnDate" class="form-control hasDatepicker" id="dpcalfr" placeholder="Return Date" style="height: 85px;border:1px solid;border-left:0px solid">
+                           <!--  <input name="returnDate" type="text" value="" class="form-control calendar" placeholder="Return Date" id="dpf2" autocomplete="off" onclick="this.select();"  style="height: 85px;"> -->
+                           <span class="icon-inside"><i class="far fa-calendar-alt" style="height: 85px;"></i></span>
+                        </div>
+                        <div class="col-sm-2 pax_drop flight" style="border:0px solid;border-left:0px solid">
+                           <div class="input-group">
 
+                              <span class="form-control c-round c-theme travellers-input text-truncate" id="travellers-flight" style="height: 85px;border:1px solid;border-left:0px solid">
+                                 <label class="input-group-addon travellers-icon"><i class="mdi mdi-account"></i></label>
+                                 <!-- <span class="adultsF">1</span> adult,
+                                 <span class="childsF">0</span> child,
+                                 <span class="infantsF">0</span> infant, -->
+                                 <span class="travellerF">Travellers &amp; Class</span> <br>
+                                 <span class="travellerF">1</span> Traveller,
+                                 <span class="cabinClassF">Any</span>
+                              </span>
+                           </div>
+                           <div class="travellers-input-popup" id="flights-travellers" style="display: none;">
+                              <div class="row">
+                                 <div class="col-md-12">
+                                    <i class="mdi mdi-close-circle fa fa-times" aria-hidden="true"></i>
+                                 </div>
+                             </div>
+
+                              <div class="cabin-options">
+                                 <div class="custom-control custom-radio">
+                                    <input id="flightClassAny" name="cabinClass" class="flight-class custom-control-input" value="1" checked="" required="" type="radio" style="height: 85px;">
+                                    <label class="custom-control-label" for="flightClassAny">Any</label>
+                                 </div>
+                                 <div class="custom-control custom-radio">
+                                    <input id="flightClassEconomic" name="cabinClass" class="flight-class custom-control-input" value="2" checked="" required="" type="radio">
+                                    <label class="custom-control-label" for="flightClassEconomic">Economic</label>
+                                 </div>
+                                 <div class="custom-control custom-radio">
+                                    <input id="flightClassPremiumEconomic" name="cabinClass" class="flight-class custom-control-input" value="1" required="" type="radio">
+                                    <label class="custom-control-label" for="flightClassPremiumEconomic">Premium Economy</label>
+                                 </div>
+                                 <div class="custom-control custom-radio">
+                                    <input id="flightClassBusiness" name="cabinClass" class="flight-class custom-control-input" value="3" required="" type="radio">
+                                    <label class="custom-control-label" for="flightClassBusiness">Business</label>
+                                 </div>
+                                 <div class="custom-control custom-radio">
+                                    <input id="flightClassPremiumBusiness" name="cabinClass" class="flight-class custom-control-input" value="4" required="" type="radio">
+                                    <label class="custom-control-label" for="flightClassPremiumBusiness">Premium Business</label>
+                                 </div>
+                                 <div class="custom-control custom-radio">
+                                    <input id="flightClassFirstClass" name="cabinClass" class="flight-class custom-control-input" value="5" required="" type="radio">
+                                    <label class="custom-control-label" for="flightClassFirstClass">First Class</label>
+                                 </div>
+                              </div>
+                              <hr>
+                              <div class="trip-options d-flex justify-content-between">
+                                 <div class="numstepper small-btns">
+                                    <p>Adults</p>
+                                    <button type="button" class="quantity-btn quantity-left-minus btn-number adt" data-type="minus" data-field="adults">
+                                    </button>
+                                    <input type="text" name="adults" class="quantity-input input-number" value="1" min="1" max="9" data-field="adults" readonly="">
+                                    <button type="button" class="quantity-btn quantity-right-plus btn-number adt" data-type="plus" data-field="adults">
+                                    </button>
+                                 </div>
+                                 <div class="numstepper small-btns">
+                                    <p>Children</p>
+                                    <button type="button" class="quantity-btn quantity-left-minus btn-number chd" data-type="minus" data-field="childs">
+                                    </button>
+                                    <input type="text" name="childs" class="quantity-input input-number" value="0" min="0" max="8" data-field="childs" readonly="">
+                                    <button type="button" class="quantity-btn quantity-right-plus btn-number chd" data-type="plus" data-field="childs">
+                                    </button>
+                                 </div>
+                                 <div class="numstepper small-btns">
+                                    <p>Infants</p>
+                                    <button type="button" class="quantity-btn quantity-left-minus btn-number inf" data-type="minus" data-field="infants">
+                                    </button>
+                                    <input type="text" name="infants" class="quantity-input input-number" value="0" min="0" max="4" data-field="infants" readonly="">
+                                    <button type="button" class="quantity-btn quantity-right-plus btn-number inf" data-type="plus" data-field="infants">
+                                    </button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-2 " style="border:1px solid;border-left:0px solid">
+                           <button style="margin-top: 22px;" class="btn btn-primary btn-block" type="submit">Search</button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               </div>
+            </form>
+            <form id="M-Trip" method="POST" action="https://etripoo.com//flights/multi_results" style="display:none;">
+               <input type="hidden" name="tripType" value="M">
+               <div class="clone-section">
+                  <div class="row no-gutters first-item matchparent">
+                     <div class="col-12">
+                        <div class="row no-gutters search-input-2">
+                           <div class="col-lg-2 form-group">
+                              <input id="fromCity1" type="text" name="fromCity[]" class="form-control fromCity ui-autocomplete-input" placeholder="Origin" autocomplete="off" onclick="this.select();" required="" style="border: 1px solid #000;border-left:0px solid">
+                              <span class="icon-inside"><i class="fas fa-map-marker-alt"></i></span> 
+                           </div>
+                           <div class="col-lg-2 form-group">
+                              <input id="toCity1" type="text" name="toCity[]" class="form-control toCity ui-autocomplete-input" placeholder="Destination" autocomplete="off" onclick="this.select();" required="" style="border: 1px solid #000;border-left:0px solid">
+                              <span class="icon-inside"><i class="fas fa-map-marker-alt"></i></span> 
+                           </div>
+                           <div class="col-lg-2 form-group">
+                              <input id="dp11" name="departDate[]" type="text" value="" class="form-control calendar readonly" placeholder="Departure Date" autocomplete="off" onclick="this.select();" readonly="" style="border: 1px solid #000;border-left:0px solid">
+                              <span class="icon-inside" for="dp1"><i class="far fa-calendar-alt"></i></span> 
+                           </div>
+
+                           <div class="col-sm-2 col-12 pax_drop pax_dropM flight mobile-hide">
+                              <div class="input-group">
+                                 <!--<div class="input-group-addon travellers-icon"><i class="mdi mdi-account"></i></div>-->
+                                 <span class="form-control c-round c-theme travellers-input text-truncate" id="travellers-flight" style="border: 1px solid #000;">
+                                    <span class="travellerF">1</span> Traveller,
+                                    <span class="cabinClassF">Any</span>
+                                 </span>
+                              </div>
+                              <div class="travellers-input-popup" id="flights-travellers" style="display: none;">
+                                 <i class="mdi mdi-close-circle fa fa-times"></i>
+                                 <div class="cabin-options">
+                                    <label class="radio-custom checkbox-custom-sm">
+                                    <input type="radio" name="cabinClass" value="1" checked=""><i></i>
+                                    <span>Any</span>
+                                    </label>
+                                     <label class="radio-custom checkbox-custom-sm">
+                                       <input type="radio" name="cabinClass" value="2"><i></i>
+                                       <span>Economy</span>
+                                    </label>
+                                    <label class="radio-custom checkbox-custom-sm">
+                                       <input type="radio" name="cabinClass" value="3"><i></i>
+                                       <span>Premium Economy</span>
+                                    </label>
+                                    <label class="radio-custom checkbox-custom-sm">
+                                       <input type="radio" name="cabinClass" value="4"><i></i>
+                                       <span>Business</span>
+                                    </label>
+                                    <label class="radio-custom checkbox-custom-sm">
+                                       <input type="radio" name="cabinClass" value="5"><i></i>
+                                       <span>PremiumBusiness</span>
+                                    </label>
+                                    <label class="radio-custom checkbox-custom-sm">
+                                       <input type="radio" name="cabinClass" value="6"><i></i>
+                                       <span>First</span>
+                                    </label>
+                                 </div>
+                                 <hr>
+                                 <div class="trip-options d-flex justify-content-between">
+                                    <div class="numstepper small-btns">
+                                       <p>Adults</p>
+                                       <button type="button" class="quantity-btn quantity-left-minus btn-number adt" data-type="minus" data-field="adults">
+                                       </button>
+                                       <input type="text" name="adults" class="quantity-input input-number" value="1" min="1" max="9" data-field="adults" readonly="">
+                                       <button type="button" class="quantity-btn quantity-right-plus btn-number adt" data-type="plus" data-field="adults">
+                                       </button>
+                                    </div>
+                                    <div class="numstepper small-btns">
+                                       <p>Children</p>
+                                       <button type="button" class="quantity-btn quantity-left-minus btn-number chd" data-type="minus" data-field="childs">
+                                       </button>
+                                       <input type="text" name="childs" class="quantity-input input-number" value="0" min="0" max="8" data-field="childs" readonly="">
+                                       <button type="button" class="quantity-btn quantity-right-plus btn-number chd" data-type="plus" data-field="childs">
+                                       </button>
+                                    </div>
+                                    <div class="numstepper small-btns">
+                                       <p>Infants</p>
+                                       <button type="button" class="quantity-btn quantity-left-minus btn-number inf" data-type="minus" data-field="infants">
+                                       </button>
+                                       <input type="text" name="infants" class="quantity-input input-number" value="0" min="0" max="4" data-field="infants" readonly="">
+                                       <button type="button" class="quantity-btn quantity-right-plus btn-number inf" data-type="plus" data-field="infants">
+                                       </button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-2 form-group">
+                              <button class="btn btn-primary btn-block" type="submit" style="margin-top: 2px;border-left:0px solid;border:1px solid">Search</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="clone-item">
+                     <div class="row matchparent" style="margin-left:2px">
+                        <div class="col-12">
+                           <div class="row no-gutters search-input-2">
+                              <div class="col-lg-2 form-group">
+                                 <input id="fromCity2" type="text" name="fromCity[]" class="form-control fromCity ui-autocomplete-input" placeholder="Origin" autocomplete="off" onclick="this.select();" required="" style="border: 1px solid #000;">
+                                 <span class="icon-inside"><i class="fas fa-map-marker-alt"></i></span> 
+                              </div>
+                              <div class="col-lg-2 form-group">
+                                 <input id="toCity2" type="text" name="toCity[]" class="form-control toCity ui-autocomplete-input" placeholder="Destination" autocomplete="off" onclick="this.select();" required="" style="border: 1px solid #000;border-left:0px solid">
+                                 <span class="icon-inside"><i class="fas fa-map-marker-alt"></i></span> 
+                              </div>
+                              <div class="col-lg-2 form-group">
+                                 <input id="dp12" name="departDate[]" type="text" value="" class="form-control readonly calendar" placeholder="Departure Date" autocomplete="off" onclick="this.select();" readonly="" style="border: 1px solid #000;border-left:0px solid">
+                                 <span class="icon-inside"><i class="far fa-calendar-alt"></i></span> 
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="clonediv-m"></div>
+                  <div class="row form-group2 no-padding MaddRemove">
+                     <div class="col-sm-2 col-5">
+                        <div class="numstepper small-btns multi-count-btn" style="margin-left:30px">
+                           <label class="clearfix" style="width: 100%">Add / Remove</label>
+                           <button type="button" class="quantity-btn quantity-left-minus btn-number-multicity" data-type="minus" data-field="multicity-field" style="border: 1px solid;">
+                           </button>
+                           <input type="text" name="multicity-field" class="quantity-input input-number-multicity" value="1" min="1" max="4" data-field="multicity-field" disabled="" style="border: 1px solid;">
+                           <button type="button" class="quantity-btn quantity-right-plus btn-number-multicity" data-type="plus" data-field="multicity-field" style="border: 1px solid;border-left:0px solid">
+                           </button>
+                        </div>
+                     </div>
+                     <div class="col-sm-2 col-12 text-right Msearch mobile-show" id="multi-responsiveSearch"></div>
+                  </div>
+               </div>
+            </form>
+            <div class="tripcheckbox" style="margin: 10px;">
+               <label class="checkbox-custom checkbox-custom-sm">
+                  <input type="checkbox" name="tripTypeM" value="M"><i></i>
+                  <span>Add multicity routes</span>
+               </label>
+               <label class="checkbox-custom checkbox-custom-sm">
+                  <input type="checkbox" id="nonStopF" name="nonStopF" value="1"><i></i>
+                  <span>Non-stop flights</span>
+               </label>
+            </div>
+                         <!--<div style="display: flex;">-->
+            <!--    <span class="popupCloseButton" style="margin: 9px;color: red;text-decoration: underline;">clear all</span>-->
+            <!--</div>-->
+         </div>
+
+         <!-- Search Hotels -->
+         <div class="tab-pane fade" id="hotels" role="tabpanel" aria-labelledby="hotels-tab">
+            <form id="bookingHotels" autocomplete="off" action="https://etripoo.com/hotels/results" method="post">
+               <div class="row no-gutters search-input-2">
+                  <div class="col-lg-3 form-group">
+                     <input type="text" name="cityName" class="form-control autocity ui-autocomplete-input" id="destination2" placeholder="Enter a City or Airport" autocomplete="off" onclick="this.select();" pop-type="hotels-tab" required="" style="height: 85px;border:1px solid;">
+                     <input type="hidden" name="cityid" class="cityid" id="hotelcityid">
+                     <span class="icon-inside"><i class="fas fa-map-marker-alt"></i></span>
+                  </div>
+                  <div class="col-lg form-group">
+                     <input name="checkIn" type="text" value="" class="form-control calendar autodate " placeholder="Check-in" id="dph12" autocomplete="off" onclick="this.select();" required="" style="height: 85px;border:1px solid;border-left:0px solid">
+                     <span class="icon-inside"><i class="far fa-calendar-alt"></i></span>
+                  </div>
+                  <div class="col-lg form-group">
+                     <input name="checkOut" type="text" value="" class="form-control calendar " placeholder="Check-out" id="dph13" autocomplete="off" onclick="this.select();" required="" style="height: 85px;border:1px solid;border-left:0px solid">
+                     <span class="icon-inside"><i class="far fa-calendar-alt"></i></span>
+                  </div>
+
+                  <div class="col-sm-3 pax_drop">
+                     <div class="input-group">
+                        <!-- <label class="input-group-addon travellers-icon"><i class="mdi mdi-account"></i></label> -->
+                        <span class="form-control c-round c-theme travellers-input text-truncate" id="travellers-hotel" style="height: 85px;border:1px solid;border-left:0px solid">
+                           <span class="travellers-input">Rooms &amp; Guests</span><br>
+                           <span class="adultsF travellers-input">1</span> adult,
+                           <span class="childsF travellers-input">0</span> child,
+                           <span class="room_countF travellers-input">1</span> Room
+                        </span>
+                     </div>
+                     <div class="travellers-input-popup" id="travellers-hotel-popup" style="display: none;">
+                        <i class="mdi mdi-close-circle fa fa-times"></i>
+                        <div class="trip-options">
+                           <p>Rooms</p>
+                           <div class="numstepper small-btns">
+                              <button type="button" class="quantity-btn quantity-left-minus btn-number-rooms" data-type="minus" data-field="room_count"></button>
+                              <input type="text" name="room_count" class="quantity-input input-number multi" value="1" min="1" max="4" readonly="">
+                              <button type="button" class="quantity-btn quantity-right-plus btn-number-rooms" data-type="plus" data-field="room_count"></button>
+                           </div>
+                           <div class="clone-room">
+                              <p class="rooms">Room - <span>1</span></p>
+                              <div class="numstepper small-btns">
+                                 <p>Adults</p>
+                                 <button type="button" class="quantity-btn quantity-left-minus btn-number-arr" data-type="minus" data-field="adults">
+                                 </button>
+                                 <input type="text" name="adults[]" class="quantity-input input-number adults" value="1" min="1" max="3" readonly="">
+                                 <button type="button" class="quantity-btn quantity-right-plus btn-number-arr" data-type="plus" data-field="adults">
+                                 </button>
+                              </div>
+                              <div class="clone-item roomage">
+                                 <input type="hidden" class="roomsno" value="1">
+                                 <p style="display: none;">Child Age - <span>1</span></p>
+                                 <div class="numstepper small-btns">
+                                    <p>Children</p>
+                                    <button type="button" class="quantity-btn quantity-left-minus btn-number-multi roomAge" data-type="minus" data-field="childs">
+                                    </button>
+                                    <input type="text" name="childs[]" class="quantity-input input-number multi childs" value="0" min="0" max="3" readonly="">
+                                    <button type="button" class="quantity-btn quantity-right-plus btn-number-multi roomAge" data-type="plus" data-field="childs">
+                                    </button>
+                                 </div>
+                              </div>
+                              <div class="clonediv"></div>
+                           </div>
+                           <div class="clonediv-room"></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-2 form-group">
+                     <button class="btn btn-primary btn-block" type="submit" style="margin-top: 22px;border-left:0px solid;border:1px solid">Search</button>
+                  </div>
+               </div>
+            </form>
+            <div class="tripcheckbox" style="margin: 10px;">
+               <label></label>
+               <label></label>
+            </div>
+         </div>
+         <!-- Search Bus -->
+         <div class="tab-pane fade active show" id="bus" role="tabpanel" aria-labelledby="bus-tab">
+            <form id="bookingBus" autocomplete="off" action="https://etripoo.com/bus/results" method="post">
+               <!-- <form id="bookingBus" action="bus_result.php" method="post"> -->
+               <div class="row no-gutters search-input-2">
+                  <div class="col-lg form-group">
+                     <!-- <input type="text" class="form-control" id="busFrom" required placeholder="From" style="height: 85px;font-weight: 600;font-size: 26px;"> -->
+                     <input type="text" name="Origin" class="form-control ui-autocomplete-input" id="Origin" required="" placeholder="From" style="height: 85px;font-weight: 600;font-size: 26px;border:1px solid;" autocomplete="off">
+                     <span class="icon-inside"><i class="fas fa-map-marker-alt"></i></span>
+                  </div>
+                  <div class="col-lg form-group">
+                     <!-- <input type="text" class="form-control" id="busTo" required placeholder="To" style="height: 85px;font-weight: 600;font-size: 26px;"> -->
+                     <input type="text" class="form-control ui-autocomplete-input" name="Destination" id="Destination" required="" placeholder="To" style="height: 85px;font-weight: 600;font-size: 26px;border-left:0px solid;border:1px solid;" autocomplete="off">
+                     <span class="icon-inside"><i class="fas fa-map-marker-alt"></i></span>
+                  </div>
+                  <div class="col-lg form-group">
+                     <!-- <input id="busDepart" type="text" class="form-control" required placeholder="Depart Date" style="height: 85px;font-weight: 600;font-size: 26px;"> -->
+                     <input id="dpb21" name="departDate" type="text" class="form-control calendar autodate" required="" placeholder="Depart Date" style="border-left:0px solid;height: 85px;font-weight: 600;font-size: 26px;border:1px solid;">
+
+                     <span class="icon-inside"><i class="far fa-calendar-alt"></i></span>
+                  </div>
+                  <!-- <div class="col-lg travellers-class form-group">
+                     <input type="text" id="busTravellersClass"  class="travellers-class-input form-control" name="bus-travellers-class" placeholder="Seats" required onkeypress="return false;" style="height: 85px;font-weight: 600;font-size: 26px;border-right: 1px #ffffff;">
+                     <span class="icon-inside"><i class="fas fa-caret-down"></i></span>
+                     <div class="travellers-dropdown" >
+                        <div class="row align-items-center mb-3">
+                           <div class="col-sm-7">
+                              <p class="mb-sm-0">Seats</p>
+                           </div>
+                           <div class="col-sm-5">
+                              <div class="qty input-group">
+                                 <div class="input-group-prepend">
+                                    <button type="button" class="btn bg-light-4" data-value="decrease" data-target="#adult-travellers" data-toggle="spinner">-</button>
+                                 </div>
+                                 <input type="text" data-ride="spinner" id="adult-travellers" class="qty-spinner form-control" value="1" readonly>
+                                 <div class="input-group-append">
+                                    <button type="button" class="btn bg-light-4" data-value="increase" data-target="#adult-travellers" data-toggle="spinner">+</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>o
+                        <button class="btn btn-primary btn-block submit-done" type="button">Done</button>
+                     </div>
+                  </div> -->
+                  <div class="col-lg-2 form-group" style="border:1px solid;border-left:0px solid">
+                     <button class="btn btn-primary btn-block" type="submit" style="margin-top: 22px;">Search</button>
+                  </div>
+               </div>
+               <div style="margin: 10px;">
+                  <label>
+                  </label>
+                  <label>
+                  </label>
+               </div>
+            </form>
+         </div>
+         <!-- Search Insurance -->
+         <div class="tab-pane fade" id="insurance" role="tabpanel" aria-labelledby="insurance-tab" style="margin-left: 23px;margin-right: 20px">
+            <h5 class="text-4 mb-3">Book Insurance Here</h5>
+            <form id="Insurance" method="post" action="https://etripoo.com/insurance/results">
+               <div class="mb-3 col-md-4" style="margin-left:-15px">
+                  <input type="hidden" name="callBackId" value="aW5zdXJhbmNldGJv">
+                  <!-- <label>Destination</label> -->
+                  <select class="custom-select" id="pickuptype" name="pickuptype" required="">
+                     <option value="4">Domestic</option>
+                     <option value="1">US/Canada</option>
+                     <option value="2">Non US</option>
+                  </select>
+               </div>
+               <div class="form-row">
+                  <div class="col-md-12 col-lg form-group">
+                     <!-- <label>Depart</label> -->
+                     <input id="dpi1" name="pickupdate" type="text" class="form-control calendar autodate readonly" required="" placeholder="Pick-up date">
+                     <span class="icon-inside"><i class="far fa-calendar-alt"></i></span>
+                     <!--  <input id="dpi1" type="text" class="form-control" required placeholder="Pick-up date" style="height: 85px;">
+                     <span class="icon-inside"><i class="far fa-calendar-alt"></i></span> -->
+                  </div>
+                  <div class="col-md-12 col-lg form-group">
+                     <!-- <label>Return</label> -->
+                     <input id="dpi2" name="pickrtdate" type="text" class="form-control calendar readonly" required="" placeholder="Pick-up date">
+                     <span class="icon-inside"><i class="far fa-calendar-alt"></i></span>
+                  </div>
+                  <div class="col-md-12 col-lg form-group">
+                     <!-- <label id="lbl_pickuptime">Duration</label> -->
+                     <input name="duration" type="text" class="form-control rounded-right-0" required="" placeholder="Days">
+                  </div>
+               </div>
+               <div class="form-row">
+                  <div class="col-md-12 col-lg form-group" style="margin-left:0px;border-right: 1px #ffffff;border: 0px solid #d5d3d3;">
+                     <!-- <label>No. of Pax</label> -->
+                     <div class="col-sm-4 pax_drop">
+                        <div class="input-group" style="margin-left:-16px;">
+                           <span class="form-control c-round c-theme travellers-input text-truncate" id="travellers-hotel">
+                              <span class="adultsF travellers-input"></span> No. of Pax
+                              <span class="childsF travellers-input">0</span>
+                              <span class="room_countF travellers-input"></span>
+                           </span>
+                        </div>
+                        <div class="travellers-input-popup" id="travellers-hotel-popup" style="display: none;">
+                           <div class="trip-options">
+                              <div class="clone-room">
+                                 <div class="clone-item roomage">
+                                    <input type="hidden" class="roomsno" value="1">
+                                    <p style="display: none;">Pax Age - <span>1</span></p>
+                                    <div class="numstepper small-btns">
+                                       <p>No. of Pax</p>
+                                       <button type="button" class="quantity-btn quantity-left-minus btn-number-multi roomAge" data-type="minus" data-field="childs">
+                                       </button>
+                                       <input type="text" name="childs[]" class="quantity-input input-number multi childs" value="0" min="0" max="6" required="" readonly="">
+                                       <button type="button" class="quantity-btn quantity-right-plus btn-number-multi roomAge" data-type="plus" data-field="childs">
+                                       </button>
+                                    </div>
+                                 </div>
+                                 <div class="clonediv"></div>
+                              </div>
+                              <div class="clonediv-room"></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="form-row">
+                  <div class="col-lg-2 form-group" style="padding-left: 2px">
+                     <button class="btn btn-primary btn-block" type="submit">Search</button>
+                  </div>
+               </div>
+            </form>
+         </div>
+         <!-- Search Train -->
+         <div class="tab-pane fade" id="trains" role="tabpanel" aria-labelledby="trains-tab">
+            <form id="bookingTrain" method="post">
+               <div class="row no-gutters search-input-2">
+                  <!-- <div class="col-lg form-group">
+                     <input type="text" class="form-control" id="trainFrom" required placeholder="From">
+                     <span class="icon-inside"><i class="fas fa-map-marker-alt"></i></span> 
+                  </div>
+                  <div class="col-lg form-group">
+                     <input type="text" class="form-control" id="trainTo" required placeholder="To">
+                     <span class="icon-inside"><i class="fas fa-map-marker-alt"></i></span> 
+                  </div>
+                  <div class="col-lg form-group">
+                     <input id="trainDepart" type="text" class="form-control" required placeholder="Depart Date">
+                     <span class="icon-inside"><i class="far fa-calendar-alt"></i></span> 
+                  </div>
+                  <div class="col-lg travellers-class form-group">
+                     <input type="text" id="trainTravellersClass"  class="travellers-class-input form-control" name="train-travellers-class" placeholder="Travellers, Class" required onkeypress="return false;">
+                     <span class="icon-inside"><i class="fas fa-caret-down"></i></span>
+                     <div class="travellers-dropdown">
+                        <div class="row align-items-center">
+                           <div class="col-sm-7">
+                              <p class="mb-sm-0">Adults <small class="text-muted">(12+ yrs)</small></p>
+                           </div>
+                           <div class="col-sm-5">
+                              <div class="qty input-group">
+                                 <div class="input-group-prepend">
+                                    <button type="button" class="btn bg-light-4" data-value="decrease" data-target="#trainAdult-travellers" data-toggle="spinner">-</button>
+                                 </div>
+                                 <input type="text" data-ride="spinner" id="trainAdult-travellers" class="qty-spinner form-control" value="1" readonly>
+                                 <div class="input-group-append">
+                                    <button type="button" class="btn bg-light-4" data-value="increase" data-target="#trainAdult-travellers" data-toggle="spinner">+</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <hr class="my-2">
+                        <div class="row align-items-center">
+                           <div class="col-sm-7">
+                              <p class="mb-sm-0">Children <small class="text-muted">(2-12 yrs)</small></p>
+                           </div>
+                           <div class="col-sm-5">
+                              <div class="qty input-group">
+                                 <div class="input-group-prepend">
+                                    <button type="button" class="btn bg-light-4" data-value="decrease" data-target="#trainChildren-travellers" data-toggle="spinner">-</button>
+                                 </div>
+                                 <input type="text" data-ride="spinner" id="trainChildren-travellers" class="qty-spinner form-control" value="0" readonly>
+                                 <div class="input-group-append">
+                                    <button type="button" class="btn bg-light-4" data-value="increase" data-target="#trainChildren-travellers" data-toggle="spinner">+</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <hr class="my-2">
+                        <div class="row align-items-center">
+                           <div class="col-sm-7">
+                              <p class="mb-sm-0">Infants <small class="text-muted">(Below 2 yrs)</small></p>
+                           </div>
+                           <div class="col-sm-5">
+                              <div class="qty input-group">
+                                 <div class="input-group-prepend">
+                                    <button type="button" class="btn bg-light-4" data-value="decrease" data-target="#trainInfants-travellers" data-toggle="spinner">-</button>
+                                 </div>
+                                 <input type="text" data-ride="spinner" id="trainInfants-travellers" class="qty-spinner form-control" value="0" readonly>
+                                 <div class="input-group-append">
+                                    <button type="button" class="btn bg-light-4" data-value="increase" data-target="#trainInfants-travellers" data-toggle="spinner">+</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="form-group mt-3">
+                           <select id="train-class" name="train-class" class="custom-select">
+                              <option value="0">All Class</option>
+                              <option value="1">First Class</option>
+                              <option value="2">Second Class</option>
+                              <option value="3">First Class Sleeper (SL)</option>
+                              <option value="4">Second Class Sleeper (SL)</option>
+                              <option value="5">Business</option>
+                           </select>
+                        </div>
+                        <button class="btn btn-primary btn-block submit-done" type="button">Done</button>
+                     </div>
+                  </div> -->
+                  <div class="col-md form-group">
+                     <input type="text" class="form-control" id="trainFrom" required="" placeholder="Where you want to go?" style="height: 85px;border-right: 1px #ffffff;">
+                     <span class="icon-inside"><i class="fas fa-map-marker-alt"></i></span>
+                  </div>
+                  <div class="col-lg-2 form-group">
+                     <button class="btn btn-primary btn-block" type="submit" style="margin-top: 22px;">Search</button>
+                  </div>
+               </div>
+            </form>
+         </div>
+         <!-- Search Car -->
+         <div class="tab-pane fade" id="Activities" role="tabpanel" aria-labelledby="Activities-tab">
+            <form id="bookingCars" method="post">
+               <div class="row no-gutters search-input-2">
+                  <div class="col-md form-group">
+                     <input type="text" class="form-control" id="carsCity" required="" placeholder="Search for a City or experirnce" style="height: 85px;border-right: 1px #ffffff;">
+                     <span class="icon-inside"><i class="fas fa-map-marker-alt"></i></span>
+                  </div>
+                  <div class="col-lg-2 form-group">
+                     <button class="btn btn-primary btn-block" type="submit" style="margin-top: 22px;">Search</button>
+                  </div>
+               </div>
+            </form>
+         </div>
+      </div>
+   </div>
+
+
+<!-- indextab -->
+         <ul class=" secondary-nav-tabs">
+            <li class="secondary-navtab">
+              <a id="clicker"
+                class="secondary-navtab-anchor"
+                href="index.html"
+                role="tab"
+                aria-controls="flights"
+                aria-selected="false"
+                ><span
+                  ><i class="fas fa-plane" style="font-weight: 600"></i
+                ></span>
+                Flights</a
+              >
+            </li>
+            <li class="secondary-navtab">
+              <a
+              id="show"
+                class="secondary-navtab-anchor show"
+                data-toggle="tab"
+                href="Flights.html"
+                role="tab"
+                aria-controls="hotel"
+                aria-selected="false"
+                ><span
+                  ><i class="fa fa-building-o" style="font-weight: 600"></i
+                ></span>
+                Hotel</a
+              >
+            </li>
+            <li class="secondary-navtab">
+              <a
+                class="secondary-navtab-anchor"
+                data-toggle="tab"
+                href="https://www.akbartravels.com/visa"
+                target="_blank"
+                role="tab"
+                aria-controls="flights"
+                aria-selected="false"
+                ><span
+                  ><i
+                    class="fa fa-cc-visa"
+                    aria-hidden="true"
+                    style="font-weight: 600"
+                  ></i
+                ></span>
+                Visa</a
+              >
+            </li>
+
+            <li class="secondary-navtab">
+              <a
+                class="secondary-navtab-anchor"
+                data-toggle="tab"
+                href="#holiday"
+                role="tab"
+                aria-controls="holiday"
+                aria-selected="false"
+                ><span
+                  ><i class="fa fa-suitcase" style="font-weight: 600"></i
+                ></span>
+                Holiday</a
+              >
+            </li>
+            <li class="secondary-navtab">
+              <a
+                class="secondary-navtab-anchor"
+                data-toggle="tab"
+                href="https://www.akbartravels.com/bus-ticket-booking"
+                target="_blank"
+                role="tab"
+                aria-controls="flights"
+                aria-selected="false"
+                ><span><i class="fa fa-bus" style="font-weight: 600"></i></span>
+                Bus</a
+              >
+            </li>
+            <li class="secondary-navtab">
+              <a 
+                class="secondary-navtab-anchor"
+                data-toggle="tab"
+                href="#flights"
+                role="tab"
+                aria-controls="flights"
+                aria-selected="false"
+                ><span
+                  ><i class="fa fa-ship" style="font-weight: 600"></i
+                ></span>
+                Cruise</a
+              >
+            </li>
+            <li class="secondary-navtab">
+              <a
+                class="secondary-navtab-anchor"
+                id="flights-tab"
+                data-toggle="tab"
+                href="https://www.umrahtrip.com/home"
+                target="_blank"
+                role="tab"
+                aria-controls="flights"
+                aria-selected="false"
+                ><span
+                  ><i class="fa fa-moon-o" style="font-weight: 600"></i
+                ></span>
+                Umrah</a
+              >
+            </li>
+            <li class="secondary-navtab">
+              <a
+                class="secondary-navtab-anchor"
+                id="flights-tab"
+                data-toggle="tab"
+                
+                role="tab"
+                aria-controls="flights"
+                aria-selected="false"
+                ><span
+                  ><i class="fa fa-ellipsis-h" style="font-weight: 600"></i
+                ></span>
+                More</a
+              >
+            </li>
+          </ul>
+<!-- indextab -->
+
+ <!-- <ul class=" secondary-nav-tabs nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="secondary-navtab nav-item" role="presentation">
+              <a 
+                class="secondary-navtab-anchor nav-link active"
+                id="pills-home-tab"
+                href="index.html"
+                data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"
+                ><span
+                  ><i class="fas fa-plane" style="font-weight: 600"></i
+                ></span>
+                Flights</a
+              >
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"> <div class="container-radio " >
+          <div class="card card1 show1 show1-show2 ">
+            <div
+              class="d-flex justify-content-start radio-color-secondary align-top "
+            >
+              <div class="form-check form-check-inline radio ">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="inlineRadioOptions"
+                  id="inlineRadio1"
+                  value="option1"
+                />
+                <label class="form-check-label" for="inlineRadio1"
+                  >One Way</label
+                >
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="inlineRadioOptions"
+                  id="inlineRadio2"
+                  value="option2"
+                />
+                <label class="form-check-label" for="inlineRadio2"
+                  >Round Trip</label
+                >
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="inlineRadioOptions"
+                  id="inlineRadio3"
+                  value="option3"
+                />
+                <label class="form-check-label" for="inlineRadio3"
+                  >MultiCity</label
+                >
+              </div>
+              <div class="radio">
+                <h3>Book Flight Tickets</h3>
+              </div>
+              
+            </div>
+          </div></div>
+  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+</div>
+
+
+
+
+
+
+            <li class="secondary-navtab nav-item" role="presentation">
+              <a
+              
+                class="secondary-navtab-anchor nav-link"
+            
+                href="Flights.html"
+            
+                id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><span
+                  ><i class="fa fa-building-o" style="font-weight: 600"></i
+                ></span>
+                Hotel</a> 
+                  </li>
+              -->
+
+<!-- navvtabd -->
+
+<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</button>
+  </li>
+</ul>
+<div class="tab-content" id="pills-tabContent">
+  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"></div>
+  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+</div>
+
+<!-- check -->
+
+      <!-- check -->
+<div>
+<ul class="secondary-nav-tabs nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="secondary-navtab nav-item" role="presentation">
+              <a 
+                class="secondary-navtab-anchor nav-link active"
+                id="pills-home-tab"
+                href="index.html"
+                data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"
+                ><span
+                  ><i class="fas fa-plane" style="font-weight: 600"></i
+                ></span>
+                Flights</a
+              >
+            </li>
+            <li class="secondary-navtab nav-item" role="presentation">
+            <a class="secondary-navtab-anchor nav-link"
+            
+                href="Flights.html"
+            
+               id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><span
+                  ><i class="fa fa-building-o" style="font-weight: 600"></i
+                ></span>
+                Hotel</a> 
+                  </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"> 
+    <div class="container-radio " >
+          <div class="card">
+            <div
+              class="d-flex justify-content-start radio-color-secondary align-top "
+            >
+              <div class="form-check form-check-inline  ">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="inlineRadioOptions"
+                  id="inlineRadio1"
+                  value="option1"
+                />
+                <label class="form-check-label" for="inlineRadio1"
+                  >One Way</label
+                >
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="inlineRadioOptions"
+                  id="inlineRadio2"
+                  value="option2"
+                />
+                <label class="form-check-label" for="inlineRadio2"
+                  >Round Trip</label
+                >
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="inlineRadioOptions"
+                  id="inlineRadio3"
+                  value="option3"
+                />
+                <label class="form-check-label" for="inlineRadio3"
+                  >MultiCity</label
+                >
+              </div>
+              <!-- <div class="radio">
+                <h3>Book Flight Tickets</h3>
+              </div> -->
+              
+            </div>
+          </div></div>
+         <div class="row align-items-center">
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <h6 class="card-title">From</h6>
+                <h3 class="card-text">Bangalore</h3>
+                <p >[BLR] Bengaluru</p>
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <h6 class="card-title">To</h6>
+                <h3 class="card-text">Chennai</h3>
+                <p class="fs-6 fw-lighter">[MAA] Chennai</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card ">
+              <div class="card-body">
+                <div class="Flight--dropdown"><div class="dropdown">
+  <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+    <span><i class="bi bi-calendar-day"></i></span>Depart
+  </a>
+
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+   <p>12 May’22
+Thursday</p>
+    <li><a class="dropdown-item" href="#"></a></li>
+    <li><a class="dropdown-item" href="#"></a></li>
+    <li><a class="dropdown-item" href="#"></a></li>
+  </ul>
+</div> </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+<div class="Flight--dropdown"><div class="dropdown">
+  <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+    <span><i class="bi bi-calendar-day"></i></span>Return
+  </a>
+
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+   <p>12 May’22
+Thursday</p>
+    <li><a class="dropdown-item" href="#"></a></li>
+    <li><a class="dropdown-item" href="#"></a></li>
+    <li><a class="dropdown-item" href="#"></a></li>
+  </ul>
+</div> </div>              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <div class="list--tooltip">
+<a class="btn " data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+    Travellers &class
+  </a>                
+<div class="collapse" id="collapseExample">
+  <div class="card card-body">
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+  <label class="form-check-label" for="flexRadioDefault1">
+    Economy
+  </label>  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+  <label class="form-check-label" for="flexRadioDefault1">
+    Premium 
+  </label>
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+  <label class="form-check-label" for="flexRadioDefault1">
+    Bussiness
+  </label>
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+  <label class="form-check-label" for="flexRadioDefault1">
+    First-class
+  </label>
+</div>
+  </div>
+</div>
+</div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <button class="btn btn-danger  button-flight-2" type="button">
+              Search Flights
+            </button>
+          </div>
+        </div>
+        <div class="row row-col d-flex flex-row align-item-center justify-content-between">
+          <div class="col align-item-center">
+            <div class="d-flex flex-row align-item-center">
+              <p class="card1"> <span><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></span> Fares from Kolkata</p>
+            
+            
+            <div class="tripcheckbox col card" style="margin: 10px;">
+               <label class="checkbox-custom checkbox-custom-sm">
+                  <input type="checkbox" name="tripTypeM" value="M"><i></i>
+                  <span>Direct Flights</span>
+               </label>
+               <label class="checkbox-custom checkbox-custom-sm">
+                  <input type="checkbox" id="nonStopF" name="nonStopF" value="1"><i></i>
+                  <span>Defence Fare</span>
+               </label>
+            </div>
+            <!-- <div>
+              <h6 class="color-animation anime "><span><i class="fa fa-exclamation-triangle" aria-hidden="true"></i></span> Covid-19 Updates</h6>
+            </div> -->
+            </div>
+          </div>
+
+        </div>
+
+
+
+        </div>
+  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+
+
+
+<div class="card">
+            <div
+              class="hotel-card">
+                <h3>Book Domestic and International Hotel</h3>
+              
+            </div>
+          </div>
+        
+
+        <!-- card -->
+        <div class="row align-items-center">
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <h6 class="card-title">Enter Your Destination or property</h6>
+                <h3 class="card-text">Bangalore</h3>
+                <p >Bengaluru</p>
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <h6 class="card-title">To</h6>
+                <h3 class="card-text">Chennai</h3>
+                <p class="fs-6 fw-lighter">[MAA] Chennai</p>
+              </div>
+            </div>
+          </div> -->
+          <div class="col">
+            <div class="card ">
+              <div class="card-body">
+                <div class="Flight--dropdown"><div class="dropdown">
+  <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+    <span><i class="bi bi-calendar-day"></i></span>Depart
+  </a>
+
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+   <p>12 May’22
+Thursday</p>
+    <li><a class="dropdown-item" href="#"></a></li>
+    <li><a class="dropdown-item" href="#"></a></li>
+    <li><a class="dropdown-item" href="#"></a></li>
+  </ul>
+</div> </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+<div class="Flight--dropdown"><div class="dropdown">
+  <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+    <span><i class="bi bi-calendar-day"></i></span>Return
+  </a>
+
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+   <p>12 May’22
+Thursday</p>
+    <li><a class="dropdown-item" href="#"></a></li>
+    <li><a class="dropdown-item" href="#"></a></li>
+    <li><a class="dropdown-item" href="#"></a></li>
+  </ul>
+</div> </div>              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <div class="list--tooltip">
+<a class="btn " data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+    Travellers &class
+  </a>                
+<div class="collapse" id="collapseExample">
+  <div class="card card-body">
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+  <label class="form-check-label" for="flexRadioDefault1">
+    Economy
+  </label>  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+  <label class="form-check-label" for="flexRadioDefault1">
+    Premium 
+  </label>
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+  <label class="form-check-label" for="flexRadioDefault1">
+    Bussiness
+  </label>
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+  <label class="form-check-label" for="flexRadioDefault1">
+    First-class
+  </label>
+</div>
+  </div>
+</div>
+</div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <button class="btn btn-danger " type="button">
+              Search Flights
+            </button>
+          </div>
+        </div>
+        <div class="row row-col d-flex flex-row align-item-center justify-content-between">
+          <div class="col align-item-center">
+            <div class="d-flex flex-row align-item-center">
+              <p class="card1"> <span><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></span> Fares from Kolkata</p>
+            
+            
+            <div class="tripcheckbox col card1" style="margin: 10px;">
+               <label class="checkbox-custom checkbox-custom-sm">
+                  <input type="checkbox" name="tripTypeM" value="M"><i></i>
+                  <span>Direct Flights</span>
+               </label>
+               <label class="checkbox-custom checkbox-custom-sm">
+                  <input type="checkbox" id="nonStopF" name="nonStopF" value="1"><i></i>
+                  <span>Defence Fare</span>
+               </label>
+            </div>
+            <!-- <div>
+              <h6 class="color-animation anime"><span><i class="fa fa-exclamation-triangle" aria-hidden="true"></i></span> Covid-19 Updates</h6>
+            </div> -->
+            </div>
+          </div>
+
+        </div>
+
+
+
+
+
+
+
+    </div>
+  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+</div>
+
+</div>
+
+<!-- checkend -->
+
+
+
+<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Toggle top offcanvas</button>
+
+<div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+  <div class="offcanvas-header">
+    <h5 id="offcanvasTopLabel">Offcanvas top</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    ...
+  </div>
+</div>
+    <!-- Bootstrap Js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
   </body>
 </head>    <section>

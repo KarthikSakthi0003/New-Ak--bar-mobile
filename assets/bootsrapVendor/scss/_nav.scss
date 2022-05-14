@@ -13,7 +13,7 @@
 
 .nav-link {
   display: block;
-  padding: $nav-link-padding-y $nav-link-padding-x;
+  padding: -0.5rem 1rem;
   @include font-size($nav-link-font-size);
   font-weight: $nav-link-font-weight;
   color: $nav-link-color;
@@ -76,7 +76,6 @@
   }
 }
 
-
 //
 // Pills
 //
@@ -94,7 +93,6 @@
     @include gradient-bg($nav-pills-link-active-bg);
   }
 }
-
 
 //
 // Justified variants
@@ -123,7 +121,6 @@
     width: 100%; // Make sure button will grow
   }
 }
-
 
 // Tabbable tabs
 //
