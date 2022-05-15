@@ -36,8 +36,13 @@
 
 .input_typehtc1 {
   @include mixins.responsive(xs) {
-    padding: 2rem 0rem;
-    margin-left: -35px;
+    padding: 1rem 0rem;
+    margin-left: 1px;
+  }
+  @include mixins.responsive(md) {
+    outline: none;
+    width: 94%;
+    box-sizing: border-box;
   }
 }
 .hoc2 {

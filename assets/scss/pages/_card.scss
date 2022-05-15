@@ -241,11 +241,19 @@
   }
 }
 .owc4 {
+  @include mixins.responsive(md) {
+    padding: 1rem 1rem;
+  }
+
   @include mixins.responsive(lg) {
     padding: 1rem 1rem;
   }
 
   &--lg--card {
+    @include mixins.responsive(md) {
+      padding: 1rem 4rem;
+    }
+
     @include mixins.responsive(lg) {
       padding: 1rem 4rem;
     }
@@ -274,6 +282,11 @@
     @include mixins.responsive(lg) {
       padding: 1rem 4rem;
     }
+  }
+}
+.twc4--lg--card {
+  @include mixins.responsive(md) {
+    padding: 1rem 4rem;
   }
 }
 

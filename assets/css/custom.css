@@ -11885,7 +11885,7 @@ body {
 }
 @media only screen and (min-width: 768px) {
   .anime {
-    padding: 1rem 8rem;
+    padding: 1rem 6rem;
     font-size: larger;
   }
 }
@@ -12318,7 +12318,7 @@ body {
   font-size: 18px;
   font-size: 1.5rem;
   color: #c4c3c3;
-  z-index: 3;
+  z-index: 2;
 }
 @media only screen and (max-width: 576px) {
   .icon-inside-o1 {
@@ -12330,20 +12330,20 @@ body {
     font-size: 18px;
     font-size: 1.5rem;
     color: #c4c3c3;
-    z-index: 3;
+    z-index: 2;
   }
 }
 @media only screen and (min-width: 768px) {
   .icon-inside-o1 {
     position: absolute;
-    right: 263px;
+    right: 154px;
     margin-top: -3px;
     top: calc(50% - 11px);
     pointer-events: none;
     font-size: 18px;
     font-size: 1.5rem;
     color: #c4c3c3;
-    z-index: 3;
+    z-index: 2;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -12356,7 +12356,7 @@ body {
     font-size: 18px;
     font-size: 1.5rem;
     color: #c4c3c3;
-    z-index: 3;
+    z-index: 2;
   }
 }
 
@@ -12369,7 +12369,7 @@ body {
   font-size: 18px;
   font-size: 1.5rem;
   color: #c4c3c3;
-  z-index: 3;
+  z-index: 2;
 }
 @media only screen and (max-width: 576px) {
   .icon-inside-o2 {
@@ -12381,20 +12381,20 @@ body {
     font-size: 18px;
     font-size: 1.5rem;
     color: #c4c3c3;
-    z-index: 3;
+    z-index: 2;
   }
 }
 @media only screen and (min-width: 768px) {
   .icon-inside-o2 {
     position: absolute;
-    right: 265px;
-    margin-top: -3px;
+    right: 149px;
+    margin-top: 0px;
     top: calc(50% - 11px);
     pointer-events: none;
     font-size: 18px;
     font-size: 1.5rem;
     color: #c4c3c3;
-    z-index: 3;
+    z-index: 2;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -12407,7 +12407,7 @@ body {
     font-size: 18px;
     font-size: 1.5rem;
     color: #c4c3c3;
-    z-index: 3;
+    z-index: 2;
   }
 }
 
@@ -12438,7 +12438,7 @@ body {
 @media only screen and (min-width: 768px) {
   .icon-inside-t1 {
     position: absolute;
-    right: 265px;
+    right: 150px;
     margin-top: -3px;
     top: calc(50% - 11px);
     pointer-events: none;
@@ -12476,7 +12476,7 @@ body {
 @media only screen and (min-width: 768px) {
   .icon-inside-t2 {
     position: absolute;
-    right: 31px;
+    right: 148px;
     margin-top: 3px;
     top: calc(50% - 11px);
     pointer-events: none;
@@ -12489,7 +12489,7 @@ body {
 @media only screen and (min-width: 768px) {
   .icon-inside-t2 {
     position: absolute;
-    right: 265px;
+    right: 148px;
     margin-top: 3px;
     top: calc(50% - 11px);
     pointer-events: none;
@@ -12540,7 +12540,7 @@ body {
 @media only screen and (min-width: 768px) {
   .icon-inside-m1 {
     position: absolute;
-    right: 265px;
+    right: 149px;
     margin-top: 1px;
     top: calc(50% - 11px);
     pointer-events: none;
@@ -12578,7 +12578,7 @@ body {
 @media only screen and (min-width: 768px) {
   .icon-inside-m2 {
     position: absolute;
-    right: 265px;
+    right: 148px;
     margin-top: 2px;
     top: calc(50% - 11px);
     pointer-events: none;
@@ -12616,7 +12616,7 @@ body {
 @media only screen and (min-width: 768px) {
   .icon-inside-m3 {
     position: absolute;
-    right: 265px;
+    right: 147px;
     margin-top: 2px;
     top: calc(50% - 11px);
     pointer-events: none;
@@ -12649,19 +12649,19 @@ body {
   font-size: 18px;
   font-size: 1.5rem;
   color: #c4c3c3;
-  z-index: 3;
+  z-index: 2;
 }
 @media only screen and (min-width: 768px) {
   .icon-inside-m4 {
     position: absolute;
-    right: 265px;
+    right: 146px;
     margin-top: 10px;
     top: calc(50% - 11px);
     pointer-events: none;
     font-size: 18px;
     font-size: 1.5rem;
     color: #c4c3c3;
-    z-index: 3;
+    z-index: 2;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -12674,7 +12674,7 @@ body {
     font-size: 18px;
     font-size: 1.5rem;
     color: #c4c3c3;
-    z-index: 3;
+    z-index: 2;
   }
 }
 
@@ -12695,7 +12695,7 @@ body {
 @media only screen and (min-width: 768px) {
   .icon-inside-m5 {
     position: absolute;
-    right: 265px;
+    right: 150px;
     margin-top: 2px;
     top: calc(50% - 11px);
     pointer-events: none;
@@ -12722,7 +12722,7 @@ body {
 @media only screen and (min-width: 768px) {
   .icon-inside-m6 {
     position: absolute;
-    right: 265px;
+    right: 150px;
     margin-top: 2px;
     top: calc(50% - 11px);
     pointer-events: none;
@@ -13098,9 +13098,19 @@ body {
   }
 }
 
+@media only screen and (min-width: 768px) {
+  .owc4 {
+    padding: 1rem 1rem;
+  }
+}
 @media only screen and (min-width: 992px) {
   .owc4 {
     padding: 1rem 1rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .owc4--lg--card {
+    padding: 1rem 4rem;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -13128,6 +13138,12 @@ body {
 }
 
 @media only screen and (min-width: 992px) {
+  .twc4--lg--card {
+    padding: 1rem 4rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
   .twc4--lg--card {
     padding: 1rem 4rem;
   }
@@ -13226,11 +13242,64 @@ body {
 
 @media only screen and (max-width: 576px) {
   .input_typehtc1 {
-    padding: 2rem 0rem;
-    margin-left: -35px;
+    padding: 1rem 0rem;
+    margin-left: 1px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .input_typehtc1 {
+    outline: none;
+    width: 94%;
+    box-sizing: border-box;
   }
 }
 
+/* @use "../abstract/mixins" as mixins;
+
+#staticbackdrop1 {
+  @include mixins.responsive(xs) {
+    padding-right: 167px;
+    padding-top: 8%;
+    display: block;
+  }
+}
+
+.login2 {
+  @include mixins.responsive(xs) {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 2rem;
+    border-bottom: 1px solid #dee2e6;
+    border-top-left-radius: calc(0.3rem - 1px);
+    border-top-right-radius: calc(0.3rem - 1px);
+  }
+  @include mixins.responsive(md) {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 2rem;
+    border-bottom: 1px solid #dee2e6;
+    border-top-left-radius: calc(0.3rem - 1px);
+    border-top-right-radius: calc(0.3rem - 1px);
+  }
+}
+
+.login2btn {
+  @include mixins.responsive(xs) {
+    padding: 1.5rem 2.5rem;
+    margin: -0.5rem -0.5rem -0.5rem auto;
+  }
+}
+.login2title {
+  @include mixins.responsive(xs) {
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+}
+ */
 /* // X-Small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap
 
@@ -13504,13 +13573,26 @@ body {
   }
 }
 
+@media only screen and (max-width: 576px) {
+  .button-flight-2-hotel {
+    padding: 0.1rem 9rem;
+    margin-top: 5px;
+  }
+}
 @media only screen and (min-width: 768px) {
   .button-flight-2-hotel {
-    padding: 0.1rem 5rem;
+    padding: 1.1rem 16rem;
     margin-top: 5px;
   }
 }
 @media only screen and (min-width: 992px) {
+  .button-flight-2-hotel {
+    padding: 1.1rem 2rem;
+    margin-top: 38px;
+    margin-left: 403px;
+  }
+}
+@media only screen and (min-width: 1200px) {
   .button-flight-2-hotel {
     padding: 1.1rem 2rem;
     margin-top: 38px;
@@ -14164,6 +14246,19 @@ body.dark .search-field i {
   text-decoration: none;
   list-style: none;
 }
+@media only screen and (max-width: 576px) {
+  .wrapper .sidebar ul li a {
+    padding: 8px 9px 8px 32px;
+    display: block;
+    border-bottom: 1px solid #fff;
+    color: black;
+    font-size: 16px;
+    margin-left: -17px;
+    position: relative;
+    text-decoration: none;
+    list-style: none;
+  }
+}
 
 .wrapper .sidebar ul li a .icon {
   color: #000;
@@ -14309,6 +14404,33 @@ body.active .wrapper .section {
   }
 }
 
+/* // X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+@media (max-width: 576px) {
+}
+
+// Small devices (landscape phones, 576px and up)
+
+@media (min-width: 576px) {
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+}
+ */
 /* ===== Google Font Import - Poformsins ===== */
 * {
   margin: 0;
@@ -14335,6 +14457,11 @@ body.active .wrapper .section {
   overflow: hidden;
   margin: 0 20px;
 }
+@media only screen and (max-width: 576px) {
+  .container {
+    margin: 0 0;
+  }
+}
 
 .container .forms {
   display: flex;
@@ -14349,6 +14476,11 @@ body.active .wrapper .section {
   padding: 30px;
   background-color: #fff;
   transition: margin-left 0.18s ease;
+}
+@media only screen and (max-width: 576px) {
+  .container .form {
+    width: 60%;
+  }
 }
 
 .container.active .login {

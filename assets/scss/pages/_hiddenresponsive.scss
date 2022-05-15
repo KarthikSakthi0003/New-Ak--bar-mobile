@@ -124,7 +124,7 @@
   font-size: 18px;
   font-size: 1.5rem;
   color: #c4c3c3;
-  z-index: 3;
+  z-index: 2;
   @include mixins.responsive(xs) {
     position: absolute;
     right: 37px;
@@ -134,18 +134,18 @@
     font-size: 18px;
     font-size: 1.5rem;
     color: #c4c3c3;
-    z-index: 3;
+    z-index: 2;
   }
   @include mixins.responsive(md) {
     position: absolute;
-    right: 263px;
+    right: 154px;
     margin-top: -3px;
     top: calc(50% - 11px);
     pointer-events: none;
     font-size: 18px;
     font-size: 1.5rem;
     color: #c4c3c3;
-    z-index: 3;
+    z-index: 2;
   }
   @include mixins.responsive(lg) {
     position: absolute;
@@ -156,7 +156,7 @@
     font-size: 18px;
     font-size: 1.5rem;
     color: #c4c3c3;
-    z-index: 3;
+    z-index: 2;
   }
 }
 .icon-inside-o2 {
@@ -168,7 +168,7 @@
   font-size: 18px;
   font-size: 1.5rem;
   color: #c4c3c3;
-  z-index: 3;
+  z-index: 2;
   @include mixins.responsive(xs) {
     position: absolute;
     right: 35px;
@@ -178,18 +178,18 @@
     font-size: 18px;
     font-size: 1.5rem;
     color: #c4c3c3;
-    z-index: 3;
+    z-index: 2;
   }
   @include mixins.responsive(md) {
     position: absolute;
-    right: 265px;
-    margin-top: -3px;
+    right: 149px;
+    margin-top: 0px;
     top: calc(50% - 11px);
     pointer-events: none;
     font-size: 18px;
     font-size: 1.5rem;
     color: #c4c3c3;
-    z-index: 3;
+    z-index: 2;
   }
   @include mixins.responsive(lg) {
     position: absolute;
@@ -200,7 +200,7 @@
     font-size: 18px;
     font-size: 1.5rem;
     color: #c4c3c3;
-    z-index: 3;
+    z-index: 2;
   }
 }
 
@@ -227,7 +227,7 @@
   }
   @include mixins.responsive(md) {
     position: absolute;
-    right: 265px;
+    right: 150px;
     margin-top: -3px;
     top: calc(50% - 11px);
     pointer-events: none;
@@ -261,7 +261,7 @@
 
   @include mixins.responsive(md) {
     position: absolute;
-    right: 31px;
+    right: 148px;
     margin-top: 3px;
     top: calc(50% - 11px);
     pointer-events: none;
@@ -272,7 +272,7 @@
   }
   @include mixins.responsive(md) {
     position: absolute;
-    right: 265px;
+    right: 148px;
     margin-top: 3px;
     top: calc(50% - 11px);
     pointer-events: none;
@@ -316,7 +316,7 @@
   }
   @include mixins.responsive(md) {
     position: absolute;
-    right: 265px;
+    right: 149px;
     margin-top: 1px;
     top: calc(50% - 11px);
     pointer-events: none;
@@ -349,7 +349,7 @@
   z-index: 3;
   @include mixins.responsive(md) {
     position: absolute;
-    right: 265px;
+    right: 148px;
     margin-top: 2px;
     top: calc(50% - 11px);
     pointer-events: none;
@@ -382,7 +382,7 @@
   z-index: 3;
   @include mixins.responsive(md) {
     position: absolute;
-    right: 265px;
+    right: 147px;
     margin-top: 2px;
     top: calc(50% - 11px);
     pointer-events: none;
@@ -412,17 +412,17 @@
   font-size: 18px;
   font-size: 1.5rem;
   color: #c4c3c3;
-  z-index: 3;
+  z-index: 2;
   @include mixins.responsive(md) {
     position: absolute;
-    right: 265px;
+    right: 146px;
     margin-top: 10px;
     top: calc(50% - 11px);
     pointer-events: none;
     font-size: 18px;
     font-size: 1.5rem;
     color: #c4c3c3;
-    z-index: 3;
+    z-index: 2;
   }
   @include mixins.responsive(lg) {
     position: absolute;
@@ -433,7 +433,7 @@
     font-size: 18px;
     font-size: 1.5rem;
     color: #c4c3c3;
-    z-index: 3;
+    z-index: 2;
   }
 }
 .icon-inside-m5 {
@@ -451,7 +451,7 @@
   }
   @include mixins.responsive(md) {
     position: absolute;
-    right: 265px;
+    right: 150px;
     margin-top: 2px;
     top: calc(50% - 11px);
     pointer-events: none;
@@ -475,7 +475,7 @@
   z-index: 3;
   @include mixins.responsive(md) {
     position: absolute;
-    right: 265px;
+    right: 150px;
     margin-top: 2px;
     top: calc(50% - 11px);
     pointer-events: none;

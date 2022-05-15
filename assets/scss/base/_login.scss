@@ -1,3 +1,4 @@
+@use "../abstract/mixins" as mixins;
 /* ===== Google Font Import - Poformsins ===== */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
@@ -25,6 +26,10 @@
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   margin: 0 20px;
+
+  @include mixins.responsive(xs) {
+    margin: 0 0;
+  }
 }
 
 .container .forms {
@@ -40,6 +45,10 @@
   padding: 30px;
   background-color: #fff;
   transition: margin-left 0.18s ease;
+
+  @include mixins.responsive(xs) {
+    width: 60%;
+  }
 }
 
 .container.active .login {

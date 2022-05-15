@@ -1,0 +1,46 @@
+/* @use "../abstract/mixins" as mixins;
+
+#staticbackdrop1 {
+  @include mixins.responsive(xs) {
+    padding-right: 167px;
+    padding-top: 8%;
+    display: block;
+  }
+}
+
+.login2 {
+  @include mixins.responsive(xs) {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 2rem;
+    border-bottom: 1px solid #dee2e6;
+    border-top-left-radius: calc(0.3rem - 1px);
+    border-top-right-radius: calc(0.3rem - 1px);
+  }
+  @include mixins.responsive(md) {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 2rem;
+    border-bottom: 1px solid #dee2e6;
+    border-top-left-radius: calc(0.3rem - 1px);
+    border-top-right-radius: calc(0.3rem - 1px);
+  }
+}
+
+.login2btn {
+  @include mixins.responsive(xs) {
+    padding: 1.5rem 2.5rem;
+    margin: -0.5rem -0.5rem -0.5rem auto;
+  }
+}
+.login2title {
+  @include mixins.responsive(xs) {
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+}
+ */

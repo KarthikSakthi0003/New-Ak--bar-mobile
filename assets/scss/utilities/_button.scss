@@ -195,11 +195,20 @@
 }
 
 .button-flight-2-hotel {
+  @include mixins.responsive(xs) {
+    padding: 0.1rem 9rem;
+    margin-top: 5px;
+  }
   @include mixins.responsive(md) {
-    padding: 0.1rem 5rem;
+    padding: 1.1rem 16rem;
     margin-top: 5px;
   }
   @include mixins.responsive(lg) {
+    padding: 1.1rem 2rem;
+    margin-top: 38px;
+    margin-left: 403px;
+  }
+  @include mixins.responsive(x-lg) {
     padding: 1.1rem 2rem;
     margin-top: 38px;
     margin-left: 403px;

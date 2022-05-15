@@ -39,6 +39,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 @import "./pages/hiddenresponsive";
 @import "./pages/card";
 @import "./pages/card2";
+@import "./pages/loginform";
 
 //abstract
 @import "./abstract/mixins";
