@@ -10,7 +10,7 @@ body {
   overflow: visible;
 }
 #staticBackdrop1 {
-  @include mixins.responsive(xs) {
+  /*  @include mixins.responsive(xs) {
     opacity: -1.5;
-  }
+  } */
 }
