@@ -25,7 +25,7 @@
 
 .input_type1 {
   @include mixins.responsive(xs) {
-    width: 100%;
+    width: 94%;
     /*     border-radius: 10px;
  */
     outline: none;
@@ -51,6 +51,11 @@
 }
 .input_type2 {
   box-sizing: border-box;
+  @include mixins.responsive(xs) {
+    outline: none;
+    width: 94%;
+    box-sizing: border-box;
+  }
   @include mixins.responsive(md) {
     outline: none;
     width: 94%;
@@ -64,6 +69,11 @@
 }
 .input_type3 {
   box-sizing: border-box;
+  @include mixins.responsive(xs) {
+    outline: none;
+    width: 94%;
+    box-sizing: border-box;
+  }
   @include mixins.responsive(md) {
     outline: none;
     width: 94%;
@@ -78,6 +88,12 @@
 }
 .input_type4 {
   box-sizing: border-box;
+
+  @include mixins.responsive(xs) {
+    outline: none;
+    width: 94%;
+    box-sizing: border-box;
+  }
   @include mixins.responsive(md) {
     outline: none;
     width: 94%;
@@ -91,6 +107,12 @@
 }
 .input_type5 {
   box-sizing: border-box;
+  @include mixins.responsive(xs) {
+    outline: none;
+    width: 94%;
+    box-sizing: border-box;
+  }
+
   @include mixins.responsive(md) {
     outline: none;
     width: 94%;
@@ -111,6 +133,12 @@
 }
 .input_type6 {
   box-sizing: border-box;
+
+  @include mixins.responsive(xs) {
+    outline: none;
+    width: 96%;
+    box-sizing: border-box;
+  }
   @include mixins.responsive(md) {
     outline: none;
     width: 89%;
@@ -130,6 +158,12 @@
 }
 .input_type7 {
   box-sizing: border-box;
+
+  @include mixins.responsive(xs) {
+    outline: none;
+    width: 96%;
+    box-sizing: border-box;
+  }
   @include mixins.responsive(md) {
     outline: none;
     width: 89%;
@@ -143,6 +177,12 @@
 }
 .input_type8 {
   box-sizing: border-box;
+
+  @include mixins.responsive(xs) {
+    outline: none;
+    width: 97%;
+    box-sizing: border-box;
+  }
   @include mixins.responsive(md) {
     outline: none;
     width: 117%;

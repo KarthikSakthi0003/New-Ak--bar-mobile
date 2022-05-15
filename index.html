@@ -32,49 +32,17 @@
   <body>
     <header class="header">
       <div>
-        <a href="/"><img
+        <a href="/"><img class="sidebar-responsive"
             src="./assets/img/home-logo.png"
             alt="akbar-logo"
-            loading="lazy"/></a>
-
-
-        
+            loading="lazy"/></a>  
       </div>
 
-      <!-- toggler offcanvas -->
-      <div>
-        <!-- 
-        <div> 
-          
-          <a class="btn hiddenlg "data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"> <span class="toggler-bar"> <i class="fa fa-bars" aria-hidden="true"></i> </span>
-        </a></div>
-
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Log-in</h5>
-    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-    <div>
-      <h3>Hello Guest</h3><br><br><br> <hr>
-      <p>Make Payment</p>
-
-    </div>
-    <div class=" mt-3">
-      <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
-        Login
-      </button>
-      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <li><a class="dropdown-item" href="#">Action</a></li>
-        <li><a class="dropdown-item" href="#">Another action</a></li>
-        <li><a class="dropdown-item" href="#">Something else here</a></li>
-      </ul>
-    </div>
-  </div>
-</div> -->
-
-        <!-- toggler end -->
-<!--         <ul class="header--menus gap-1">
+      <!-- Main menu  -->
+      <section>
+      <div>    
+      <!-- toggler end -->
+      <ul class="header--menus gap-1">
           <li>
             <a href="#" class="btn btn-ak-primary btn-sm" role="button">
               AKBAR BIZZ
@@ -129,109 +97,245 @@
                                     <li><a class="dropdown-item"href="" title="INR">INR - Indian Rupee</a></li>
             </ul>
           </li>
-
-          <li class="nav-item dropdown">
-            <a
-              href="#"
-              class="btn btn-login-primary btn-sm downarrow"
-              data-toggle="dropdown"
-              id="Login_RegisterButton"
-              data-bs-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-              role="button"
-            >
+ <li class="nav-item dropdown" id="Sidebarlogin">
+ <a href="#login">        
+  <!-- Button trigger modal -->
+<a href="#" class="btn btn-login-primary btn-sm downarrow" data-bs-toggle="modal" data-bs-target="#staticBackdrop" role="button">
               <span><i class="bi bi-person-fill"></i></span>Login/Register
               <span class="downarrow-icon"
                 ><i class="bi bi-caret-down-fill"></i></span
             ></a>
+  <!-- Modal -->
+      <div
+        class="modal fade"
+        id="staticBackdrop"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Login/Registration</h5>
+                <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button> 
+            </div>
+            <div class="modal-body">
+              <!-- ========== Start login form ========== -->
+              <div class="body">
+                <div class="container">
+                  <div class="forms">
+                    <div class="form login">
+                      <span class="title">Login</span>
 
-            <ul class="dropdown-menu" aria-labelledby="Login_RegisterButton">
-              <li>
-                <a href="#" class="dropdown-item">
-                  <span><i class="bi bi-key-fill margin-left"></i></span>
-                  Login</a
-                >
-              </li>
+                      <form action="#">
+                        <div class="input-field">
+                          <input
+                            type="text"
+                            placeholder="Enter your email"
+                            required
+                          />
+                          <i class="fa fa-envelope icon"></i>
+                        </div>
+                        <div class="input-field">
+                          <input
+                            type="password"
+                            class="password"
+                            placeholder="Enter your password"
+                            required
+                          />
+                          <i class="fa fa-lock icon"></i>
+                          <i class="fa fa-eye-slash showHidePw"></i>
+                        </div>
 
-              <li>
-                <a href="#" class="dropdown-item">
-                  <span><i class="bi bi-emoji-smile-fill"></i></span>
-                  Register</a
-                >
-              </li>
-              <li>
-                <a href="#" class="dropdown-item">
-                  <span><i class="bi bi-clipboard-check-fill"></i></span>
-                  Mybooking</a
-                >
-              </li>
-              <li>
-                <a href="#" class="dropdown-item">
-                  <span><i class="bi bi-cash-coin"></i></span> Makepayment</a
-                >
-              </li>
-              <li>
-                <a href="#" class="dropdown-item">
-                  <span><i class="bi bi-pencil-fill"></i></span> blog</a
-                >
-              </li>
-            </ul>
-          </li>
-        </ul> -->
+                        <div class="checkbox-text">
+                          <div class="checkbox-content">
+                            <input type="checkbox" id="logCheck" />
+                            <label for="logCheck" class="text"
+                              >Remember me</label
+                            >
+                          </div>
+
+                          <a href="#" class="text">Forgot password?</a>
+                        </div>
+
+                        <div class="input-field button">
+                          <input type="button" value="Login Now" />
+                        </div>
+                      </form>
+
+                      <div class="login-signup">
+                        <span class="text"
+                          >Not a member?
+                          <a href="#" class="text signup-link">Signup now</a>
+                        </span>
+                      </div>
+                    </div>
+
+                    <!-- Registration Form -->
+                    <div class="form signup">
+                      <span class="title">Registration</span>
+
+                      <form action="#">
+                        <div class="input-field">
+                          <input
+                            type="text"
+                            placeholder="Enter your name"
+                            required
+                          />
+                          <i class="fa fa-user"></i>
+                        </div>
+                        <div class="input-field">
+                          <input
+                            type="text"
+                            placeholder="Enter your email"
+                            required
+                          />
+                          <i class="fa fa-envelope icon"></i>
+                        </div>
+                        <div class="input-field">
+                          <input
+                            type="password"
+                            class="password"
+                            placeholder="Create a password"
+                            required
+                          />
+                          <i class="fa fa-lock icon"></i>
+                        </div>
+                        <div class="input-field">
+                          <input
+                            type="password"
+                            class="password"
+                            placeholder="Confirm a password"
+                            required
+                          />
+                          <i class="fa fa-lock icon"></i>
+                          <i class="fa fa-eye-slash showHidePw"></i>
+                        </div>
+
+                        <div class="checkbox-text">
+                          <div class="checkbox-content">
+                            <input type="checkbox" id="sigCheck" />
+                            <label for="sigCheck" class="text"
+                              >Remember me</label
+                            >
+                          </div>
+
+                          <a href="#" class="text">Forgot password?</a>
+                        </div>
+
+                        <div class="input-field button">
+                          <input type="button" value="Login Now" />
+                        </div>
+                      </form>
+
+                      <div class="login-signup">
+                        <span class="text"
+                          >Not a member?
+                          <a href="#" class="text login-link">Signup now</a>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ========== End login form ========== -->
+            </div>
+            <div class="modal-footer">
+              <!-- <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">Understood</button>
+ -->            </div>
+          </div>
+        </div>
       </div>
-<!-- togler off canvas end -->
+</a>
+            
+          </li>        </ul> 
+      </div>
+      </section>
+<!-- Mainmenu end -->
 
-<!-- nav togler -->
-<nav class="navbar navbar-expand-lg navbar-light">
-  <div class="container">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon bg-light"></span>
-    </button>
+                    
+                
+                
+                <!-- ======end login -->
 
-    <a  class="navbar-brand"href="/"> </a>
 
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0 header--menus gap-1">
-        <li class="nav-item">
-            <a href="#" class="btn btn-ak-primary btn-sm"  aria-current="page"  role="button">
-              AKBAR BIZZ
-            </a>
+
+<!-- sidebar start -->
+<body>
+   
+  
+    <div class="wrapper">
+        <div class="section">
+            <div class="top_navbar">
+                <div class="hamburger">
+                    <a href="#">
+                        <i class="fa fa-chevron-circle-right arrow"></i>
+                        <i class="fa fa-bars  bars" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+             
+        </div>
+        <div class="sidebar">
+            <div class="profile">
+                <h3>AkbarTravels</h3>
+                
+            </div>
+            <ul>
+          <li>
+            <a href="#" class="" role="button">
+              <span class="item">AKBAR BIZZ</span>
+            </a><hr>
           </li>
-        <li class="nav-item">
-            <a href="#" class="btn btn-ak-primary btn-sm" role="button">IRCTC AGENT</a>
-
-        <li class="nav-item dropdown">
+          <li>
+            <a href="#" class="" role="button"
+              ><span class="item">IRCTC AGENT</span></a
+            ><hr>
+          </li>
+          <li>
             <a
               href="#"
-              class="btn btn-ak-primary btn-sm dropdown-toggle"
+              class=""
               data-bs-toggle="dropdown"
               id="dropdownINR"
               aria-haspopup="true"
               aria-expanded="false"
               role="button"
-              >₹ INR</a
-            >
-            <ul class="dropdown-menu" aria-labelledby="dropdownINR">
+              ><span class="item">₹ INR</span></a
+            ><hr>
+            <!--<ul class="dropdown-menu" aria-labelledby="dropdownINR">
               <li><a class="dropdown-item" href="#">Action</a></li>
               <li><a class="dropdown-item" href="#">Another action</a></li>
               <li><a class="dropdown-item" href="#">Something else here</a></li>
               <li><a class="dropdown-item" href="#">Separated link</a></li>
-            </ul>
+            </ul> -->
           </li>
 
-
- <li class="nav-item dropdown">
+          <li class="dropdown">
             <a
               href="#"
-              class="btn btn-ak-primary btn-sm dropdown-toggle"
+              class=""
               data-bs-toggle="dropdown"
               id="dropdownCountry"
               aria-haspopup="true"
               aria-expanded="false"
               role="button"
-              >INDIA</a
-            >
+              ><span class="item">Country</a
+            ><hr>
 
             <ul class="dropdown-menu" aria-labelledby="dropdownCountry">
               <li><a class="active" href="" title="AED">AED - UAE Dirham</a></li>
@@ -246,10 +350,11 @@
                                     <li><a class="dropdown-item"href="" title="INR">INR - Indian Rupee</a></li>
             </ul>
           </li>
-          <li class="nav-item dropdown">
+
+          <li class="dropdown">
             <a
               href="#"
-              class="btn btn-login-primary btn-sm downarrow"
+              class="downarrow"
               data-toggle="dropdown"
               id="Login_RegisterButton"
               data-bs-toggle="dropdown"
@@ -257,25 +362,21 @@
               aria-expanded="false"
               role="button"
             >
-              <span><i class="bi bi-person-fill"></i></span>Login/Register
+              <span><i class="bi bi-person-fill"></i></span><span class="item"> <a href="#Sidebarlogin">Login/Register</a> </span>
               <span class="downarrow-icon"
                 ><i class="bi bi-caret-down-fill"></i></span
             ></a>
 
-            <ul class="dropdown-menu" aria-labelledby="Login_RegisterButton">
-              <li>
+      <!--       <ul class="dropdown-menu" aria-labelledby="Login_RegisterButton">
+              <li><hr>
                 <a href="#" class="dropdown-item">
                   <span><i class="bi bi-key-fill margin-left"></i></span>
-                  Login</a
-                >
+                  
+                  <span class="item">Login</span>
+                  </a>
               </li>
 
-              <li>
-                <a href="#" class="dropdown-item">
-                  <span><i class="bi bi-emoji-smile-fill"></i></span>
-                  Register</a
-                >
-              </li>
+              
               <li>
                 <a href="#" class="dropdown-item">
                   <span><i class="bi bi-clipboard-check-fill"></i></span>
@@ -292,17 +393,22 @@
                   <span><i class="bi bi-pencil-fill"></i></span> blog</a
                 >
               </li>
-            </ul>
+            </ul> -->
           </li>
-
-      </ul>
-      
+        
+            
+            </ul>
+        </div>
+        
     </div>
-  </div>
-</nav>
+  
 
 
-<!-- nav toggler end -->
+
+
+
+  <!-- sidebar end -->
+<!-- ========== Start login ========== -->
 
     </header>
     <main>
@@ -1957,11 +2063,20 @@ Download the AkbarTravels App & wherever you’re going, take us with you.      
       <!-- ========== End Section ========== -->
 <!-- ckeking  -->
 
-
-
 <!-- checkend -->
     </main>
 
+
+
+    <!-- ch -->
+    
+<script>
+  var hamburger = document.querySelector(".hamburger");
+hamburger.addEventListener("click", function () {
+  document.querySelector("body").classList.toggle("active");
+});
+</script>
+    <!-- ch -->
     <!-- Bootstrap Js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     

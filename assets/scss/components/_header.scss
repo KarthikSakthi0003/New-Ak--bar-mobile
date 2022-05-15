@@ -59,10 +59,10 @@
     padding: 1rem 2rem;
     background-color: #14589c;
   }
-  @include mixins.responsive(md) {
+  @include mixins.responsive(lg) {
     //css code
     padding: 1rem 2rem;
-    background-color: #14589c;
+    background-color: #07162d;
   }
 }
 

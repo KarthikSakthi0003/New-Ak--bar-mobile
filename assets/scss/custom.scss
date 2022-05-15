@@ -1,3 +1,6 @@
+/* ===== Google Font Import - Poformsins ===== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
 @import "../bootsrapVendor/scss/functions";
 
 @import "../bootsrapVendor/scss/variables";
@@ -35,3 +38,9 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 //utilities
 @import "./utilities/button";
 @import "./utilities/navtabs";
+
+//navOffcanvas
+@import "./layouts/canvas";
+@import "./layouts/navcss";
+//loginform
+@import "./base/login";

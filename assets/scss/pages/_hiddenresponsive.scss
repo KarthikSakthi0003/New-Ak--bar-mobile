@@ -125,6 +125,17 @@
   font-size: 1.5rem;
   color: #c4c3c3;
   z-index: 3;
+  @include mixins.responsive(xs) {
+    position: absolute;
+    right: 37px;
+    margin-top: 0px;
+    top: calc(50% - 11px);
+    pointer-events: none;
+    font-size: 18px;
+    font-size: 1.5rem;
+    color: #c4c3c3;
+    z-index: 3;
+  }
   @include mixins.responsive(md) {
     position: absolute;
     right: 263px;
@@ -158,6 +169,17 @@
   font-size: 1.5rem;
   color: #c4c3c3;
   z-index: 3;
+  @include mixins.responsive(xs) {
+    position: absolute;
+    right: 35px;
+    margin-top: 3px;
+    top: calc(50% - 11px);
+    pointer-events: none;
+    font-size: 18px;
+    font-size: 1.5rem;
+    color: #c4c3c3;
+    z-index: 3;
+  }
   @include mixins.responsive(md) {
     position: absolute;
     right: 265px;
@@ -192,7 +214,17 @@
   font-size: 1.5rem;
   color: #c4c3c3;
   z-index: 3;
-
+  @include mixins.responsive(xs) {
+    position: absolute;
+    right: 30px;
+    margin-top: 1px;
+    top: calc(50% - 11px);
+    pointer-events: none;
+    font-size: 18px;
+    font-size: 1.5rem;
+    color: #c4c3c3;
+    z-index: 3;
+  }
   @include mixins.responsive(md) {
     position: absolute;
     right: 265px;
@@ -226,6 +258,18 @@
   font-size: 1.5rem;
   color: #c4c3c3;
   z-index: 3;
+
+  @include mixins.responsive(md) {
+    position: absolute;
+    right: 31px;
+    margin-top: 3px;
+    top: calc(50% - 11px);
+    pointer-events: none;
+    font-size: 18px;
+    font-size: 1.5rem;
+    color: #c4c3c3;
+    z-index: 3;
+  }
   @include mixins.responsive(md) {
     position: absolute;
     right: 265px;
@@ -259,6 +303,17 @@
   font-size: 1.5rem;
   color: #c4c3c3;
   z-index: 3;
+  @include mixins.responsive(xs) {
+    position: absolute;
+    right: 33px;
+    margin-top: 3px;
+    top: calc(50% - 11px);
+    pointer-events: none;
+    font-size: 18px;
+    font-size: 1.5rem;
+    color: #c4c3c3;
+    z-index: 3;
+  }
   @include mixins.responsive(md) {
     position: absolute;
     right: 265px;
