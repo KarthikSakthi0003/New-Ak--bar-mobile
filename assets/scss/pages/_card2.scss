@@ -1,0 +1,84 @@
+@use "../abstract/mixins" as mixins;
+
+.hotel-cardhtc1 {
+  @include mixins.responsive(xs) {
+    padding: 2rem 3rem;
+  }
+}
+
+.htc1 {
+  @include mixins.responsive(xs) {
+    padding: 0rem 0.666rem;
+    margin-left: -2rem;
+  }
+  @include mixins.responsive(md) {
+  }
+  @include mixins.responsive(lg) {
+  }
+  @include mixins.responsive(x-lg) {
+  }
+}
+.htc1card {
+  @include mixins.responsive(xs) {
+    margin-left: 3px;
+    margin-right: -29px;
+    padding-left: 37px;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+  }
+}
+
+.input_typehtc1 {
+  @include mixins.responsive(xs) {
+    padding: 2rem 0rem;
+    margin-left: -35px;
+  }
+}
+.hoc2 {
+  @include mixins.responsive(xs) {
+  }
+  @include mixins.responsive(md) {
+  }
+}
+.hoc {
+  @include mixins.responsive(lg) {
+  }
+  @include mixins.responsive(x-lg) {
+  }
+}
+.hoc {
+  @include mixins.responsive(xs) {
+  }
+  @include mixins.responsive(md) {
+  }
+}
+.hoc {
+  @include mixins.responsive(xs) {
+  }
+  @include mixins.responsive(md) {
+  }
+}
+.hoc {
+  @include mixins.responsive(xs) {
+  }
+  @include mixins.responsive(md) {
+  }
+}
+.hoc {
+  @include mixins.responsive(xs) {
+  }
+  @include mixins.responsive(md) {
+  }
+}
+.hoc {
+  @include mixins.responsive(xs) {
+  }
+  @include mixins.responsive(md) {
+  }
+}

@@ -5598,7 +5598,7 @@ textarea.form-control-lg {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1050;
+  z-index: 0;
   width: 100vw;
   height: 100vh;
   background-color: #000;
@@ -12678,18 +12678,19 @@ body {
   }
 }
 
-.icon-inside-m5 {
-  position: absolute;
-  right: -13px;
-  left: 263px;
-  margin-top: 2px;
-  padding-right: 13rem;
-  top: calc(50% - 11px);
-  pointer-events: none;
-  font-size: 18px;
-  font-size: 1.5rem;
-  color: #c4c3c3;
-  z-index: 3;
+@media only screen and (max-width: 576px) {
+  .icon-inside-m5 {
+    position: absolute;
+    right: -13px;
+    left: 254px;
+    margin-top: 13px;
+    padding-right: 13rem;
+    top: calc(50% - 11px);
+    pointer-events: none;
+    font-size: 18px;
+    font-size: 1.5rem;
+    color: #c4c3c3;
+  }
 }
 @media only screen and (min-width: 768px) {
   .icon-inside-m5 {
@@ -12774,6 +12775,11 @@ body {
   .destination_display {
     display: contents;
   }
+}
+
+#staticbackdrop {
+  position: fixed;
+  z-index: 999;
 }
 
 /* // X-Small devices (portrait phones, less than 576px)
@@ -13160,6 +13166,68 @@ body {
 @media only screen and (max-width: 576px) {
   .mwc8 {
     padding: 1rem 6rem;
+  }
+}
+
+/* // X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+@media (max-width: 576px) {
+}
+
+// Small devices (landscape phones, 576px and up)
+
+@media (min-width: 576px) {
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+}
+ */
+@media only screen and (max-width: 576px) {
+  .hotel-cardhtc1 {
+    padding: 2rem 3rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .htc1 {
+    padding: 0rem 0.666rem;
+    margin-left: -2rem;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .htc1card {
+    margin-left: 3px;
+    margin-right: -29px;
+    padding-left: 37px;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .input_typehtc1 {
+    padding: 2rem 0rem;
+    margin-left: -35px;
   }
 }
 

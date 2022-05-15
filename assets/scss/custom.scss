@@ -21,6 +21,7 @@ $custom-colors: (
 }
 
 $modal-backdrop-opacity: -0.5;
+$zindex-modal-backdrop: 0;
 //merge the maps
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
@@ -37,6 +38,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 @import "./pages/responsive";
 @import "./pages/hiddenresponsive";
 @import "./pages/card";
+@import "./pages/card2";
 
 //abstract
 @import "./abstract/mixins";
