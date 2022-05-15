@@ -3,6 +3,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+.modal-backdrop.show {
+  opacity: -1.5 !important;
+}
+
 .nav-link {
   padding: -0.5rem 1rem !important;
 }
@@ -11316,6 +11321,10 @@ a {
   text-decoration: none;
 }
 
+body {
+  overflow: visible;
+}
+
 /* // X-Small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap
 
@@ -14227,6 +14236,12 @@ body.active .wrapper .section {
   }
 }
 
+@media only screen and (max-width: 576px) {
+  #staticBackdrop1 {
+    opacity: -1.5;
+  }
+}
+
 /* ===== Google Font Import - Poformsins ===== */
 * {
   margin: 0;
@@ -14408,5 +14423,162 @@ body.active .wrapper .section {
   margin-top: 30px;
   text-align: center;
 }
+
+/* ===== Google Font Import - Poformsins ===== */
+.css * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.css .bodytwo {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+.css .containertwo {
+  position: relative;
+  max-width: 430px;
+  width: 100%;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 0 20px;
+}
+.css .containertwo .forms {
+  display: flex;
+  align-items: center;
+  height: 440px;
+  width: 200%;
+  transition: height 0.2s ease;
+}
+.css .containertwo .form {
+  width: 50%;
+  padding: 30px;
+  background-color: #fff;
+  transition: margin-left 0.18s ease;
+}
+.css .containertwo .active .logintwo {
+  margin-left: -50%;
+  opacity: 0;
+  transition: margin-left 0.18s ease, opacity 0.15s ease;
+}
+.css .containertwo .signuptwo {
+  opacity: 0;
+  transition: opacity 0.09s ease;
+}
+.css .containertwo .active .signup {
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+.css .containertwo .active .forms {
+  height: 600px;
+}
+.css .containertwo .form .title {
+  position: relative;
+  font-size: 27px;
+  font-weight: 600;
+}
+.css .form .title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  background-color: #4070f4;
+  border-radius: 25px;
+}
+.css .form .input-fieldtwo {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  margin-top: 30px;
+}
+.css .input-fieldtwo input {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding: 0 35px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  border-bottom: 2px solid #ccc;
+  border-top: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+.css .input-fieldtwo input:is(:focus, :valid) {
+  border-bottom-color: #4070f4;
+}
+.css .input-fieldtwo i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  font-size: 23px;
+  transition: all 0.2s ease;
+}
+.css .input-fieldtwo input:is(:focus, :valid) ~ i {
+  color: #4070f4;
+}
+.css .input-fieldtwo i.icontwo {
+  left: 0;
+}
+.css .input-fieldtwo i.showHidePwd {
+  right: 0;
+  cursor: pointer;
+  padding: 10px;
+}
+.css .form .checkbox-texttwo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.css .checkbox-texttwo .checkbox-contenttwo {
+  display: flex;
+  align-items: center;
+}
+.css .checkbox-contenttwo input {
+  margin: 0 8px -2px 4px;
+  accent-color: #4070f4;
+}
+.css .form .text {
+  color: #333;
+  font-size: 14px;
+}
+.css .form a.text {
+  color: #4070f4;
+  text-decoration: none;
+}
+.css .form a:hover {
+  text-decoration: underline;
+}
+.css .form .button {
+  margin-top: 35px;
+}
+.css .form .button input {
+  border: none;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border-radius: 6px;
+  background-color: #4070f4;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.css .button input:hover {
+  background-color: #265df2;
+}
+.css .form .login-signuptwo {
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* 2nd */
 
 /*# sourceMappingURL=custom.css.map */

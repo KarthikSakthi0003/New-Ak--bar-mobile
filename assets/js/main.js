@@ -54,3 +54,8 @@ signUp.addEventListener("click", () => {
 login.addEventListener("click", () => {
   container.classList.remove("active");
 });
+
+// sidebar login
+
+const sideBar = document.getElementById("sidelogBtn");
+console.log(sideBar);

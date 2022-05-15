@@ -6,3 +6,11 @@
 a {
   text-decoration: none;
 }
+body {
+  overflow: visible;
+}
+#staticBackdrop1 {
+  @include mixins.responsive(xs) {
+    opacity: -1.5;
+  }
+}

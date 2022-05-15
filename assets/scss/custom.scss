@@ -7,6 +7,9 @@
 
 @import "../bootsrapVendor/scss/mixins";
 
+.modal-backdrop.show {
+  opacity: -1.5 !important;
+}
 //Akbar primary colors
 $custom-colors: (
   "ak-primary": #22364c,
@@ -44,3 +47,4 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 @import "./layouts/navcss";
 //loginform
 @import "./base/login";
+@import "./base/sidelogin";

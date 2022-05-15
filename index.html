@@ -97,7 +97,7 @@
                                     <li><a class="dropdown-item"href="" title="INR">INR - Indian Rupee</a></li>
             </ul>
           </li>
- <li class="nav-item dropdown" id="Sidebarlogin">
+ <li class="nav-item dropdown" data-bs-target="#Sidebarlogin" id="side-barlogin">
  <a href="#login">        
   <!-- Button trigger modal -->
 <a href="#" class="btn btn-login-primary btn-sm downarrow" data-bs-toggle="modal" data-bs-target="#staticBackdrop" role="button">
@@ -351,22 +351,17 @@
             </ul>
           </li>
 
-          <li class="dropdown">
-            <a
-              href="#"
-              class="downarrow"
-              data-toggle="dropdown"
-              id="Login_RegisterButton"
-              data-bs-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-              role="button"
-            >
-              <span><i class="bi bi-person-fill"></i></span><span class="item"> <a href="#Sidebarlogin">Login/Register</a> </span>
+              <li>
+       <div>   <!-- loginsidebar -->
+          <div>
+            <a href="#" role="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
+              <span><i class="bi bi-person-fill"></i></span> Login/Register </span>
               <span class="downarrow-icon"
                 ><i class="bi bi-caret-down-fill"></i></span
             ></a>
 
+            </div>
+<!-- loginsidebar end -->
       <!--       <ul class="dropdown-menu" aria-labelledby="Login_RegisterButton">
               <li><hr>
                 <a href="#" class="dropdown-item">
@@ -394,13 +389,136 @@
                 >
               </li>
             </ul> -->
-          </li>
+          
+   
+   <!-- Button trigger modal -->
+<!-- Modal -->
+<div class="modal-bg" style="opacity: -1.5 !important;">
+<div class="modal fade" id="staticBackdrop1" style="opacity: -1.5;" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-100" aria-labelledby="staticBackdropLabel2" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabe2">Login/Registration</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <div class="body">
+        <div class="container">
+          <div class="forms">
+            <div class="form login">
+              <span class="title">Login</span>
+
+              <form action="#">
+                <div class="input-field">
+                  <input type="text" placeholder="Enter your email" required />
+                  <i class="uil uil-envelope icon"></i>
+                </div>
+                <div class="input-field">
+                  <input
+                    type="password"
+                    class="password"
+                    placeholder="Enter your password"
+                    required
+                  />
+                  <i class="fa fa-lock icon"></i>
+                  <i class="fa fa-eye-slash showHidePw"></i>
+                </div>
+
+                <div class="checkbox-text">
+                  <div class="checkbox-content">
+                    <input type="checkbox" id="logCheck" />
+                    <label for="logCheck" class="text">Remember me</label>
+                  </div>
+
+                  <a href="#" class="text">Forgot password?</a>
+                </div>
+
+                <div class="input-field button">
+                  <input type="button" value="Login Now" />
+                </div>
+              </form>
+
+              <div class="login-signup">
+                <span class="text"
+                  >Not a member?
+                  <a href="#" class="text signup-link">Signup now</a>
+                </span>
+              </div>
+            </div>
+
+            <!-- Registration Form -->
+            <div class="form signup">
+              <span class="title">Registration</span>
+
+              <form action="#">
+                <div class="input-field">
+                  <input type="text" placeholder="Enter your name" required />
+                  <i class="fa fa-user"></i>
+                </div>
+                <div class="input-field">
+                  <input type="text" placeholder="Enter your email" required />
+                  <i class="fa fa-envelope icon"></i>
+                </div>
+                <div class="input-field">
+                  <input
+                    type="password"
+                    class="password"
+                    placeholder="Create a password"
+                    required
+                  />
+                  <i class="fa fa-lock icon"></i>
+                </div>
+                <div class="input-field">
+                  <input
+                    type="password"
+                    class="password"
+                    placeholder="Confirm a password"
+                    required
+                  />
+                  <i class="fa fa-lock icon"></i>
+                  <i class="fa fa-eye-slash showHidePw"></i>
+                </div>
+
+                <div class="checkbox-text">
+                  <div class="checkbox-content">
+                    <input type="checkbox" id="sigCheck" />
+                    <label for="sigCheck" class="text">Remember me</label>
+                  </div>
+
+                  <a href="#" class="text">Forgot password?</a>
+                </div>
+
+                <div class="input-field button">
+                  <input type="button" value="Login Now" />
+                </div>
+              </form>
+
+              <div class="login-signup">
+                <span class="text"
+                  >Not a member?
+                  <a href="#" class="text login-link">Signup now</a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+       
+      </div>
+      </div>
+      <div class="modal-footer">
         
+      </div>
+    </div>
+  </div>
+</div>
+</li>
+
             
             </ul>
         </div>
         
-    </div>
+    </div></div>
   
 
 

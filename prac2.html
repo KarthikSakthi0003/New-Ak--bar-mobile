@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Hotels Booking Online - Book Budget, Luxury, Cheap Domestic &
+      International Hotels - Akbar Travels
+    </title>
+    <link
+      rel="shortcut icon"
+      href="https://www.akbartravels.com/in/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <!-- ===== Iconscout CSS ===== -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+
+    <!--bootsrap-icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <!-- fontAwsome -->
+    <script
+      src="https://kit.fontawesome.com/9540c9a694.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--Bootsrap stylesheet-->
+    <link rel="stylesheet" href="./assets/css/custom.css" />
+  </head>
+  <body>
+    <!-- ========== Start login ========== -->
+    <div id="loginMenu">
+      <a href="javascript:void(0)" class="close" onclick="closeSM()">&times;</a>
+      <div class="body">
+        <div class="container">
+          <div class="forms">
+            <div class="form login">
+              <span class="title">Login</span>
+
+              <form action="#">
+                <div class="input-field">
+                  <input type="text" placeholder="Enter your email" required />
+                  <i class="uil uil-envelope icon"></i>
+                </div>
+                <div class="input-field">
+                  <input
+                    type="password"
+                    class="password"
+                    placeholder="Enter your password"
+                    required
+                  />
+                  <i class="uil uil-lock icon"></i>
+                  <i class="uil uil-eye-slash showHidePw"></i>
+                </div>
+
+                <div class="checkbox-text">
+                  <div class="checkbox-content">
+                    <input type="checkbox" id="logCheck" />
+                    <label for="logCheck" class="text">Remember me</label>
+                  </div>
+
+                  <a href="#" class="text">Forgot password?</a>
+                </div>
+
+                <div class="input-field button">
+                  <input type="button" value="Login Now" />
+                </div>
+              </form>
+
+              <div class="login-signup">
+                <span class="text"
+                  >Not a member?
+                  <a href="#" class="text signup-link">Signup now</a>
+                </span>
+              </div>
+            </div>
+
+            <!-- Registration Form -->
+            <div class="form signup">
+              <span class="title">Registration</span>
+
+              <form action="#">
+                <div class="input-field">
+                  <input type="text" placeholder="Enter your name" required />
+                  <i class="uil uil-user"></i>
+                </div>
+                <div class="input-field">
+                  <input type="text" placeholder="Enter your email" required />
+                  <i class="uil uil-envelope icon"></i>
+                </div>
+                <div class="input-field">
+                  <input
+                    type="password"
+                    class="password"
+                    placeholder="Create a password"
+                    required
+                  />
+                  <i class="uil uil-lock icon"></i>
+                </div>
+                <div class="input-field">
+                  <input
+                    type="password"
+                    class="password"
+                    placeholder="Confirm a password"
+                    required
+                  />
+                  <i class="uil uil-lock icon"></i>
+                  <i class="uil uil-eye-slash showHidePw"></i>
+                </div>
+
+                <div class="checkbox-text">
+                  <div class="checkbox-content">
+                    <input type="checkbox" id="sigCheck" />
+                    <label for="sigCheck" class="text">Remember me</label>
+                  </div>
+
+                  <a href="#" class="text">Forgot password?</a>
+                </div>
+
+                <div class="input-field button">
+                  <input type="button" value="Login Now" />
+                </div>
+              </form>
+
+              <div class="login-signup">
+                <span class="text"
+                  >Not a member?
+                  <a href="#" class="text login-link">Signup now</a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--<script src="script.js"></script>-->
+    </div>
+
+    <!-- js code -->
+
+    <section class="sidbar-width">
+      <div id="mySidemenu" class="sidemenu">
+        <a href="javascript:void(0)" class="close" onclick="closeSM()"
+          >&times;</a
+        >
+            <i class="fa fa-arrow-right toggler"></i>
+
+        <ul class="sm-wrapper">
+
+          <li class="nav-side">
+            <a href="#"> AKBAR BIZZ </a>
+            <hr />
+          </li>
+          <li class="nav-side">
+            <a href="#">IRCTC AGENT</a>
+            <hr />
+          </li>
+
+          <li>
+            <a
+              href="#"
+              class=""
+              data-bs-toggle="dropdown"
+              id="dropdownINR"
+              aria-haspopup="true"
+              aria-expanded="false"
+              role="button"
+              >₹ INR</a
+            >
+            <hr />
+            <ul class="dropdown-menu" aria-labelledby="dropdownINR">
+              <li>
+                <a class="dropdown-item" href="#">Action</a>
+                <hr />
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Another action</a>
+                <hr />
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+                <hr />
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Separated link</a>
+                <hr />
+              </li>
+            </ul>
+          </li>
+
+              </li>
+              <li class="nav-side">
+                <a class="dropdown-item" href="" title="EUR">EUR - Euro</a>
+                <hr />
+              </li>
+              <li>
+                <a class="dropdown-item" href="" title="QAR"
+                  >QAR - Qatari Rial</a
+                >
+                <hr />
+              </li>
+              <li class="nav-side">
+                <a class="dropdown-item" href="" title="BHD"
+                  >BHD - Bahraini Dinar</a
+                >
+                <hr />
+              </li>
+              <li>
+                <a class="dropdown-item" href="" title="OMR"
+                  >OMR - Omani Riyal</a
+                >
+                <hr />
+              </li>
+              <li>
+                <a class="dropdown-item" href="" title="KWD"
+                  >KWD - Kuwaiti Dinar</a
+                >
+                <hr />
+              </li>
+              <li>
+                <a class="dropdown-item" href="" title="INR"
+                  >INR - Indian Rupee</a
+                >
+                <hr />
+              </li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a
+              href="#"
+              class="downarrow"
+              data-toggle="dropdown"
+              id="Login_RegisterButton"
+              data-bs-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <span><i class="bi bi-person-fill"></i></span>Login/Register
+              <span class="downarrow-icon"
+                ><i class="bi bi-caret-down-fill"></i></span
+            ></a>
+            <hr />
+
+            <ul class="dropdown-menu" aria-labelledby="Login_RegisterButton">
+              <li>
+                <a href="#" class="dropdown-item">
+                  <span><i class="bi bi-key-fill margin-left"></i></span>
+                  Login</a
+                >
+                <hr />
+              </li>
+
+              <li>
+                <a href="#" class="dropdown-item">
+                  <span><i class="bi bi-emoji-smile-fill"></i></span>
+                  Register</a
+                >
+                <hr />
+              </li>
+              <li>
+                <a href="#" class="dropdown-item">
+                  <span><i class="bi bi-clipboard-check-fill"></i></span>
+                  Mybooking</a
+                >
+                <hr />
+              </li>
+              <li>
+                <a href="#" class="dropdown-item">
+                  <span><i class="bi bi-cash-coin"></i></span> Makepayment</a
+                >
+                <hr />
+              </li>
+              <li>
+                <a href="#" class="dropdown-item">
+                  <span><i class="bi bi-pencil-fill"></i></span> blog</a
+                >
+                <hr />
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div id="pg-content">
+        <div
+          style="font-size: 50px; cursor: pointer; color: #fff"
+          onclick="openSM()"
+        >
+          &#9776;
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+      <script>
+        const body = document.querySelector('body'),
+      sidebar = body.querySelector('nav-side'),
+      toggle = body.querySelector(".toggler"),
+      searchBtn = body.querySelector(".search-box"),
+      modeSwitch = body.querySelector(".toggle-switch"),
+      modeText = body.querySelector(".mode-text");
+
+
+toggle.addEventListener("click" , () =>{
+    sidebar.classList.toggle("close");
+})
+
+searchBtn.addEventListener("click" , () =>{
+    sidebar.classList.remove("close");
+})
+
+modeSwitch.addEventListener("click" , () =>{
+    body.classList.toggle("dark");
+    
+    if(body.classList.contains("dark")){
+        modeText.innerText = "Light mode";
+    }else{
+        modeText.innerText = "Dark mode";
+        
+    }
+});
+    </script>
+
+
+    </section>
+
+    <!-- js code end -->
+
+
+    <!-- js2 -->
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">Akbar Travells</span>
+                    
+                </div>
+            </div>
+
+            <i class="fa fa-arrow-right toggle"></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <li class="search-box">
+                    <i class='fa fa-search icon'></i>
+                    <input type="text" placeholder="Search...">
+                </li>
+
+                <ul class="menu-links">
+                    <li class="nav-side">
+                        <a href="#">
+                            <i class='fa fa-home-alt icon' ></i>
+                            <span class="text nav-text">Upcoming trips</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-side">
+                        <a href="#">
+                            <i class='bx bx-bar-chart-alt-2 icon' ></i>
+                            <span class="text nav-text">Mybooking</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-side">
+                        <a href="#">
+                            <i class='fa fa-bell icon'></i>
+                            <span class="text nav-text">Notifications</span>
+                        </a>
+                    </li>
+
+                    
+
+                    
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='fa fa-wallet icon' ></i>
+                            <span class="text nav-text">Wallets</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="#">
+                        <i class='fa fa-log-out icon' ></i>
+                        <span class="text nav-text">Login</span>
+                    </a>
+                </li>
+
+                
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="home">
+        <div class="text">Dashboard Sidebar</div>
+    </section>
+
+    <script>
+        const body = document.querySelector('body'),
+      sidebar = body.querySelector('nav'),
+      toggle = body.querySelector(".toggle"),
+      searchBtn = body.querySelector(".search-box"),
+      modeSwitch = body.querySelector(".toggle-switch"),
+      modeText = body.querySelector(".mode-text");
+
+
+toggle.addEventListener("click" , () =>{
+    sidebar.classList.toggle("close");
+})
+
+searchBtn.addEventListener("click" , () =>{
+    sidebar.classList.remove("close");
+})
+
+modeSwitch.addEventListener("click" , () =>{
+    body.classList.toggle("dark");
+    
+    if(body.classList.contains("dark")){
+        modeText.innerText = "Light mode";
+    }else{
+        modeText.innerText = "Dark mode";
+        
+    }
+});
+    </script>
+
+
+
+<!-- ========== Start login code modal ========== -->
+
+<!-- Button trigger modal -->
+ <li class="nav-item dropdown">
+ <a href="#login">        
+  <!-- Button trigger modal -->
+<a href="#" class="btn btn-login-primary btn-sm downarrow" data-bs-toggle="modal" data-bs-target="#staticBackdrop" role="button">
+              <span><i class="bi bi-person-fill"></i></span>Login/Register
+              <span class="downarrow-icon"
+                ><i class="bi bi-caret-down-fill"></i></span
+            ></a>
+  <!-- Modal -->
+      <div
+        class="modal fade"
+        id="staticBackdrop"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Login/Registration</h5>
+              <!--  <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button> -->
+            </div>
+            <div class="modal-body">
+              <!-- ========== Start login form ========== -->
+              <div class="body">
+                <div class="container">
+                  <div class="forms">
+                    <div class="form login">
+                      <span class="title">Login</span>
+
+                      <form action="#">
+                        <div class="input-field">
+                          <input
+                            type="text"
+                            placeholder="Enter your email"
+                            required
+                          />
+                          <i class="fa fa-envelope icon"></i>
+                        </div>
+                        <div class="input-field">
+                          <input
+                            type="password"
+                            class="password"
+                            placeholder="Enter your password"
+                            required
+                          />
+                          <i class="fa fa-lock icon"></i>
+                          <i class="fa fa-eye-slash showHidePw"></i>
+                        </div>
+
+                        <div class="checkbox-text">
+                          <div class="checkbox-content">
+                            <input type="checkbox" id="logCheck" />
+                            <label for="logCheck" class="text"
+                              >Remember me</label
+                            >
+                          </div>
+
+                          <a href="#" class="text">Forgot password?</a>
+                        </div>
+
+                        <div class="input-field button">
+                          <input type="button" value="Login Now" />
+                        </div>
+                      </form>
+
+                      <div class="login-signup">
+                        <span class="text"
+                          >Not a member?
+                          <a href="#" class="text signup-link">Signup now</a>
+                        </span>
+                      </div>
+                    </div>
+
+                    <!-- Registration Form -->
+                    <div class="form signup">
+                      <span class="title">Registration</span>
+
+                      <form action="#">
+                        <div class="input-field">
+                          <input
+                            type="text"
+                            placeholder="Enter your name"
+                            required
+                          />
+                          <i class="fa fa-user"></i>
+                        </div>
+                        <div class="input-field">
+                          <input
+                            type="text"
+                            placeholder="Enter your email"
+                            required
+                          />
+                          <i class="fa fa-envelope icon"></i>
+                        </div>
+                        <div class="input-field">
+                          <input
+                            type="password"
+                            class="password"
+                            placeholder="Create a password"
+                            required
+                          />
+                          <i class="fa fa-lock icon"></i>
+                        </div>
+                        <div class="input-field">
+                          <input
+                            type="password"
+                            class="password"
+                            placeholder="Confirm a password"
+                            required
+                          />
+                          <i class="fa fa-lock icon"></i>
+                          <i class="fa fa-eye-slash showHidePw"></i>
+                        </div>
+
+                        <div class="checkbox-text">
+                          <div class="checkbox-content">
+                            <input type="checkbox" id="sigCheck" />
+                            <label for="sigCheck" class="text"
+                              >Remember me</label
+                            >
+                          </div>
+
+                          <a href="#" class="text">Forgot password?</a>
+                        </div>
+
+                        <div class="input-field button">
+                          <input type="button" value="Login Now" />
+                        </div>
+                      </form>
+
+                      <div class="login-signup">
+                        <span class="text"
+                          >Not a member?
+                          <a href="#" class="text login-link">Signup now</a>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ========== End login form ========== -->
+            </div>
+            <div class="modal-footer">
+              <!-- <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">Understood</button>
+ -->            </div>
+          </div>
+        </div>
+      </div>
+</a>
+            
+          </li>
+
+
+<!-- ========== End login code modal ========== -->
+
+    <!-- js2end -->
+
+    <!-- Bootstrap Js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- js -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
