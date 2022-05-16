@@ -26,7 +26,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     text-align: center;
     background-color: #fff;
     color: #1f4687;
@@ -34,7 +33,7 @@
     list-style: none;
     border-radius: 0px -3px 1px 1px;
     height: 68px;
-    width: 70px;
+    width: 77px;
     margin-right: 1px;
     border: 1px solid rgba(255, 255, 255, 0.28);
     box-shadow: 0 2px 2px 0 rgb(0 0 0 / 30%);
@@ -116,6 +115,7 @@
     color: #000;
     @include mixins.responsive(xs) {
       color: #1f4687;
+      padding: 1px -15px;
     }
     @include mixins.responsive(sm) {
       color: #1f4687;
