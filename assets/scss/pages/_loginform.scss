@@ -1,6 +1,5 @@
-/* @use "../abstract/mixins" as mixins;
-
-#staticbackdrop1 {
+@use "../abstract/mixins" as mixins;
+.login2--head {
   @include mixins.responsive(xs) {
     padding-right: 167px;
     padding-top: 8%;
@@ -14,7 +13,7 @@
     flex-shrink: 0;
     align-items: center;
     justify-content: space-between;
-    padding: 4rem 2rem;
+    padding: -2rem 2rem;
     border-bottom: 1px solid #dee2e6;
     border-top-left-radius: calc(0.3rem - 1px);
     border-top-right-radius: calc(0.3rem - 1px);
@@ -43,4 +42,3 @@
     line-height: 1.5;
   }
 }
- */
